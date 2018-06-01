@@ -71,9 +71,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4112D3AE20C1FB0E00FABEB3 /* Build configuration list for PBXNativeTarget "pnutAPI" */;
 			buildPhases = (
+				417A3ED420C20D3A0051B74B /* ShellScript */,
 				4112D39820C1FB0C00FABEB3 /* Sources */,
 				4112D39920C1FB0C00FABEB3 /* Frameworks */,
 				4112D39A20C1FB0C00FABEB3 /* Resources */,
+				417A3ED520C20D5B0051B74B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,6 +131,35 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		417A3ED420C20D3A0051B74B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "test -e ~/.zshrc && source ~/.zshrc\nbundle exec fastlane set_secrets";
+		};
+		417A3ED520C20D5B0051B74B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "test -e ~/.zshrc && source ~/.zshrc\nbundle exec fastlane remove_secrets";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4112D39820C1FB0C00FABEB3 /* Sources */ = {
