@@ -1,0 +1,2 @@
+github "ishkawa/APIKit" ~> 3.1
+github "OAuthSwift/OAuthSwift" ~> 1.2.0
