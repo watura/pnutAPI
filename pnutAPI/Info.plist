@@ -21,9 +21,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>PnutClientID</key>
-	<string>ENV[&quot;PNUT_CLIENT_ID&quot;]</string>
+	<string>PNUT_CLIENT_ID</string>
 	<key>PnutClientSecret</key>
-	<string>ENV[&quot;PNUT_CLIENT_SECRET&quot;]</string>
+	<string>PNUT_CLIENT_SECRET</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

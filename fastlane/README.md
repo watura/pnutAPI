@@ -15,14 +15,19 @@ Install _fastlane_ using
 or alternatively using `brew cask install fastlane`
 
 # Available Actions
-### set_secret
+### set_secrets
 ```
-fastlane set_secret
+fastlane set_secrets
 ```
 
-### remove_secret
+### remove_secrets
 ```
-fastlane remove_secret
+fastlane remove_secrets
+```
+
+### ensure_no_secrets
+```
+fastlane ensure_no_secrets
 ```
 
 
