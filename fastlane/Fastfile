@@ -1,0 +1,9 @@
+lane :set_secret do
+  set_info_plist_value(path: "./pnutAPI/Info.plist", key: "PnutClientID", value: ENV["PNUT_CLIENT_ID"])
+  set_info_plist_value(path: "./pnutAPI/Info.plist", key: "PnutClientSecret", value: ENV["PNUT_CLIENT_SECRET"])
+end
+
+lane :remove_secret do
+  set_info_plist_value(path: "./pnutAPI/Info.plist", key: "PnutClientID", value: "ENV[\"PNUT_CLIENT_ID\"]")
+  set_info_plist_value(path: "./pnutAPI/Info.plist", key: "PnutClientSecret", value: "ENV[\"PNUT_CLIENT_SECRET\"]")
+end
