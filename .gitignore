@@ -1,7 +1,6 @@
 .DS_Store
 /.build
 /Packages
-/*.xcodeproj
 .env
 ### https://raw.github.com/github/gitignore/90f149de451a5433aebd94d02d11b0e28843a1af/Global/Xcode.gitignore
 
@@ -85,7 +84,7 @@ playground.xcworkspace
 # Carthage
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
+Carthage/Checkouts
 
 Carthage/Build
 
@@ -100,6 +99,3 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
-
-
-Carthage/Checkouts/
