@@ -53,6 +53,12 @@ extension APITokenManager {
     var hasToken: Bool {
         return token != nil
     }
+
+    var credential: OAuthSwiftCredential {
+        let cred = oauthSwift.client.credential
+        cred.oauthToken = token ?? ""
+        return cred
+    }
 }
 
 extension APITokenManager {

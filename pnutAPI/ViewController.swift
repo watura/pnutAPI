@@ -1,7 +1,8 @@
 import UIKit
 import OAuthSwift
+import APIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     var oauthswift: OAuth2Swift?
 
     override func viewDidLoad() {
@@ -17,7 +18,11 @@ class ViewController: UIViewController {
     @IBAction func touchUpInside(_ sender: Any) {
         let manager = APITokenManager()
         if manager.hasToken {
-            manager.removeToken()
+            GetTokenRequest().request(success: { response in
+                print(response)
+            }, failure: { error in
+                print(error)
+            })
         } else {
             _ = manager.authorize(viewController: self)
         }

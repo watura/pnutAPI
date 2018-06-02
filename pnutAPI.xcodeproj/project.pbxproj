@@ -16,6 +16,9 @@
 		417A3EE320C212EC0051B74B /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED920C212CF0051B74B /* OAuthSwift.framework */; };
 		417A3EE420C212EC0051B74B /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED820C212CF0051B74B /* Result.framework */; };
 		417A3EE820C2232B0051B74B /* APITokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417A3EE720C2232B0051B74B /* APITokenManager.swift */; };
+		417A3EEB20C258DD0051B74B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417A3EEA20C258DD0051B74B /* API.swift */; };
+		417A3EED20C25AE50051B74B /* DecodableParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417A3EEC20C25AE50051B74B /* DecodableParser.swift */; };
+		417A3EEF20C25BAF0051B74B /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417A3EEE20C25BAF0051B74B /* Token.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		417A3ED820C212CF0051B74B /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		417A3ED920C212CF0051B74B /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
 		417A3EE720C2232B0051B74B /* APITokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITokenManager.swift; sourceTree = "<group>"; };
+		417A3EEA20C258DD0051B74B /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		417A3EEC20C25AE50051B74B /* DecodableParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableParser.swift; sourceTree = "<group>"; };
+		417A3EEE20C25BAF0051B74B /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 		4112D39E20C1FB0D00FABEB3 /* pnutAPI */ = {
 			isa = PBXGroup;
 			children = (
+				417A3EE920C258CA0051B74B /* API */,
 				417A3EE620C2231E0051B74B /* Manager */,
 				4112D39F20C1FB0D00FABEB3 /* AppDelegate.swift */,
 				4112D3A120C1FB0D00FABEB3 /* ViewController.swift */,
@@ -93,6 +100,16 @@
 				417A3EE720C2232B0051B74B /* APITokenManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		417A3EE920C258CA0051B74B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				417A3EEA20C258DD0051B74B /* API.swift */,
+				417A3EEE20C25BAF0051B74B /* Token.swift */,
+				417A3EEC20C25AE50051B74B /* DecodableParser.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +248,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				417A3EED20C25AE50051B74B /* DecodableParser.swift in Sources */,
 				4112D3A220C1FB0D00FABEB3 /* ViewController.swift in Sources */,
 				4112D3A020C1FB0D00FABEB3 /* AppDelegate.swift in Sources */,
+				417A3EEF20C25BAF0051B74B /* Token.swift in Sources */,
+				417A3EEB20C258DD0051B74B /* API.swift in Sources */,
 				417A3EE820C2232B0051B74B /* APITokenManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
