@@ -46,8 +46,8 @@ public extension API {
         decoder.dateDecodingStrategy = .iso8601
 
         if let _ = try? decoder.decode(Response.self, from: data) {
-        } else {
-            print(response)
+        } else if let value = String(data: data, encoding: .utf8) {
+            print(value)
         }
 
         return try decoder.decode(Response.self, from: data)

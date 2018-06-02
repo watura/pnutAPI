@@ -6,15 +6,6 @@ public struct UserResponse: Codable {
         public let name: String
     }
 
-    public struct Counts: Codable {
-        public let bookmarks: Int
-        public let clients: Int
-        public let followers: Int
-        public let following: Int
-        public let posts: Int
-        public let users: Int
-    }
-
     public struct Verified: Codable {
         public let domain: String
         public let link: URL
