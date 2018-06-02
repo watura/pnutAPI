@@ -34,6 +34,8 @@
 		41869E0C20C2ABB800F98D00 /* PostsLifecycleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869E0B20C2ABB800F98D00 /* PostsLifecycleRequest.swift */; };
 		41869E0E20C2B17700F98D00 /* PostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869E0D20C2B17700F98D00 /* PostResponse.swift */; };
 		41869E1020C2B27500F98D00 /* Counts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869E0F20C2B27500F98D00 /* Counts.swift */; };
+		41869E1220C2BB6400F98D00 /* PostStreamRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869E1120C2BB6400F98D00 /* PostStreamRequest.swift */; };
+		41869E1420C2BDBB00F98D00 /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869E1320C2BDBB00F98D00 /* Entities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		41869E0B20C2ABB800F98D00 /* PostsLifecycleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsLifecycleRequest.swift; sourceTree = "<group>"; };
 		41869E0D20C2B17700F98D00 /* PostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResponse.swift; sourceTree = "<group>"; };
 		41869E0F20C2B27500F98D00 /* Counts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counts.swift; sourceTree = "<group>"; };
+		41869E1120C2BB6400F98D00 /* PostStreamRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStreamRequest.swift; sourceTree = "<group>"; };
+		41869E1320C2BDBB00F98D00 /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +184,7 @@
 				41869DDE20C2834D00F98D00 /* Meta.swift */,
 				41869DDC20C2827000F98D00 /* PnutResponse.swift */,
 				41869E0D20C2B17700F98D00 /* PostResponse.swift */,
+				41869E1320C2BDBB00F98D00 /* Entities.swift */,
 				41869E0F20C2B27500F98D00 /* Counts.swift */,
 				41869DD820C27D9F00F98D00 /* TokenResponse.swift */,
 				41869DD620C27D7B00F98D00 /* UserResponse.swift */,
@@ -191,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				417A3EEE20C25BAF0051B74B /* TokenRequest.swift */,
+				41869E1120C2BB6400F98D00 /* PostStreamRequest.swift */,
 				41869E0B20C2ABB800F98D00 /* PostsLifecycleRequest.swift */,
 				41869DE320C28B6200F98D00 /* UsersLookupRequest.swift */,
 			);
@@ -481,6 +487,8 @@
 				41869E0520C2970700F98D00 /* DecodableParser.swift in Sources */,
 				41869E0320C2970000F98D00 /* UsersLookupRequest.swift in Sources */,
 				41869E0820C2970D00F98D00 /* TokenResponse.swift in Sources */,
+				41869E1220C2BB6400F98D00 /* PostStreamRequest.swift in Sources */,
+				41869E1420C2BDBB00F98D00 /* Entities.swift in Sources */,
 				41869E1020C2B27500F98D00 /* Counts.swift in Sources */,
 				41869E0E20C2B17700F98D00 /* PostResponse.swift in Sources */,
 				41869E0920C2970D00F98D00 /* UserResponse.swift in Sources */,

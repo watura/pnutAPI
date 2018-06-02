@@ -5,19 +5,28 @@ import PnutAPI
 
 enum PnutAPIList: String {
     case authorize
+
     case lookupUser
     case lookupUsers
+
     case postLifecyclePost
     case postLifecycleRevise
     case postLifecycleDelete
 
+    case postStreams
+    case unifiedPostStreams
+    case mentionsPostStreams
+    case postsPostStreams
+    case globalPostStreams
+    case tagsPostStreams
+
     case deleteToken
     case getToken
 
-    static var count: Int { return 8 }
+    static var count: Int { return PnutAPIList.list.count }
 
     static var list: [PnutAPIList] {
-        return [.authorize, .lookupUser, .lookupUsers, .postLifecyclePost, .postLifecycleRevise, .postLifecycleDelete, .deleteToken, .getToken]
+        return [.authorize, .lookupUser, .lookupUsers, .postLifecyclePost, .postLifecycleRevise, .postLifecycleDelete, .postStreams, .unifiedPostStreams, .mentionsPostStreams, .postsPostStreams, .globalPostStreams, .tagsPostStreams, .deleteToken, .getToken]
     }
 
     func action(viewController: UIViewController) {
@@ -35,6 +44,18 @@ enum PnutAPIList: String {
         case .postLifecycleRevise:
             let body = PostBody(text: "Revised Test Post  \(Date())")
             RevisePostRequest(id: "378143", postBody: body).request()
+        case .postStreams:
+            PostStreamsRequest().request()
+        case .unifiedPostStreams:
+            UnifiedPostStreamsRequest().request()
+        case .mentionsPostStreams:
+            MentionsPostStreamsRequest().request()
+        case .postsPostStreams:
+            UserPostStreamsRequest().request()
+        case .globalPostStreams:
+            GlobalPostStreamsRequest().request()
+        case .tagsPostStreams:
+            TagsPostStreamsRequest(tag: "MondayNightDanceParty").request()
         case .postLifecycleDelete:
             DeletePostRequest(id: "378143").request()
         case .deleteToken:

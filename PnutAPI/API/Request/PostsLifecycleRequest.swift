@@ -77,7 +77,6 @@ public struct RevisePostRequest: API {
     }
 }
 
-
 public struct DeletePostRequest: API {
     public typealias Response = PnutResponse<PostResponse>
 

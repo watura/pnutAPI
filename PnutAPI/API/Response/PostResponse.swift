@@ -3,13 +3,16 @@ import Foundation
 public struct PostResponse: Codable {
     public let createdAt: Date
     public let id: String
+    public let isDeleted: Bool?
     public let source: Source
     public let user: UserResponse
     public let threadId: String
+    public let replyTo: String?
+    public let repostOf: String?
     public let counts: Counts
-    public let content: Content
-    public let youBookmarked: Bool
-    public let youReposted: Bool
+    public let content: Content?
+    public let youBookmarked: Bool?
+    public let youReposted: Bool?
 
     public struct Source: Codable {
         public let id: String
@@ -21,12 +24,6 @@ public struct PostResponse: Codable {
         public let html: String
         public let text: String
         public let entities: Entities
-    }
-
-    public struct Entities: Codable {
-        public let links: [URL]
-        public let mentions: [String]
-        public let tags: [String]
     }
 
     public struct Counts: Codable {
