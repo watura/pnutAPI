@@ -65,6 +65,7 @@
 			children = (
 				417A3EE120C212EC0051B74B /* Frameworks */,
 				4112D39D20C1FB0D00FABEB3 /* Products */,
+				41869DE120C287CA00F98D00 /* Supporting Files */,
 				4112D39E20C1FB0D00FABEB3 /* pnutAPI */,
 			);
 			sourceTree = "<group>";
@@ -83,10 +84,6 @@
 				417A3EE920C258CA0051B74B /* API */,
 				417A3EE620C2231E0051B74B /* Manager */,
 				4112D39F20C1FB0D00FABEB3 /* AppDelegate.swift */,
-				4112D3A620C1FB0E00FABEB3 /* Assets.xcassets */,
-				4112D3AB20C1FB0E00FABEB3 /* Info.plist */,
-				4112D3A820C1FB0E00FABEB3 /* LaunchScreen.storyboard */,
-				4112D3A320C1FB0D00FABEB3 /* Main.storyboard */,
 				4112D3A120C1FB0D00FABEB3 /* ViewController.swift */,
 			);
 			path = pnutAPI;
@@ -138,6 +135,17 @@
 				417A3EEE20C25BAF0051B74B /* TokenRequest.swift */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		41869DE120C287CA00F98D00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4112D3A620C1FB0E00FABEB3 /* Assets.xcassets */,
+				4112D3AB20C1FB0E00FABEB3 /* Info.plist */,
+				4112D3A820C1FB0E00FABEB3 /* LaunchScreen.storyboard */,
+				4112D3A320C1FB0D00FABEB3 /* Main.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,7 +445,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = pnutAPI/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,7 +467,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = pnutAPI/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

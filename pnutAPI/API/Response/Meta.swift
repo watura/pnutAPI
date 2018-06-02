@@ -1,5 +1,5 @@
 import Foundation
 
-struct Meta: Decodable {
+struct Meta: Codable {
     let code: Int
 }

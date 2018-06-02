@@ -1,12 +1,12 @@
 import Foundation
 
-struct UserResponse: Decodable {
-    struct Badge: Decodable {
+struct UserResponse: Codable {
+    struct Badge: Codable {
         let id: String
         let name: String
     }
 
-    struct Counts: Decodable {
+    struct Counts: Codable {
         let bookmarks: Int
         let clients: Int
         let followers: Int
@@ -15,19 +15,19 @@ struct UserResponse: Decodable {
         let users: Int
     }
 
-    struct Verified: Decodable {
+    struct Verified: Codable {
         let domain: String
         let link: URL
     }
 
-    struct Content: Decodable {
+    struct Content: Codable {
         let html: String
         let text: String
         let avatarImage: Image
         let coverImage: Image
     }
 
-    struct Image: Decodable {
+    struct Image: Codable {
         let link: URL
         let height: Int
         let width: Int

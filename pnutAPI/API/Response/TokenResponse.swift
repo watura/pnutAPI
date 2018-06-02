@@ -1,11 +1,11 @@
-struct TokenResponse: Decodable {
-    struct App: Decodable {
+struct TokenResponse: Codable {
+    struct App: Codable {
         let id: String
         let link: String
         let name: String
     }
 
-    struct Storage: Decodable {
+    struct Storage: Codable {
         let available: Int
         let total: Int
     }
