@@ -18,7 +18,11 @@
 		417A3EE820C2232B0051B74B /* APITokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417A3EE720C2232B0051B74B /* APITokenManager.swift */; };
 		417A3EEB20C258DD0051B74B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417A3EEA20C258DD0051B74B /* API.swift */; };
 		417A3EED20C25AE50051B74B /* DecodableParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417A3EEC20C25AE50051B74B /* DecodableParser.swift */; };
-		417A3EEF20C25BAF0051B74B /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417A3EEE20C25BAF0051B74B /* Token.swift */; };
+		417A3EEF20C25BAF0051B74B /* TokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417A3EEE20C25BAF0051B74B /* TokenRequest.swift */; };
+		41869DD720C27D7B00F98D00 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869DD620C27D7B00F98D00 /* UserResponse.swift */; };
+		41869DD920C27D9F00F98D00 /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869DD820C27D9F00F98D00 /* TokenResponse.swift */; };
+		41869DDD20C2827000F98D00 /* PnutResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869DDC20C2827000F98D00 /* PnutResponse.swift */; };
+		41869DDF20C2834D00F98D00 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869DDE20C2834D00F98D00 /* Meta.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +39,11 @@
 		417A3EE720C2232B0051B74B /* APITokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITokenManager.swift; sourceTree = "<group>"; };
 		417A3EEA20C258DD0051B74B /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		417A3EEC20C25AE50051B74B /* DecodableParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableParser.swift; sourceTree = "<group>"; };
-		417A3EEE20C25BAF0051B74B /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		417A3EEE20C25BAF0051B74B /* TokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequest.swift; sourceTree = "<group>"; };
+		41869DD620C27D7B00F98D00 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		41869DD820C27D9F00F98D00 /* TokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
+		41869DDC20C2827000F98D00 /* PnutResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PnutResponse.swift; sourceTree = "<group>"; };
+		41869DDE20C2834D00F98D00 /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +63,9 @@
 		4112D39320C1FB0C00FABEB3 = {
 			isa = PBXGroup;
 			children = (
-				4112D39E20C1FB0D00FABEB3 /* pnutAPI */,
-				4112D39D20C1FB0D00FABEB3 /* Products */,
 				417A3EE120C212EC0051B74B /* Frameworks */,
+				4112D39D20C1FB0D00FABEB3 /* Products */,
+				4112D39E20C1FB0D00FABEB3 /* pnutAPI */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,11 +83,11 @@
 				417A3EE920C258CA0051B74B /* API */,
 				417A3EE620C2231E0051B74B /* Manager */,
 				4112D39F20C1FB0D00FABEB3 /* AppDelegate.swift */,
-				4112D3A120C1FB0D00FABEB3 /* ViewController.swift */,
-				4112D3A320C1FB0D00FABEB3 /* Main.storyboard */,
 				4112D3A620C1FB0E00FABEB3 /* Assets.xcassets */,
-				4112D3A820C1FB0E00FABEB3 /* LaunchScreen.storyboard */,
 				4112D3AB20C1FB0E00FABEB3 /* Info.plist */,
+				4112D3A820C1FB0E00FABEB3 /* LaunchScreen.storyboard */,
+				4112D3A320C1FB0D00FABEB3 /* Main.storyboard */,
+				4112D3A120C1FB0D00FABEB3 /* ViewController.swift */,
 			);
 			path = pnutAPI;
 			sourceTree = "<group>";
@@ -105,11 +113,31 @@
 		417A3EE920C258CA0051B74B /* API */ = {
 			isa = PBXGroup;
 			children = (
+				41869DE020C284C300F98D00 /* Request */,
+				41869DD520C27D6F00F98D00 /* Response */,
 				417A3EEA20C258DD0051B74B /* API.swift */,
-				417A3EEE20C25BAF0051B74B /* Token.swift */,
 				417A3EEC20C25AE50051B74B /* DecodableParser.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		41869DD520C27D6F00F98D00 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				41869DDE20C2834D00F98D00 /* Meta.swift */,
+				41869DDC20C2827000F98D00 /* PnutResponse.swift */,
+				41869DD820C27D9F00F98D00 /* TokenResponse.swift */,
+				41869DD620C27D7B00F98D00 /* UserResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		41869DE020C284C300F98D00 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				417A3EEE20C25BAF0051B74B /* TokenRequest.swift */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,9 +279,13 @@
 				417A3EED20C25AE50051B74B /* DecodableParser.swift in Sources */,
 				4112D3A220C1FB0D00FABEB3 /* ViewController.swift in Sources */,
 				4112D3A020C1FB0D00FABEB3 /* AppDelegate.swift in Sources */,
-				417A3EEF20C25BAF0051B74B /* Token.swift in Sources */,
+				417A3EEF20C25BAF0051B74B /* TokenRequest.swift in Sources */,
+				41869DD720C27D7B00F98D00 /* UserResponse.swift in Sources */,
 				417A3EEB20C258DD0051B74B /* API.swift in Sources */,
+				41869DD920C27D9F00F98D00 /* TokenResponse.swift in Sources */,
 				417A3EE820C2232B0051B74B /* APITokenManager.swift in Sources */,
+				41869DDF20C2834D00F98D00 /* Meta.swift in Sources */,
+				41869DDD20C2827000F98D00 /* PnutResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +298,7 @@
 				4112D3A420C1FB0D00FABEB3 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		4112D3A820C1FB0E00FABEB3 /* LaunchScreen.storyboard */ = {
@@ -274,6 +307,7 @@
 				4112D3A920C1FB0E00FABEB3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

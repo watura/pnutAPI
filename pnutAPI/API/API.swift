@@ -36,7 +36,7 @@ extension API {
 
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         decoder.dateDecodingStrategy = .iso8601
-
+        print(String(data: data, encoding: .utf8))
         return try decoder.decode(Response.self, from: data)
     }
 

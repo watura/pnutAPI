@@ -7,8 +7,10 @@ GEM
     atomos (0.1.2)
     babosa (1.0.2)
     claide (1.0.2)
+    clamp (0.6.5)
     colored (1.2)
     colored2 (3.1.2)
+    colorize (0.8.1)
     commander-fastlane (4.4.6)
       highline (~> 1.7.2)
     declarative (0.0.10)
@@ -118,6 +120,10 @@ GEM
       CFPropertyList
       naturally
     slack-notifier (2.3.2)
+    synx (0.2.1)
+      clamp (~> 0.6)
+      colorize (~> 0.7)
+      xcodeproj (~> 1.0)
     terminal-notifier (1.8.0)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
@@ -148,6 +154,7 @@ PLATFORMS
 DEPENDENCIES
   dotenv
   fastlane
+  synx
 
 BUNDLED WITH
    1.15.2
