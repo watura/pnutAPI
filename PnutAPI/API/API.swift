@@ -30,12 +30,25 @@ public extension API {
         return mutableRequest
     }
 
+    public var bodyParameters: BodyParameters? {
+        guard let parameters = parameters as? [String: Any], !method.prefersQueryParameters else {
+            return nil
+        }
+
+        return FormURLEncodedBodyParameters(formObject: parameters)
+    }
+
     public func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Response {
         let data = try JSONSerialization.data(withJSONObject: object, options: [])
         let decoder = JSONDecoder()
 
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         decoder.dateDecodingStrategy = .iso8601
+
+        if let _ = try? decoder.decode(Response.self, from: data) {
+        } else {
+            print(response)
+        }
 
         return try decoder.decode(Response.self, from: data)
     }
@@ -56,7 +69,8 @@ public extension API {
                 if let failure = failure {
                     failure(error)
                 } else {
-                    print(error.localizedDescription)
+                    print(self.baseURL.absoluteString + self.path)
+                    print(error)
                 }
             }
         }
