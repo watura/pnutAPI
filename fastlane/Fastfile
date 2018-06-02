@@ -11,5 +11,5 @@ end
 lane :ensure_no_secrets do
   clientId = get_info_plist_value(path: "./pnutAPI/Info.plist", key: "PnutClientID")
   clientSecret = get_info_plist_value(path: "./pnutAPI/Info.plist", key: "PnutClientSecret")
-  raise "Info.plist contains Secrets\n execute bundle exec fastlane remove_secrets" unless clientId == "PNUT_CLIENT_ID" && clientSecret = "PNUT_CLIENT_SECRET"
+  raise "Info.plist contains Secrets\n execute bundle exec fastlane remove_secrets" unless clientId == "PNUT_CLIENT_ID" && clientSecret == "PNUT_CLIENT_SECRET"
 end
