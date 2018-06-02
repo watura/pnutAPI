@@ -49,3 +49,49 @@ public struct PostRequest: API {
         return (try? JSONSerialization.jsonObject(with: encoded, options: .allowFragments)).flatMap { $0 as? [String: Any] }
     }
 }
+
+public struct RevisePostRequest: API {
+    public typealias Response = PnutResponse<PostResponse>
+
+    public init(id: String, postBody: PostBody) {
+        self.id = id
+        self.postBody = postBody
+    }
+
+    let postBody: PostBody
+    let id: String
+
+    public var method: HTTPMethod {
+        return .put
+    }
+
+    public var path: String {
+        return "posts/\(id)"
+    }
+
+    public var parameters: Any? {
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = .prettyPrinted
+        let encoded = try! encoder.encode(postBody)
+        return (try? JSONSerialization.jsonObject(with: encoded, options: .allowFragments)).flatMap { $0 as? [String: Any] }
+    }
+}
+
+
+public struct DeletePostRequest: API {
+    public typealias Response = PnutResponse<PostResponse>
+
+    public init(id: String) {
+        self.id = id
+    }
+
+    let id: String
+
+    public var method: HTTPMethod {
+        return .delete
+    }
+
+    public var path: String {
+        return "posts/\(id)"
+    }
+}

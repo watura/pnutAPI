@@ -7,6 +7,7 @@ public struct PostResponse: Codable {
     public let user: UserResponse
     public let threadId: String
     public let counts: Counts
+    public let content: Content
     public let youBookmarked: Bool
     public let youReposted: Bool
 
@@ -19,6 +20,7 @@ public struct PostResponse: Codable {
     public struct Content: Codable {
         public let html: String
         public let text: String
+        public let entities: Entities
     }
 
     public struct Entities: Codable {
