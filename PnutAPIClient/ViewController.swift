@@ -2,8 +2,21 @@ import UIKit
 import PnutAPI
 
 final class ViewController: UITableViewController {
+    override func viewDidLoad() {
+        guard let filePath = Bundle.main.path(forResource: "Info", ofType: "plist" ),
+            let plist = NSDictionary(contentsOfFile: filePath) else {
+                fatalError("Could not load plist")
+        }
+
+        guard let clientId = plist["PnutClientID"] as? String,
+            let clientSecret = plist["PnutClientSecret"] as? String else {
+                fatalError("Could not read secrets")
+        }
+        APITokenManager.shared.setCredentials(clientId: clientId, clientSecret: clientSecret)
+    }
+
     override func viewWillAppear(_ animated: Bool) {
-        let manager = APITokenManager()
+        let manager = APITokenManager.shared
 
         self.title = "has Token? \(manager.hasToken)"
     }

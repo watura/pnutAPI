@@ -8,7 +8,12 @@ public protocol API: Request where Response: Codable {
 
 public extension API {
     public var credential: OAuthSwiftCredential {
-        return APITokenManager().credential
+        do {
+            return try APITokenManager.shared.credential()
+        } catch let e {
+            print(e)
+            fatalError()
+        }
     }
 
     public var baseURL: URL {

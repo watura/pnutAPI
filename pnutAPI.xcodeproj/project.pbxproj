@@ -289,13 +289,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41869DF520C2920900F98D00 /* Build configuration list for PBXNativeTarget "PnutAPI" */;
 			buildPhases = (
-				41869DFD20C2940700F98D00 /* ShellScript */,
 				41869DE720C2920900F98D00 /* Sources */,
 				41869DE820C2920900F98D00 /* Frameworks */,
 				41869DE920C2920900F98D00 /* Headers */,
 				41869DEA20C2920900F98D00 /* Resources */,
 				41869DFE20C2941F00F98D00 /* ShellScript */,
-				41869DFF20C2944A00F98D00 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -422,19 +420,6 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
-		41869DFD20C2940700F98D00 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "test -e ~/.zshrc && source ~/.zshrc\nPLIST=\"./Supporting Files/PnutAPI/Info.plist\" bundle exec fastlane set_secrets";
-		};
 		41869DFE20C2941F00F98D00 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -453,19 +438,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-		41869DFF20C2944A00F98D00 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "test -e ~/.zshrc && source ~/.zshrc\nPLIST=\"./Supporting Files/PnutAPI/Info.plist\" bundle exec fastlane remove_secrets";
 		};
 /* End PBXShellScriptBuildPhase section */
 

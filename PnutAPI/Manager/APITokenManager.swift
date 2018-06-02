@@ -1,21 +1,14 @@
 import Foundation
 import OAuthSwift
 
-public struct APITokenManager {
-    private let oauthSwift: OAuth2Swift
+public class APITokenManager {
+    public static let shared = APITokenManager()
+    private var oauthSwift: OAuth2Swift?
     private let TokenKey = "OAuthToken"
 
-    public init() {
-        guard let filePath = Bundle.main.path(forResource: "Info", ofType: "plist" ),
-            let plist = NSDictionary(contentsOfFile: filePath) else {
-                fatalError("Could not load plist")
-        }
+    private init() {}
 
-        guard let clientId = plist["PnutClientID"] as? String,
-            let clientSecret = plist["PnutClientSecret"] as? String else {
-                fatalError("Could not read secrets")
-        }
-
+    public func setCredentials(clientId: String, clientSecret: String) {
         oauthSwift = OAuth2Swift(
             consumerKey: clientId,
             consumerSecret: clientSecret,
@@ -24,7 +17,10 @@ public struct APITokenManager {
         )
     }
 
-    public func authorize(viewController: UIViewController) -> OAuthSwiftRequestHandle? {
+    public func authorize(viewController: UIViewController) throws -> OAuthSwiftRequestHandle? {
+        guard let oauthSwift = oauthSwift else {
+            throw APITokenManagerError.noOAuthSwiftInstance
+        }
         oauthSwift.authorizeURLHandler = SafariURLHandler(viewController: viewController, oauthSwift: oauthSwift)
         guard let callback = URL(string: "pnut-callback://pnut-callback/pnut") else { fatalError() }
 
@@ -54,8 +50,10 @@ public extension APITokenManager {
         return token != nil
     }
 
-    public var credential: OAuthSwiftCredential {
-        let cred = oauthSwift.client.credential
+    public func credential() throws -> OAuthSwiftCredential {
+        guard let cred = oauthSwift?.client.credential else {
+            throw APITokenManagerError.noCredential
+        }
         cred.oauthToken = token ?? ""
         return cred
     }
@@ -66,4 +64,10 @@ extension APITokenManager {
         let ud = UserDefaults.standard
         return ud.string(forKey: TokenKey)
     }
+}
+
+enum APITokenManagerError: Error {
+    case noOAuthSwiftInstance
+    case noCredential
+    case authError(Error)
 }

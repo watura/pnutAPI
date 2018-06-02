@@ -32,8 +32,8 @@ enum PnutAPIList: String {
     func action(viewController: UIViewController) {
         switch self {
         case .authorize:
-            let manager = APITokenManager()
-            _ = manager.authorize(viewController: viewController)
+            let manager = APITokenManager.shared
+            _ = try? manager.authorize(viewController: viewController)
         case .lookupUser:
             LookupUserRequest(userId: "1").request()
         case .lookupUsers:
@@ -60,7 +60,7 @@ enum PnutAPIList: String {
             DeletePostRequest(id: "378143").request()
         case .deleteToken:
             DeleteTokenRequest().request(success: { success in
-                let manager = APITokenManager()
+                let manager = APITokenManager.shared
                 manager.removeToken()
                 viewController.title = "has Token? \(manager.hasToken)"
             })
