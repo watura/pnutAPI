@@ -181,11 +181,11 @@
 		41869DD520C27D6F00F98D00 /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				41869E0F20C2B27500F98D00 /* Counts.swift */,
+				41869E1320C2BDBB00F98D00 /* Entities.swift */,
 				41869DDE20C2834D00F98D00 /* Meta.swift */,
 				41869DDC20C2827000F98D00 /* PnutResponse.swift */,
 				41869E0D20C2B17700F98D00 /* PostResponse.swift */,
-				41869E1320C2BDBB00F98D00 /* Entities.swift */,
-				41869E0F20C2B27500F98D00 /* Counts.swift */,
 				41869DD820C27D9F00F98D00 /* TokenResponse.swift */,
 				41869DD620C27D7B00F98D00 /* UserResponse.swift */,
 			);
@@ -195,9 +195,9 @@
 		41869DE020C284C300F98D00 /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				417A3EEE20C25BAF0051B74B /* TokenRequest.swift */,
 				41869E1120C2BB6400F98D00 /* PostStreamRequest.swift */,
 				41869E0B20C2ABB800F98D00 /* PostsLifecycleRequest.swift */,
+				417A3EEE20C25BAF0051B74B /* TokenRequest.swift */,
 				41869DE320C28B6200F98D00 /* UsersLookupRequest.swift */,
 			);
 			path = Request;
