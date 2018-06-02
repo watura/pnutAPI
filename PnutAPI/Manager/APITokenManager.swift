@@ -1,11 +1,11 @@
 import Foundation
 import OAuthSwift
 
-struct APITokenManager {
+public struct APITokenManager {
     private let oauthSwift: OAuth2Swift
     private let TokenKey = "OAuthToken"
 
-    init() {
+    public init() {
         guard let filePath = Bundle.main.path(forResource: "Info", ofType: "plist" ),
             let plist = NSDictionary(contentsOfFile: filePath) else {
                 fatalError("Could not load plist")
@@ -24,7 +24,7 @@ struct APITokenManager {
         )
     }
 
-    func authorize(viewController: UIViewController) -> OAuthSwiftRequestHandle? {
+    public func authorize(viewController: UIViewController) -> OAuthSwiftRequestHandle? {
         oauthSwift.authorizeURLHandler = SafariURLHandler(viewController: viewController, oauthSwift: oauthSwift)
         guard let callback = URL(string: "pnut-callback://pnut-callback/pnut") else { fatalError() }
 
@@ -41,7 +41,7 @@ struct APITokenManager {
         )
     }
 
-    func removeToken() {
+    public func removeToken() {
         let ud = UserDefaults.standard
         ud.removeObject(forKey: TokenKey)
         ud.synchronize()
@@ -49,12 +49,12 @@ struct APITokenManager {
     }
 }
 
-extension APITokenManager {
-    var hasToken: Bool {
+public extension APITokenManager {
+    public var hasToken: Bool {
         return token != nil
     }
 
-    var credential: OAuthSwiftCredential {
+    public var credential: OAuthSwiftCredential {
         let cred = oauthSwift.client.credential
         cred.oauthToken = token ?? ""
         return cred

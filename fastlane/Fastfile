@@ -1,17 +1,15 @@
-PLIST_PATH="./Supporting Files/Info.plist"
-
 lane :set_secrets do
-  set_info_plist_value(path: PLIST_PATH, key: "PnutClientID", value: ENV["PNUT_CLIENT_ID"])
-  set_info_plist_value(path: PLIST_PATH, key: "PnutClientSecret", value: ENV["PNUT_CLIENT_SECRET"])
+  set_info_plist_value(path: ENV["PLIST"], key: "PnutClientID", value: ENV["PNUT_CLIENT_ID"])
+  set_info_plist_value(path: ENV["PLIST"], key: "PnutClientSecret", value: ENV["PNUT_CLIENT_SECRET"])
 end
 
 lane :remove_secrets do
-  set_info_plist_value(path: PLIST_PATH, key: "PnutClientID", value: "PNUT_CLIENT_ID")
-  set_info_plist_value(path: PLIST_PATH, key: "PnutClientSecret", value: "PNUT_CLIENT_SECRET")
+  set_info_plist_value(path: ENV["PLIST"], key: "PnutClientID", value: "PNUT_CLIENT_ID")
+  set_info_plist_value(path: ENV["PLIST"], key: "PnutClientSecret", value: "PNUT_CLIENT_SECRET")
 end
 
 lane :ensure_no_secrets do
-  clientId = get_info_plist_value(path: PLIST_PATH, key: "PnutClientID")
-  clientSecret = get_info_plist_value(path: PLIST_PATH, key: "PnutClientSecret")
+  clientId = get_info_plist_value(path: ENV["PLIST"], key: "PnutClientID")
+  clientSecret = get_info_plist_value(path: ENV["PLIST"], key: "PnutClientSecret")
   raise "Info.plist contains Secrets\n execute bundle exec fastlane remove_secrets" unless clientId == "PNUT_CLIENT_ID" && clientSecret == "PNUT_CLIENT_SECRET"
 end

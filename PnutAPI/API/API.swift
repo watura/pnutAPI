@@ -2,21 +2,21 @@ import Foundation
 import OAuthSwift
 import APIKit
 
-protocol API: Request where Response: Codable {
+public protocol API: Request where Response: Codable {
     var credential: OAuthSwiftCredential { get }
 }
 
-extension API {
-    var credential: OAuthSwiftCredential {
+public extension API {
+    public var credential: OAuthSwiftCredential {
         return APITokenManager().credential
     }
 
-    var baseURL: URL {
+    public var baseURL: URL {
         guard let url = URL(string: "https://api.pnut.io/v0/") else { fatalError() }
         return url
     }
 
-    func intercept(urlRequest: URLRequest) throws -> URLRequest {
+    public func intercept(urlRequest: URLRequest) throws -> URLRequest {
         let url = self.baseURL.absoluteString + self.path
 
         let header = credential.makeHeaders(URL(string: url)!,
@@ -30,7 +30,7 @@ extension API {
         return mutableRequest
     }
 
-    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Response {
+    public func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Response {
         let data = try JSONSerialization.data(withJSONObject: object, options: [])
         let decoder = JSONDecoder()
 
@@ -40,7 +40,7 @@ extension API {
         return try decoder.decode(Response.self, from: data)
     }
 
-    func request(success: ((Self.Response) -> Void)? = nil, failure: ((SessionTaskError) -> Void)? = nil) {
+    public func request(success: ((Self.Response) -> Void)? = nil, failure: ((SessionTaskError) -> Void)? = nil) {
         Session.send(self) { result in
             switch result {
             case .success(let response):
