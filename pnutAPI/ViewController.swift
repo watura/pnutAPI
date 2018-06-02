@@ -2,39 +2,58 @@ import UIKit
 import OAuthSwift
 import APIKit
 
-enum PnutAPI {
-    case authorise
+enum PnutAPI: String {
+    case authorize
     case deleteToken
     case getToken
+
+    static var count: Int { return 3 }
+
+    static var list: [PnutAPI] {
+        return [.authorize, .deleteToken, .getToken]
+    }
+
+    func action(viewController: UIViewController) {
+        switch self {
+        case .authorize:
+            let manager = APITokenManager()
+            _ = manager.authorize(viewController: viewController)
+        case .deleteToken:
+            DeleteTokenRequest().request(success: { success in
+                let manager = APITokenManager()
+                manager.removeToken()
+                viewController.title = "has Token? \(manager.hasToken)"
+            })
+        case .getToken:
+            GetTokenRequest().request()
+        }
+    }
 }
 
-
-final class ViewController: UIViewController {
-    var oauthswift: OAuth2Swift?
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    @IBAction func touchUpInside(_ sender: Any) {
+final class ViewController: UITableViewController {
+    override func viewWillAppear(_ animated: Bool) {
         let manager = APITokenManager()
-        if manager.hasToken {
-            GetTokenRequest().request(success: { response in
-                let encoder = JSONEncoder()
-                encoder.outputFormatting = .prettyPrinted // リーダブルな出力
-                let encoded = try! encoder.encode(response)
-                print(String(data: encoded, encoding: .utf8)!)
-            }, failure: { error in
-                print(error)
-            })
-        } else {
-            _ = manager.authorize(viewController: self)
+
+        self.title = "has Token? \(manager.hasToken)"
+    }
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return PnutAPI.count
+    }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") else {
+            fatalError()
         }
+
+        let api = PnutAPI.list[indexPath.row]
+        cell.textLabel?.text = api.rawValue
+        return cell
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let api = PnutAPI.list[indexPath.row]
+        api.action(viewController: self)
     }
 }

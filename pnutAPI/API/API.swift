@@ -40,13 +40,24 @@ extension API {
         return try decoder.decode(Response.self, from: data)
     }
 
-    func request(success: @escaping (Self.Response) -> Void, failure: @escaping (SessionTaskError) -> Void) {
+    func request(success: ((Self.Response) -> Void)? = nil, failure: ((SessionTaskError) -> Void)? = nil) {
         Session.send(self) { result in
             switch result {
             case .success(let response):
-                success(response)
+                if let success = success {
+                    success(response)
+                } else {
+                    let encoder = JSONEncoder()
+                    encoder.outputFormatting = .prettyPrinted
+                    let encoded = try! encoder.encode(response)
+                    print(String(data: encoded, encoding: .utf8)!)
+                }
             case .failure(let error):
-                failure(error)
+                if let failure = failure {
+                    failure(error)
+                } else {
+                    print(error.localizedDescription)
+                }
             }
         }
     }

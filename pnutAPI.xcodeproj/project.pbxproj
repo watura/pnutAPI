@@ -23,6 +23,7 @@
 		41869DD920C27D9F00F98D00 /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869DD820C27D9F00F98D00 /* TokenResponse.swift */; };
 		41869DDD20C2827000F98D00 /* PnutResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869DDC20C2827000F98D00 /* PnutResponse.swift */; };
 		41869DDF20C2834D00F98D00 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869DDE20C2834D00F98D00 /* Meta.swift */; };
+		41869DE420C28B6200F98D00 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869DE320C28B6200F98D00 /* UserRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		41869DD820C27D9F00F98D00 /* TokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
 		41869DDC20C2827000F98D00 /* PnutResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PnutResponse.swift; sourceTree = "<group>"; };
 		41869DDE20C2834D00F98D00 /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
+		41869DE320C28B6200F98D00 /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				417A3EE920C258CA0051B74B /* API */,
 				417A3EE620C2231E0051B74B /* Manager */,
+				41869DE220C28B1200F98D00 /* Storyboard */,
 				4112D39F20C1FB0D00FABEB3 /* AppDelegate.swift */,
 				4112D3A120C1FB0D00FABEB3 /* ViewController.swift */,
 			);
@@ -133,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				417A3EEE20C25BAF0051B74B /* TokenRequest.swift */,
+				41869DE320C28B6200F98D00 /* UserRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -142,10 +146,17 @@
 			children = (
 				4112D3A620C1FB0E00FABEB3 /* Assets.xcassets */,
 				4112D3AB20C1FB0E00FABEB3 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41869DE220C28B1200F98D00 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
 				4112D3A820C1FB0E00FABEB3 /* LaunchScreen.storyboard */,
 				4112D3A320C1FB0D00FABEB3 /* Main.storyboard */,
 			);
-			path = "Supporting Files";
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +297,7 @@
 			files = (
 				417A3EED20C25AE50051B74B /* DecodableParser.swift in Sources */,
 				4112D3A220C1FB0D00FABEB3 /* ViewController.swift in Sources */,
+				41869DE420C28B6200F98D00 /* UserRequest.swift in Sources */,
 				4112D3A020C1FB0D00FABEB3 /* AppDelegate.swift in Sources */,
 				417A3EEF20C25BAF0051B74B /* TokenRequest.swift in Sources */,
 				41869DD720C27D7B00F98D00 /* UserResponse.swift in Sources */,
