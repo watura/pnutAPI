@@ -102,3 +102,5 @@ fastlane/test_output
 
 # Bundle
 .bundle
+
+*.un~
