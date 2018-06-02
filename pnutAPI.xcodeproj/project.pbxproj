@@ -12,6 +12,9 @@
 		4112D3A520C1FB0D00FABEB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4112D3A320C1FB0D00FABEB3 /* Main.storyboard */; };
 		4112D3A720C1FB0E00FABEB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4112D3A620C1FB0E00FABEB3 /* Assets.xcassets */; };
 		4112D3AA20C1FB0E00FABEB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4112D3A820C1FB0E00FABEB3 /* LaunchScreen.storyboard */; };
+		417A3EE220C212EC0051B74B /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED720C212CE0051B74B /* APIKit.framework */; };
+		417A3EE320C212EC0051B74B /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED920C212CF0051B74B /* OAuthSwift.framework */; };
+		417A3EE420C212EC0051B74B /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED820C212CF0051B74B /* Result.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		4112D3A620C1FB0E00FABEB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4112D3A920C1FB0E00FABEB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4112D3AB20C1FB0E00FABEB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		417A3ED720C212CE0051B74B /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		417A3ED820C212CF0051B74B /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		417A3ED920C212CF0051B74B /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				417A3EE220C212EC0051B74B /* APIKit.framework in Frameworks */,
+				417A3EE320C212EC0051B74B /* OAuthSwift.framework in Frameworks */,
+				417A3EE420C212EC0051B74B /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,7 @@
 			children = (
 				4112D39E20C1FB0D00FABEB3 /* pnutAPI */,
 				4112D39D20C1FB0D00FABEB3 /* Products */,
+				417A3EE120C212EC0051B74B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +74,16 @@
 			path = pnutAPI;
 			sourceTree = "<group>";
 		};
+		417A3EE120C212EC0051B74B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				417A3ED720C212CE0051B74B /* APIKit.framework */,
+				417A3ED920C212CF0051B74B /* OAuthSwift.framework */,
+				417A3ED820C212CF0051B74B /* Result.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -72,9 +92,11 @@
 			buildConfigurationList = 4112D3AE20C1FB0E00FABEB3 /* Build configuration list for PBXNativeTarget "pnutAPI" */;
 			buildPhases = (
 				417A3ED420C20D3A0051B74B /* ShellScript */,
+				417A3EE520C217AA0051B74B /* ShellScript */,
 				4112D39820C1FB0C00FABEB3 /* Sources */,
 				4112D39920C1FB0C00FABEB3 /* Frameworks */,
 				4112D39A20C1FB0C00FABEB3 /* Resources */,
+				417A3ED620C212510051B74B /* ShellScript */,
 				417A3ED520C20D5B0051B74B /* ShellScript */,
 			);
 			buildRules = (
@@ -158,6 +180,38 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "test -e ~/.zshrc && source ~/.zshrc\nbundle exec fastlane remove_secrets";
+		};
+		417A3ED620C212510051B74B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/OAuthSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/APIKit.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/OAuthSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		417A3EE520C217AA0051B74B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -313,6 +367,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = pnutAPI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -331,6 +389,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = pnutAPI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
