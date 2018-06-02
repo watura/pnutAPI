@@ -8,7 +8,7 @@ public struct PostResponse: Codable {
     public let user: UserResponse
     public let threadId: String
     public let replyTo: String?
-    public let repostOf: String?
+    public let repostOf: RepostOf?
     public let counts: Counts
     public let content: Content?
     public let youBookmarked: Bool?
@@ -31,5 +31,9 @@ public struct PostResponse: Codable {
         public let reposts: Int
         public let replies: Int
         public let threads: Int
+    }
+
+    public struct RepostOf: Codable {
+        public let id: String
     }
 }
