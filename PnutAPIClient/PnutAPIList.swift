@@ -5,15 +5,15 @@ import PnutAPI
 
 enum PnutAPIList: String {
     case authorize
-    case getUser
-    case getUsers
+    case lookupUser
+    case lookupUsers
     case deleteToken
     case getToken
 
     static var count: Int { return 5 }
 
     static var list: [PnutAPIList] {
-        return [.authorize, .getUser, .getUsers, .deleteToken, .getToken]
+        return [.authorize, .lookupUser, .lookupUsers, .deleteToken, .getToken]
     }
 
     func action(viewController: UIViewController) {
@@ -21,10 +21,10 @@ enum PnutAPIList: String {
         case .authorize:
             let manager = APITokenManager()
             _ = manager.authorize(viewController: viewController)
-        case .getUser:
-            GetUserRequest(userId: "1").request()
-        case .getUsers:
-            GetUsersRequest(ids: ["1", "136"]).request()
+        case .lookupUser:
+            LookupUserRequest(userId: "1").request()
+        case .lookupUsers:
+            LookupUsersRequest(ids: ["1", "136"]).request()
         case .deleteToken:
             DeleteTokenRequest().request(success: { success in
                 let manager = APITokenManager()

@@ -1,7 +1,7 @@
 import Foundation
 import APIKit
 
-public struct GetUserRequest: API {
+public struct LookupUserRequest: API {
     public typealias Response = PnutResponse<UserResponse>
 
     let userId: String
@@ -19,7 +19,7 @@ public struct GetUserRequest: API {
     }
 }
 
-public struct GetUsersRequest: API {
+public struct LookupUsersRequest: API {
     public typealias Response = PnutResponse<[UserResponse]>
 
     let ids: [String]

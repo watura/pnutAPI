@@ -23,7 +23,7 @@
 		41869DFB20C293D600F98D00 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED920C212CF0051B74B /* OAuthSwift.framework */; };
 		41869DFC20C293D600F98D00 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED820C212CF0051B74B /* Result.framework */; };
 		41869E0220C296FC00F98D00 /* TokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417A3EEE20C25BAF0051B74B /* TokenRequest.swift */; };
-		41869E0320C2970000F98D00 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869DE320C28B6200F98D00 /* UserRequest.swift */; };
+		41869E0320C2970000F98D00 /* UsersLookupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869DE320C28B6200F98D00 /* UsersLookupRequest.swift */; };
 		41869E0420C2970300F98D00 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417A3EEA20C258DD0051B74B /* API.swift */; };
 		41869E0520C2970700F98D00 /* DecodableParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417A3EEC20C25AE50051B74B /* DecodableParser.swift */; };
 		41869E0620C2970D00F98D00 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869DDE20C2834D00F98D00 /* Meta.swift */; };
@@ -76,7 +76,7 @@
 		41869DD820C27D9F00F98D00 /* TokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
 		41869DDC20C2827000F98D00 /* PnutResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PnutResponse.swift; sourceTree = "<group>"; };
 		41869DDE20C2834D00F98D00 /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
-		41869DE320C28B6200F98D00 /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
+		41869DE320C28B6200F98D00 /* UsersLookupRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersLookupRequest.swift; sourceTree = "<group>"; };
 		41869DE520C291A500F98D00 /* PnutAPIList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PnutAPIList.swift; sourceTree = "<group>"; };
 		41869DEC20C2920900F98D00 /* PnutAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PnutAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41869DEE20C2920900F98D00 /* pnutAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pnutAPI.h; sourceTree = "<group>"; };
@@ -183,7 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				417A3EEE20C25BAF0051B74B /* TokenRequest.swift */,
-				41869DE320C28B6200F98D00 /* UserRequest.swift */,
+				41869DE320C28B6200F98D00 /* UsersLookupRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -470,7 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41869E0520C2970700F98D00 /* DecodableParser.swift in Sources */,
-				41869E0320C2970000F98D00 /* UserRequest.swift in Sources */,
+				41869E0320C2970000F98D00 /* UsersLookupRequest.swift in Sources */,
 				41869E0820C2970D00F98D00 /* TokenResponse.swift in Sources */,
 				41869E0920C2970D00F98D00 /* UserResponse.swift in Sources */,
 				41869E0A20C2972700F98D00 /* APITokenManager.swift in Sources */,
