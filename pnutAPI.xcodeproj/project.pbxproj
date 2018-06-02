@@ -15,6 +15,7 @@
 		417A3EE220C212EC0051B74B /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED720C212CE0051B74B /* APIKit.framework */; };
 		417A3EE320C212EC0051B74B /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED920C212CF0051B74B /* OAuthSwift.framework */; };
 		417A3EE420C212EC0051B74B /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED820C212CF0051B74B /* Result.framework */; };
+		417A3EE820C2232B0051B74B /* APITokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417A3EE720C2232B0051B74B /* APITokenManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		417A3ED720C212CE0051B74B /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 		417A3ED820C212CF0051B74B /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		417A3ED920C212CF0051B74B /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
+		417A3EE720C2232B0051B74B /* APITokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITokenManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		4112D39E20C1FB0D00FABEB3 /* pnutAPI */ = {
 			isa = PBXGroup;
 			children = (
+				417A3EE620C2231E0051B74B /* Manager */,
 				4112D39F20C1FB0D00FABEB3 /* AppDelegate.swift */,
 				4112D3A120C1FB0D00FABEB3 /* ViewController.swift */,
 				4112D3A320C1FB0D00FABEB3 /* Main.storyboard */,
@@ -82,6 +85,14 @@
 				417A3ED820C212CF0051B74B /* Result.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		417A3EE620C2231E0051B74B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				417A3EE720C2232B0051B74B /* APITokenManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +233,7 @@
 			files = (
 				4112D3A220C1FB0D00FABEB3 /* ViewController.swift in Sources */,
 				4112D3A020C1FB0D00FABEB3 /* AppDelegate.swift in Sources */,
+				417A3EE820C2232B0051B74B /* APITokenManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
