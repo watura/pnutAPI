@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Walnut
-//
-//  Created by Wataru Nishimoto on 2018/6/3.
-//  Copyright © 2018 Wataru Nishimoto. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

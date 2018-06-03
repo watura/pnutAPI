@@ -16,10 +16,27 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>walnut-callback</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>walnut-callback</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>PnutClientID</key>
+	<string>PNUT_CLIENT_ID</string>
+	<key>PnutClientSecret</key>
+	<string>PNUT_CLIENT_SECRET</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
