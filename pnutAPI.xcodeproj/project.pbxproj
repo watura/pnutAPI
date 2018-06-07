@@ -202,8 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				4116C5DA20C94DC800B8433E /* Components */,
-				41869E0120C296D100F98D00 /* PnutAPI */,
 				417A3EE120C212EC0051B74B /* Frameworks */,
+				41869E0120C296D100F98D00 /* PnutAPI */,
 				4112D39E20C1FB0D00FABEB3 /* PnutAPIClient */,
 				4112D39D20C1FB0D00FABEB3 /* Products */,
 				41869DE120C287CA00F98D00 /* Supporting Files */,
@@ -245,8 +245,8 @@
 		4116C5D720C94D4C00B8433E /* PostViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4116C5CD20C94D3500B8433E /* PostViewController.h */,
 				4116C5CE20C94D3500B8433E /* Info.plist */,
+				4116C5CD20C94D3500B8433E /* PostViewController.h */,
 			);
 			path = PostViewController;
 			sourceTree = "<group>";
@@ -316,9 +316,9 @@
 		41869DE120C287CA00F98D00 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4116C5D720C94D4C00B8433E /* PostViewController */,
 				41869DED20C2920900F98D00 /* PnutAPI */,
 				41869DF920C293A700F98D00 /* PnutAPIClient */,
+				4116C5D720C94D4C00B8433E /* PostViewController */,
 				41869E6C20C368B900F98D00 /* Walnut */,
 			);
 			path = "Supporting Files";
@@ -365,8 +365,8 @@
 			children = (
 				41869E6D20C368CB00F98D00 /* Storybook */,
 				41869E5C20C368AF00F98D00 /* AppDelegate.swift */,
-				41869E5E20C368AF00F98D00 /* ViewController.swift */,
 				41869E7320C389B200F98D00 /* RootNavigationViewController.swift */,
+				41869E5E20C368AF00F98D00 /* ViewController.swift */,
 			);
 			path = Walnut;
 			sourceTree = "<group>";
