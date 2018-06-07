@@ -25,6 +25,8 @@
 		4116C5D320C94D3500B8433E /* PostViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4116C5CB20C94D3500B8433E /* PostViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4116C5D820C94D7800B8433E /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4116C5B820C7EA1A00B8433E /* PostViewController.swift */; };
 		4116C5D920C94D8100B8433E /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41869E7120C3867A00F98D00 /* Post.storyboard */; };
+		4116C5DD20C9539100B8433E /* PostViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4116C5CB20C94D3500B8433E /* PostViewController.framework */; };
+		4116C5DE20C9539100B8433E /* PostViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4116C5CB20C94D3500B8433E /* PostViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		417A3EE220C212EC0051B74B /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED720C212CE0051B74B /* APIKit.framework */; };
 		417A3EE320C212EC0051B74B /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED920C212CF0051B74B /* OAuthSwift.framework */; };
 		417A3EE420C212EC0051B74B /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED820C212CF0051B74B /* Result.framework */; };
@@ -72,6 +74,13 @@
 			remoteGlobalIDString = 4116C5CA20C94D3500B8433E;
 			remoteInfo = PostViewController;
 		};
+		4116C5DF20C9539100B8433E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4116C5CA20C94D3500B8433E;
+			remoteInfo = PostViewController;
+		};
 		41869DF120C2920900F98D00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
@@ -104,6 +113,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				41869DF420C2920900F98D00 /* PnutAPI.framework in Embed Frameworks */,
+				4116C5DE20C9539100B8433E /* PostViewController.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,6 +171,7 @@
 			files = (
 				417A3EE220C212EC0051B74B /* APIKit.framework in Frameworks */,
 				417A3EE320C212EC0051B74B /* OAuthSwift.framework in Frameworks */,
+				4116C5DD20C9539100B8433E /* PostViewController.framework in Frameworks */,
 				41869DF320C2920900F98D00 /* PnutAPI.framework in Frameworks */,
 				417A3EE420C212EC0051B74B /* Result.framework in Frameworks */,
 			);
@@ -428,6 +439,7 @@
 			);
 			dependencies = (
 				41869DF220C2920900F98D00 /* PBXTargetDependency */,
+				4116C5E020C9539100B8433E /* PBXTargetDependency */,
 			);
 			name = PnutAPIClient;
 			productName = pnutAPI;
@@ -786,6 +798,11 @@
 			isa = PBXTargetDependency;
 			target = 4116C5CA20C94D3500B8433E /* PostViewController */;
 			targetProxy = 4116C5D020C94D3500B8433E /* PBXContainerItemProxy */;
+		};
+		4116C5E020C9539100B8433E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4116C5CA20C94D3500B8433E /* PostViewController */;
+			targetProxy = 4116C5DF20C9539100B8433E /* PBXContainerItemProxy */;
 		};
 		41869DF220C2920900F98D00 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
