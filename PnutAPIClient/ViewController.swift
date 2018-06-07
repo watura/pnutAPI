@@ -12,7 +12,7 @@ final class ViewController: UITableViewController {
             let clientSecret = plist["PnutClientSecret"] as? String else {
                 fatalError("Could not read secrets")
         }
-        APITokenManager.shared.setCredentials(clientId: clientId, clientSecret: clientSecret)
+        APITokenManager.shared.setCredentials(clientId: clientId, clientSecret: clientSecret, callbackUrl: "pnut-callback://pnut-callback/pnut")
     }
 
     override func viewWillAppear(_ animated: Bool) {

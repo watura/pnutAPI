@@ -5,24 +5,27 @@ public class APITokenManager {
     public static let shared = APITokenManager()
     private var oauthSwift: OAuth2Swift?
     private let TokenKey = "OAuthToken"
+    private var callbackUrl: String?
 
     private init() {}
 
-    public func setCredentials(clientId: String, clientSecret: String) {
+    public func setCredentials(clientId: String, clientSecret: String, callbackUrl: String) {
         oauthSwift = OAuth2Swift(
             consumerKey: clientId,
             consumerSecret: clientSecret,
             authorizeUrl: "https://pnut.io/oauth/authenticate",
             responseType: "token"
         )
+        self.callbackUrl = callbackUrl
     }
 
-    public func authorize(viewController: UIViewController) throws -> OAuthSwiftRequestHandle? {
+    public func authorize(viewController: UIViewController, success: @escaping () -> Void = {}, failed: @escaping () -> Void = {}) throws -> OAuthSwiftRequestHandle? {
         guard let oauthSwift = oauthSwift else {
             throw APITokenManagerError.noOAuthSwiftInstance
         }
         oauthSwift.authorizeURLHandler = SafariURLHandler(viewController: viewController, oauthSwift: oauthSwift)
-        guard let callback = URL(string: "pnut-callback://pnut-callback/pnut") else { fatalError() }
+        guard let callbackUrl = self.callbackUrl,
+            let callback = URL(string: callbackUrl) else { fatalError() }
 
         return oauthSwift.authorize(
             withCallbackURL: callback,
@@ -31,8 +34,10 @@ public class APITokenManager {
                 let ud = UserDefaults.standard
                 ud.set(credential.oauthToken, forKey: TokenKey)
                 ud.synchronize()
+                success()
         }, failure: { error in
             print(error.localizedDescription)
+            failed()
         }
         )
     }
