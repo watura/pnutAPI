@@ -2,6 +2,7 @@ import UIKit
 import OAuthSwift
 import APIKit
 import PnutAPI
+import PostViewController
 
 enum PnutAPIList: String {
     case authorize
@@ -39,8 +40,9 @@ enum PnutAPIList: String {
         case .lookupUsers:
             LookupUsersRequest(ids: ["1", "136"]).request()
         case .postLifecyclePost:
-            let body = PostBody(text: "Test Post \(Date())")
-            PostRequest(postBody: body).request()
+            guard let pvc = PostViewController.initView() else { fatalError() }
+            pvc.postAction = self
+            viewController.navigationController?.pushViewController(pvc, animated: true)
         case .postLifecycleRevise:
             let body = PostBody(text: "Revised Test Post  \(Date())")
             RevisePostRequest(id: "378143", postBody: body).request()
@@ -67,5 +69,19 @@ enum PnutAPIList: String {
         case .getToken:
             GetTokenRequest().request()
         }
+    }
+}
+
+extension PnutAPIList: PostAction {
+    func cancel() {
+    }
+
+    func compelete(text: String) {
+        let body = PostBody(text: "Revised Test Post  \(Date())")
+        PostRequest(postBody: body).request()
+    }
+
+    func validate(text: String) -> Bool {
+        return true
     }
 }
