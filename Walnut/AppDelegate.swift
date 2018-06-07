@@ -1,13 +1,31 @@
 import UIKit
+import OAuthSwift
+import PnutAPI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any] = [:]) -> Bool {
+        if url.host == "pnut" {
+            OAuthSwift.handle(url: url)
+        }
+        return true
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        guard let filePath = Bundle.main.path(forResource: "Info", ofType: "plist" ),
+            let plist = NSDictionary(contentsOfFile: filePath) else {
+                fatalError("Could not load plist")
+        }
+
+        guard let clientId = plist["PnutClientID"] as? String,
+            let clientSecret = plist["PnutClientSecret"] as? String else {
+                fatalError("Could not read secrets")
+        }
+        APITokenManager.shared.setCredentials(clientId: clientId, clientSecret: clientSecret, callbackUrl: "walnut://pnut")
         return true
     }
 

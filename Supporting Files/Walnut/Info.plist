@@ -22,10 +22,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>walnut-callback</string>
+			<string>walnut</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>walnut-callback</string>
+				<string>walnut</string>
 			</array>
 		</dict>
 	</array>

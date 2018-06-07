@@ -12,6 +12,15 @@
 		4112D3A520C1FB0D00FABEB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4112D3A320C1FB0D00FABEB3 /* Main.storyboard */; };
 		4112D3A720C1FB0E00FABEB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4112D3A620C1FB0E00FABEB3 /* Assets.xcassets */; };
 		4112D3AA20C1FB0E00FABEB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4112D3A820C1FB0E00FABEB3 /* LaunchScreen.storyboard */; };
+		4116C5BA20C7EA1F00B8433E /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4116C5B820C7EA1A00B8433E /* PostViewController.swift */; };
+		4116C5BB20C8060500B8433E /* PnutAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41869DEC20C2920900F98D00 /* PnutAPI.framework */; };
+		4116C5BC20C8060500B8433E /* PnutAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41869DEC20C2920900F98D00 /* PnutAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4116C5C020C8070500B8433E /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED720C212CE0051B74B /* APIKit.framework */; };
+		4116C5C120C8070500B8433E /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED720C212CE0051B74B /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4116C5C220C8070500B8433E /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED920C212CF0051B74B /* OAuthSwift.framework */; };
+		4116C5C320C8070500B8433E /* OAuthSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED920C212CF0051B74B /* OAuthSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4116C5C420C8070500B8433E /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED820C212CF0051B74B /* Result.framework */; };
+		4116C5C520C8070500B8433E /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED820C212CF0051B74B /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		417A3EE220C212EC0051B74B /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED720C212CE0051B74B /* APIKit.framework */; };
 		417A3EE320C212EC0051B74B /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED920C212CF0051B74B /* OAuthSwift.framework */; };
 		417A3EE420C212EC0051B74B /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED820C212CF0051B74B /* Result.framework */; };
@@ -41,9 +50,18 @@
 		41869E6220C368AF00F98D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41869E6020C368AF00F98D00 /* Main.storyboard */; };
 		41869E6420C368B100F98D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41869E6320C368B100F98D00 /* Assets.xcassets */; };
 		41869E6720C368B100F98D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41869E6520C368B100F98D00 /* LaunchScreen.storyboard */; };
+		41869E7220C3867A00F98D00 /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41869E7120C3867A00F98D00 /* Post.storyboard */; };
+		41869E7420C389B200F98D00 /* RootNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869E7320C389B200F98D00 /* RootNavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4116C5BD20C8060500B8433E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41869DEB20C2920900F98D00;
+			remoteInfo = PnutAPI;
+		};
 		41869DF120C2920900F98D00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
@@ -54,6 +72,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		4116C5BF20C8060500B8433E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4116C5C120C8070500B8433E /* APIKit.framework in Embed Frameworks */,
+				4116C5BC20C8060500B8433E /* PnutAPI.framework in Embed Frameworks */,
+				4116C5C320C8070500B8433E /* OAuthSwift.framework in Embed Frameworks */,
+				4116C5C520C8070500B8433E /* Result.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41869DF820C2920900F98D00 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,6 +107,7 @@
 		4112D3A620C1FB0E00FABEB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4112D3A920C1FB0E00FABEB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4112D3AB20C1FB0E00FABEB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4116C5B820C7EA1A00B8433E /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		417A3ED720C212CE0051B74B /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 		417A3ED820C212CF0051B74B /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		417A3ED920C212CF0051B74B /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
@@ -103,6 +136,8 @@
 		41869E6320C368B100F98D00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41869E6620C368B100F98D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41869E6820C368B100F98D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41869E7120C3867A00F98D00 /* Post.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
+		41869E7320C389B200F98D00 /* RootNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +166,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4116C5C020C8070500B8433E /* APIKit.framework in Frameworks */,
+				4116C5BB20C8060500B8433E /* PnutAPI.framework in Frameworks */,
+				4116C5C220C8070500B8433E /* OAuthSwift.framework in Frameworks */,
+				4116C5C420C8070500B8433E /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +314,9 @@
 			children = (
 				41869E6D20C368CB00F98D00 /* Storybook */,
 				41869E5C20C368AF00F98D00 /* AppDelegate.swift */,
+				4116C5B820C7EA1A00B8433E /* PostViewController.swift */,
 				41869E5E20C368AF00F98D00 /* ViewController.swift */,
+				41869E7320C389B200F98D00 /* RootNavigationViewController.swift */,
 			);
 			path = Walnut;
 			sourceTree = "<group>";
@@ -294,6 +335,7 @@
 			children = (
 				41869E6520C368B100F98D00 /* LaunchScreen.storyboard */,
 				41869E6020C368AF00F98D00 /* Main.storyboard */,
+				41869E7120C3867A00F98D00 /* Post.storyboard */,
 			);
 			path = Storybook;
 			sourceTree = "<group>";
@@ -364,10 +406,12 @@
 				41869E5820C368AF00F98D00 /* Resources */,
 				41869E6F20C369C400F98D00 /* ShellScript */,
 				41869E7020C369D600F98D00 /* ShellScript */,
+				4116C5BF20C8060500B8433E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4116C5BE20C8060500B8433E /* PBXTargetDependency */,
 			);
 			name = Walnut;
 			productName = Walnut;
@@ -439,6 +483,7 @@
 			files = (
 				41869E6720C368B100F98D00 /* LaunchScreen.storyboard in Resources */,
 				41869E6420C368B100F98D00 /* Assets.xcassets in Resources */,
+				41869E7220C3867A00F98D00 /* Post.storyboard in Resources */,
 				41869E6220C368AF00F98D00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,6 +645,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4116C5BA20C7EA1F00B8433E /* PostViewController.swift in Sources */,
+				41869E7420C389B200F98D00 /* RootNavigationViewController.swift in Sources */,
 				41869E5F20C368AF00F98D00 /* ViewController.swift in Sources */,
 				41869E5D20C368AF00F98D00 /* AppDelegate.swift in Sources */,
 			);
@@ -608,6 +655,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4116C5BE20C8060500B8433E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41869DEB20C2920900F98D00 /* PnutAPI */;
+			targetProxy = 4116C5BD20C8060500B8433E /* PBXContainerItemProxy */;
+		};
 		41869DF220C2920900F98D00 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 41869DEB20C2920900F98D00 /* PnutAPI */;
@@ -882,9 +934,14 @@
 		41869E6920C368B100F98D00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Walnut/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -900,9 +957,14 @@
 		41869E6A20C368B100F98D00 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Walnut/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
