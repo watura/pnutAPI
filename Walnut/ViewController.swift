@@ -1,5 +1,6 @@
 import UIKit
 import PnutAPI
+import PostViewController
 
 class ViewController: UIViewController {
 
@@ -21,7 +22,7 @@ class ViewController: UIViewController {
         do {
             _ = try manager.authorize(viewController: self, success: {[weak self] in
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
-                    self?.performSegue(withIdentifier: "Post", sender: self)
+                    self?.performSegue(withIdentifier: "Navigation", sender: self)
 
                 })
                 }, failed: {
@@ -36,7 +37,7 @@ class ViewController: UIViewController {
 
 extension ViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "Post",
+        if segue.identifier == "Navigation",
             let nav = segue.destination as? RootNavigationViewController {
             if let postView = PostViewController.initView() {
                 postView.postAction = self

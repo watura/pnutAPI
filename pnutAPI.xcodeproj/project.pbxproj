@@ -12,7 +12,6 @@
 		4112D3A520C1FB0D00FABEB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4112D3A320C1FB0D00FABEB3 /* Main.storyboard */; };
 		4112D3A720C1FB0E00FABEB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4112D3A620C1FB0E00FABEB3 /* Assets.xcassets */; };
 		4112D3AA20C1FB0E00FABEB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4112D3A820C1FB0E00FABEB3 /* LaunchScreen.storyboard */; };
-		4116C5BA20C7EA1F00B8433E /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4116C5B820C7EA1A00B8433E /* PostViewController.swift */; };
 		4116C5BB20C8060500B8433E /* PnutAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41869DEC20C2920900F98D00 /* PnutAPI.framework */; };
 		4116C5BC20C8060500B8433E /* PnutAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41869DEC20C2920900F98D00 /* PnutAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4116C5C020C8070500B8433E /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED720C212CE0051B74B /* APIKit.framework */; };
@@ -21,6 +20,11 @@
 		4116C5C320C8070500B8433E /* OAuthSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED920C212CF0051B74B /* OAuthSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4116C5C420C8070500B8433E /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED820C212CF0051B74B /* Result.framework */; };
 		4116C5C520C8070500B8433E /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED820C212CF0051B74B /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4116C5CF20C94D3500B8433E /* PostViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4116C5CD20C94D3500B8433E /* PostViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4116C5D220C94D3500B8433E /* PostViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4116C5CB20C94D3500B8433E /* PostViewController.framework */; };
+		4116C5D320C94D3500B8433E /* PostViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4116C5CB20C94D3500B8433E /* PostViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4116C5D820C94D7800B8433E /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4116C5B820C7EA1A00B8433E /* PostViewController.swift */; };
+		4116C5D920C94D8100B8433E /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41869E7120C3867A00F98D00 /* Post.storyboard */; };
 		417A3EE220C212EC0051B74B /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED720C212CE0051B74B /* APIKit.framework */; };
 		417A3EE320C212EC0051B74B /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED920C212CF0051B74B /* OAuthSwift.framework */; };
 		417A3EE420C212EC0051B74B /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED820C212CF0051B74B /* Result.framework */; };
@@ -50,7 +54,6 @@
 		41869E6220C368AF00F98D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41869E6020C368AF00F98D00 /* Main.storyboard */; };
 		41869E6420C368B100F98D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41869E6320C368B100F98D00 /* Assets.xcassets */; };
 		41869E6720C368B100F98D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41869E6520C368B100F98D00 /* LaunchScreen.storyboard */; };
-		41869E7220C3867A00F98D00 /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41869E7120C3867A00F98D00 /* Post.storyboard */; };
 		41869E7420C389B200F98D00 /* RootNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869E7320C389B200F98D00 /* RootNavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +64,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 41869DEB20C2920900F98D00;
 			remoteInfo = PnutAPI;
+		};
+		4116C5D020C94D3500B8433E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4116C5CA20C94D3500B8433E;
+			remoteInfo = PostViewController;
 		};
 		41869DF120C2920900F98D00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -80,6 +90,7 @@
 			files = (
 				4116C5C120C8070500B8433E /* APIKit.framework in Embed Frameworks */,
 				4116C5BC20C8060500B8433E /* PnutAPI.framework in Embed Frameworks */,
+				4116C5D320C94D3500B8433E /* PostViewController.framework in Embed Frameworks */,
 				4116C5C320C8070500B8433E /* OAuthSwift.framework in Embed Frameworks */,
 				4116C5C520C8070500B8433E /* Result.framework in Embed Frameworks */,
 			);
@@ -108,6 +119,9 @@
 		4112D3A920C1FB0E00FABEB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4112D3AB20C1FB0E00FABEB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4116C5B820C7EA1A00B8433E /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		4116C5CB20C94D3500B8433E /* PostViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PostViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4116C5CD20C94D3500B8433E /* PostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
+		4116C5CE20C94D3500B8433E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		417A3ED720C212CE0051B74B /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 		417A3ED820C212CF0051B74B /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		417A3ED920C212CF0051B74B /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
@@ -152,6 +166,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4116C5C720C94D3500B8433E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41869DE820C2920900F98D00 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -168,6 +189,7 @@
 			files = (
 				4116C5C020C8070500B8433E /* APIKit.framework in Frameworks */,
 				4116C5BB20C8060500B8433E /* PnutAPI.framework in Frameworks */,
+				4116C5D220C94D3500B8433E /* PostViewController.framework in Frameworks */,
 				4116C5C220C8070500B8433E /* OAuthSwift.framework in Frameworks */,
 				4116C5C420C8070500B8433E /* Result.framework in Frameworks */,
 			);
@@ -179,8 +201,9 @@
 		4112D39320C1FB0C00FABEB3 = {
 			isa = PBXGroup;
 			children = (
-				417A3EE120C212EC0051B74B /* Frameworks */,
+				4116C5DA20C94DC800B8433E /* Components */,
 				41869E0120C296D100F98D00 /* PnutAPI */,
+				417A3EE120C212EC0051B74B /* Frameworks */,
 				4112D39E20C1FB0D00FABEB3 /* PnutAPIClient */,
 				4112D39D20C1FB0D00FABEB3 /* Products */,
 				41869DE120C287CA00F98D00 /* Supporting Files */,
@@ -194,6 +217,7 @@
 				4112D39C20C1FB0D00FABEB3 /* PnutAPIClient.app */,
 				41869DEC20C2920900F98D00 /* PnutAPI.framework */,
 				41869E5A20C368AF00F98D00 /* Walnut.app */,
+				4116C5CB20C94D3500B8433E /* PostViewController.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,6 +231,32 @@
 				4112D3A120C1FB0D00FABEB3 /* ViewController.swift */,
 			);
 			path = PnutAPIClient;
+			sourceTree = "<group>";
+		};
+		4116C5CC20C94D3500B8433E /* PostViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41869E7120C3867A00F98D00 /* Post.storyboard */,
+				4116C5B820C7EA1A00B8433E /* PostViewController.swift */,
+			);
+			path = PostViewController;
+			sourceTree = "<group>";
+		};
+		4116C5D720C94D4C00B8433E /* PostViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4116C5CD20C94D3500B8433E /* PostViewController.h */,
+				4116C5CE20C94D3500B8433E /* Info.plist */,
+			);
+			path = PostViewController;
+			sourceTree = "<group>";
+		};
+		4116C5DA20C94DC800B8433E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4116C5CC20C94D3500B8433E /* PostViewController */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		417A3EE120C212EC0051B74B /* Frameworks */ = {
@@ -266,6 +316,7 @@
 		41869DE120C287CA00F98D00 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4116C5D720C94D4C00B8433E /* PostViewController */,
 				41869DED20C2920900F98D00 /* PnutAPI */,
 				41869DF920C293A700F98D00 /* PnutAPIClient */,
 				41869E6C20C368B900F98D00 /* Walnut */,
@@ -314,7 +365,6 @@
 			children = (
 				41869E6D20C368CB00F98D00 /* Storybook */,
 				41869E5C20C368AF00F98D00 /* AppDelegate.swift */,
-				4116C5B820C7EA1A00B8433E /* PostViewController.swift */,
 				41869E5E20C368AF00F98D00 /* ViewController.swift */,
 				41869E7320C389B200F98D00 /* RootNavigationViewController.swift */,
 			);
@@ -335,7 +385,6 @@
 			children = (
 				41869E6520C368B100F98D00 /* LaunchScreen.storyboard */,
 				41869E6020C368AF00F98D00 /* Main.storyboard */,
-				41869E7120C3867A00F98D00 /* Post.storyboard */,
 			);
 			path = Storybook;
 			sourceTree = "<group>";
@@ -343,6 +392,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4116C5C820C94D3500B8433E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4116C5CF20C94D3500B8433E /* PostViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41869DE920C2920900F98D00 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -376,6 +433,24 @@
 			productName = pnutAPI;
 			productReference = 4112D39C20C1FB0D00FABEB3 /* PnutAPIClient.app */;
 			productType = "com.apple.product-type.application";
+		};
+		4116C5CA20C94D3500B8433E /* PostViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4116C5D620C94D3500B8433E /* Build configuration list for PBXNativeTarget "PostViewController" */;
+			buildPhases = (
+				4116C5C620C94D3500B8433E /* Sources */,
+				4116C5C720C94D3500B8433E /* Frameworks */,
+				4116C5C820C94D3500B8433E /* Headers */,
+				4116C5C920C94D3500B8433E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PostViewController;
+			productName = PostViewController;
+			productReference = 4116C5CB20C94D3500B8433E /* PostViewController.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		41869DEB20C2920900F98D00 /* PnutAPI */ = {
 			isa = PBXNativeTarget;
@@ -412,6 +487,7 @@
 			);
 			dependencies = (
 				4116C5BE20C8060500B8433E /* PBXTargetDependency */,
+				4116C5D120C94D3500B8433E /* PBXTargetDependency */,
 			);
 			name = Walnut;
 			productName = Walnut;
@@ -429,6 +505,9 @@
 				ORGANIZATIONNAME = "Wataru Nishimoto";
 				TargetAttributes = {
 					4112D39B20C1FB0C00FABEB3 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					4116C5CA20C94D3500B8433E = {
 						CreatedOnToolsVersion = 9.4;
 					};
 					41869DEB20C2920900F98D00 = {
@@ -455,6 +534,7 @@
 				4112D39B20C1FB0C00FABEB3 /* PnutAPIClient */,
 				41869DEB20C2920900F98D00 /* PnutAPI */,
 				41869E5920C368AF00F98D00 /* Walnut */,
+				4116C5CA20C94D3500B8433E /* PostViewController */,
 			);
 		};
 /* End PBXProject section */
@@ -467,6 +547,14 @@
 				4112D3AA20C1FB0E00FABEB3 /* LaunchScreen.storyboard in Resources */,
 				4112D3A720C1FB0E00FABEB3 /* Assets.xcassets in Resources */,
 				4112D3A520C1FB0D00FABEB3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4116C5C920C94D3500B8433E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4116C5D920C94D8100B8433E /* Post.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,7 +571,6 @@
 			files = (
 				41869E6720C368B100F98D00 /* LaunchScreen.storyboard in Resources */,
 				41869E6420C368B100F98D00 /* Assets.xcassets in Resources */,
-				41869E7220C3867A00F98D00 /* Post.storyboard in Resources */,
 				41869E6220C368AF00F98D00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,6 +707,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4116C5C620C94D3500B8433E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4116C5D820C94D7800B8433E /* PostViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41869DE720C2920900F98D00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -645,7 +740,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4116C5BA20C7EA1F00B8433E /* PostViewController.swift in Sources */,
 				41869E7420C389B200F98D00 /* RootNavigationViewController.swift in Sources */,
 				41869E5F20C368AF00F98D00 /* ViewController.swift in Sources */,
 				41869E5D20C368AF00F98D00 /* AppDelegate.swift in Sources */,
@@ -659,6 +753,11 @@
 			isa = PBXTargetDependency;
 			target = 41869DEB20C2920900F98D00 /* PnutAPI */;
 			targetProxy = 4116C5BD20C8060500B8433E /* PBXContainerItemProxy */;
+		};
+		4116C5D120C94D3500B8433E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4116C5CA20C94D3500B8433E /* PostViewController */;
+			targetProxy = 4116C5D020C94D3500B8433E /* PBXContainerItemProxy */;
 		};
 		41869DF220C2920900F98D00 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -867,6 +966,62 @@
 			};
 			name = Release;
 		};
+		4116C5D420C94D3500B8433E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/PostViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.PostViewController;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4116C5D520C94D3500B8433E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/PostViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.PostViewController;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		41869DF620C2920900F98D00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -994,6 +1149,15 @@
 			buildConfigurations = (
 				4112D3AF20C1FB0E00FABEB3 /* Debug */,
 				4112D3B020C1FB0E00FABEB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4116C5D620C94D3500B8433E /* Build configuration list for PBXNativeTarget "PostViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4116C5D420C94D3500B8433E /* Debug */,
+				4116C5D520C94D3500B8433E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

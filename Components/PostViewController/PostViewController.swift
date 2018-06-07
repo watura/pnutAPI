@@ -15,7 +15,8 @@ public class PostViewController: UIViewController {
 
 extension PostViewController {
     public static func initView() -> PostViewController? {
-        let storyboard = UIStoryboard(name: "Post", bundle: nil)
+        let storyboardBundle = Bundle(for: self)
+        let storyboard = UIStoryboard(name: "Post", bundle: storyboardBundle)
         return storyboard.instantiateViewController(withIdentifier: "PostView") as? PostViewController
     }
 }
