@@ -77,7 +77,7 @@ extension PnutAPIList: PostAction {
     }
 
     func compelete(text: String) {
-        let body = PostBody(text: "Revised Test Post  \(Date())")
+        let body = PostBody(text: text)
         PostRequest(postBody: body).request()
     }
 
