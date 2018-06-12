@@ -2,6 +2,7 @@
 /.build
 /Packages
 .env.default
+.env
 ### https://raw.github.com/github/gitignore/90f149de451a5433aebd94d02d11b0e28843a1af/Global/Xcode.gitignore
 
 # Xcode
