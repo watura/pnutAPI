@@ -14,37 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "41869E5920C368AF00F98D00"
-               BuildableName = "Walnut.app"
-               BlueprintName = "Walnut"
-               ReferencedContainer = "container:pnutAPI.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "41869DEB20C2920900F98D00"
-               BuildableName = "PnutAPI.framework"
-               BlueprintName = "PnutAPI"
-               ReferencedContainer = "container:pnutAPI.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "41AE668520CFB24E009851E1"
-               BuildableName = "OnBoardingViewController.framework"
-               BlueprintName = "OnBoardingViewController"
+               BlueprintIdentifier = "4116C5CA20C94D3500B8433E"
+               BuildableName = "PostViewController.framework"
+               BlueprintName = "PostViewController"
                ReferencedContainer = "container:pnutAPI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -57,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "41869E5920C368AF00F98D00"
-            BuildableName = "Walnut.app"
-            BlueprintName = "Walnut"
-            ReferencedContainer = "container:pnutAPI.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -79,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "41869E5920C368AF00F98D00"
-            BuildableName = "Walnut.app"
-            BlueprintName = "Walnut"
+            BlueprintIdentifier = "4116C5CA20C94D3500B8433E"
+            BuildableName = "PostViewController.framework"
+            BlueprintName = "PostViewController"
             ReferencedContainer = "container:pnutAPI.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -98,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "41869E5920C368AF00F98D00"
-            BuildableName = "Walnut.app"
-            BlueprintName = "Walnut"
+            BlueprintIdentifier = "4116C5CA20C94D3500B8433E"
+            BuildableName = "PostViewController.framework"
+            BlueprintName = "PostViewController"
             ReferencedContainer = "container:pnutAPI.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
