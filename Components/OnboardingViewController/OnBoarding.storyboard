@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--On Boarding View Controller-->
+        <scene sceneID="cHg-RH-Gdx">
+            <objects>
+                <viewController storyboardIdentifier="OnBoardingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ko9-7E-YEP" customClass="OnBoardingViewController" customModule="OnBoardingViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8AY-dZ-GZY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="HR5-6m-qth">
+                                <rect key="frame" x="0.0" y="120" width="375" height="447"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Walnut" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGI-SE-gz0">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                        <color key="textColor" red="0.66666666669999997" green="0.63137254899999995" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DnM-BC-KUM">
+                                        <rect key="frame" x="0.0" y="399" width="375" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="4Ai-Uy-pm5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <state key="normal" title="Login with pnut.io">
+                                            <color key="titleColor" red="0.070588235289999995" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="ko9-7E-YEP" eventType="touchUpInside" id="hNB-A6-h7q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HR5-6m-qth" firstAttribute="top" secondItem="h38-R0-Hyy" secondAttribute="top" constant="100" id="OKc-im-xdM"/>
+                            <constraint firstItem="h38-R0-Hyy" firstAttribute="trailing" secondItem="HR5-6m-qth" secondAttribute="trailing" id="XR6-MB-SbE"/>
+                            <constraint firstItem="h38-R0-Hyy" firstAttribute="bottom" secondItem="HR5-6m-qth" secondAttribute="bottom" constant="100" id="n2h-t4-9NB"/>
+                            <constraint firstItem="HR5-6m-qth" firstAttribute="leading" secondItem="h38-R0-Hyy" secondAttribute="leading" id="vcP-Tm-Hms"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="h38-R0-Hyy"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="DnM-BC-KUM" id="c6i-y2-qWA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jDI-TY-eqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="143.47826086956522"/>
+        </scene>
+    </scenes>
+</document>

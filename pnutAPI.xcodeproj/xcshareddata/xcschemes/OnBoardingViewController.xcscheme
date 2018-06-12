@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "41869E5920C368AF00F98D00"
-               BuildableName = "Walnut.app"
-               BlueprintName = "Walnut"
+               BlueprintIdentifier = "41AE668520CFB24E009851E1"
+               BuildableName = "OnBoardingViewController.framework"
+               BlueprintName = "OnBoardingViewController"
                ReferencedContainer = "container:pnutAPI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,20 +34,6 @@
                ReferencedContainer = "container:pnutAPI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "41AE668520CFB24E009851E1"
-               BuildableName = "OnBoardingViewController.framework"
-               BlueprintName = "OnBoardingViewController"
-               ReferencedContainer = "container:pnutAPI.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -60,9 +46,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "41869E5920C368AF00F98D00"
-            BuildableName = "Walnut.app"
-            BlueprintName = "Walnut"
+            BlueprintIdentifier = "41AE668520CFB24E009851E1"
+            BuildableName = "OnBoardingViewController.framework"
+            BlueprintName = "OnBoardingViewController"
             ReferencedContainer = "container:pnutAPI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -79,16 +65,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "41869E5920C368AF00F98D00"
-            BuildableName = "Walnut.app"
-            BlueprintName = "Walnut"
+            BlueprintIdentifier = "41AE668520CFB24E009851E1"
+            BuildableName = "OnBoardingViewController.framework"
+            BlueprintName = "OnBoardingViewController"
             ReferencedContainer = "container:pnutAPI.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -98,16 +83,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "41869E5920C368AF00F98D00"
-            BuildableName = "Walnut.app"
-            BlueprintName = "Walnut"
+            BlueprintIdentifier = "41AE668520CFB24E009851E1"
+            BuildableName = "OnBoardingViewController.framework"
+            BlueprintName = "OnBoardingViewController"
             ReferencedContainer = "container:pnutAPI.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

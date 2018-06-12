@@ -61,6 +61,8 @@
 		41AE668A20CFB24F009851E1 /* OnBoardingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 41AE668820CFB24F009851E1 /* OnBoardingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41AE668D20CFB24F009851E1 /* OnBoardingViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */; };
 		41AE668E20CFB24F009851E1 /* OnBoardingViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		41AE669720CFB31D009851E1 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AE669520CFB2C5009851E1 /* OnBoarding.storyboard */; };
+		41AE669820CFB322009851E1 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE669320CFB2BC009851E1 /* OnBoardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +180,8 @@
 		41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnBoardingViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AE668820CFB24F009851E1 /* OnBoardingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnBoardingViewController.h; sourceTree = "<group>"; };
 		41AE668920CFB24F009851E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41AE669320CFB2BC009851E1 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		41AE669520CFB2C5009851E1 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -440,6 +444,8 @@
 		41AE669220CFB267009851E1 /* OnboardingViewController */ = {
 			isa = PBXGroup;
 			children = (
+				41AE669320CFB2BC009851E1 /* OnBoardingViewController.swift */,
+				41AE669520CFB2C5009851E1 /* OnBoarding.storyboard */,
 			);
 			path = OnboardingViewController;
 			sourceTree = "<group>";
@@ -668,6 +674,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41AE669720CFB31D009851E1 /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -873,6 +880,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41AE669820CFB322009851E1 /* OnBoardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

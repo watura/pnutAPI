@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         APITokenManager.shared.setCredentials(clientId: clientId, clientSecret: clientSecret, callbackUrl: "walnut://pnut")
 
 
-        window?.rootViewController = VCRoutingMangar.rootViewController()
+        window?.rootViewController = VCRoutingMangar.shared.rootViewController()
 
         return true
     }
