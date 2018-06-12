@@ -26,6 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 fatalError("Could not read secrets")
         }
         APITokenManager.shared.setCredentials(clientId: clientId, clientSecret: clientSecret, callbackUrl: "walnut://pnut")
+
+
+        window?.rootViewController = VCRoutingMangar.rootViewController()
+
         return true
     }
 

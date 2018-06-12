@@ -57,6 +57,10 @@
 		41869E6420C368B100F98D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41869E6320C368B100F98D00 /* Assets.xcassets */; };
 		41869E6720C368B100F98D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41869E6520C368B100F98D00 /* LaunchScreen.storyboard */; };
 		41869E7420C389B200F98D00 /* RootNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869E7320C389B200F98D00 /* RootNavigationViewController.swift */; };
+		41AE668020CFAC82009851E1 /* VCRoutingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE667F20CFAC82009851E1 /* VCRoutingManager.swift */; };
+		41AE668A20CFB24F009851E1 /* OnBoardingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 41AE668820CFB24F009851E1 /* OnBoardingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41AE668D20CFB24F009851E1 /* OnBoardingViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */; };
+		41AE668E20CFB24F009851E1 /* OnBoardingViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +92,13 @@
 			remoteGlobalIDString = 41869DEB20C2920900F98D00;
 			remoteInfo = pnutAPI;
 		};
+		41AE668B20CFB24F009851E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41AE668520CFB24E009851E1;
+			remoteInfo = OnBoardingViewController;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -114,6 +125,7 @@
 			files = (
 				41869DF420C2920900F98D00 /* PnutAPI.framework in Embed Frameworks */,
 				4116C5DE20C9539100B8433E /* PostViewController.framework in Embed Frameworks */,
+				41AE668E20CFB24F009851E1 /* OnBoardingViewController.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,6 +174,10 @@
 		41869E6820C368B100F98D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41869E7120C3867A00F98D00 /* Post.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
 		41869E7320C389B200F98D00 /* RootNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationViewController.swift; sourceTree = "<group>"; };
+		41AE667F20CFAC82009851E1 /* VCRoutingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCRoutingManager.swift; sourceTree = "<group>"; };
+		41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnBoardingViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41AE668820CFB24F009851E1 /* OnBoardingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnBoardingViewController.h; sourceTree = "<group>"; };
+		41AE668920CFB24F009851E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +187,7 @@
 			files = (
 				417A3EE220C212EC0051B74B /* APIKit.framework in Frameworks */,
 				417A3EE320C212EC0051B74B /* OAuthSwift.framework in Frameworks */,
+				41AE668D20CFB24F009851E1 /* OnBoardingViewController.framework in Frameworks */,
 				4116C5DD20C9539100B8433E /* PostViewController.framework in Frameworks */,
 				41869DF320C2920900F98D00 /* PnutAPI.framework in Frameworks */,
 				417A3EE420C212EC0051B74B /* Result.framework in Frameworks */,
@@ -206,6 +223,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		41AE668220CFB24E009851E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -229,6 +253,7 @@
 				41869DEC20C2920900F98D00 /* PnutAPI.framework */,
 				41869E5A20C368AF00F98D00 /* Walnut.app */,
 				4116C5CB20C94D3500B8433E /* PostViewController.framework */,
+				41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -265,6 +290,7 @@
 		4116C5DA20C94DC800B8433E /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				41AE669220CFB267009851E1 /* OnboardingViewController */,
 				4116C5CC20C94D3500B8433E /* PostViewController */,
 			);
 			path = Components;
@@ -327,6 +353,7 @@
 		41869DE120C287CA00F98D00 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				41AE668720CFB24F009851E1 /* OnBoardingViewController */,
 				41869DED20C2920900F98D00 /* PnutAPI */,
 				41869DF920C293A700F98D00 /* PnutAPIClient */,
 				4116C5D720C94D4C00B8433E /* PostViewController */,
@@ -376,6 +403,7 @@
 			children = (
 				41869E6D20C368CB00F98D00 /* Storybook */,
 				41869E5C20C368AF00F98D00 /* AppDelegate.swift */,
+				41AE667F20CFAC82009851E1 /* VCRoutingManager.swift */,
 				41869E7320C389B200F98D00 /* RootNavigationViewController.swift */,
 				41869E5E20C368AF00F98D00 /* ViewController.swift */,
 			);
@@ -400,6 +428,22 @@
 			path = Storybook;
 			sourceTree = "<group>";
 		};
+		41AE668720CFB24F009851E1 /* OnBoardingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41AE668820CFB24F009851E1 /* OnBoardingViewController.h */,
+				41AE668920CFB24F009851E1 /* Info.plist */,
+			);
+			path = OnBoardingViewController;
+			sourceTree = "<group>";
+		};
+		41AE669220CFB267009851E1 /* OnboardingViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OnboardingViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -416,6 +460,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				41869DF020C2920900F98D00 /* pnutAPI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41AE668320CFB24E009851E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41AE668A20CFB24F009851E1 /* OnBoardingViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +492,7 @@
 			dependencies = (
 				41869DF220C2920900F98D00 /* PBXTargetDependency */,
 				4116C5E020C9539100B8433E /* PBXTargetDependency */,
+				41AE668C20CFB24F009851E1 /* PBXTargetDependency */,
 			);
 			name = PnutAPIClient;
 			productName = pnutAPI;
@@ -508,6 +561,24 @@
 			productReference = 41869E5A20C368AF00F98D00 /* Walnut.app */;
 			productType = "com.apple.product-type.application";
 		};
+		41AE668520CFB24E009851E1 /* OnBoardingViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41AE668F20CFB24F009851E1 /* Build configuration list for PBXNativeTarget "OnBoardingViewController" */;
+			buildPhases = (
+				41AE668120CFB24E009851E1 /* Sources */,
+				41AE668220CFB24E009851E1 /* Frameworks */,
+				41AE668320CFB24E009851E1 /* Headers */,
+				41AE668420CFB24E009851E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnBoardingViewController;
+			productName = OnBoardingViewController;
+			productReference = 41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -530,6 +601,9 @@
 					41869E5920C368AF00F98D00 = {
 						CreatedOnToolsVersion = 9.4;
 					};
+					41AE668520CFB24E009851E1 = {
+						CreatedOnToolsVersion = 9.4;
+					};
 				};
 			};
 			buildConfigurationList = 4112D39720C1FB0C00FABEB3 /* Build configuration list for PBXProject "pnutAPI" */;
@@ -549,6 +623,7 @@
 				41869DEB20C2920900F98D00 /* PnutAPI */,
 				41869E5920C368AF00F98D00 /* Walnut */,
 				4116C5CA20C94D3500B8433E /* PostViewController */,
+				41AE668520CFB24E009851E1 /* OnBoardingViewController */,
 			);
 		};
 /* End PBXProject section */
@@ -586,6 +661,13 @@
 				41869E6720C368B100F98D00 /* LaunchScreen.storyboard in Resources */,
 				41869E6420C368B100F98D00 /* Assets.xcassets in Resources */,
 				41869E6220C368AF00F98D00 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41AE668420CFB24E009851E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,7 +711,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "test -e ~/.zshrc && source ~/.zshrc\nPLIST=\"./Supporting Files/PnutAPIClient/Info.plist\" bundle exec fastlane set_secrets";
+			shellScript = "eval \"$(anyenv init -)\"\nexport LC_ALL=ja_JP.UTF-8\nexport LANG=ja_JP.UTF-8\nPLIST=\"./Supporting Files/PnutAPIClient/Info.plist\" /Users/watura/.anyenv/envs/rbenv/shims/bundle exec fastlane set_secrets";
 		};
 		417A3ED520C20D5B0051B74B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -642,7 +724,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "test -e ~/.zshrc && source ~/.zshrc\nPLIST=\"./Supporting Files/PnutAPIClient/Info.plist\" bundle exec fastlane remove_secrets";
+			shellScript = "eval \"$(anyenv init -)\"\nexport LC_ALL=ja_JP.UTF-8\nexport LANG=ja_JP.UTF-8\nPLIST=\"./Supporting Files/PnutAPIClient/Info.plist\" /Users/watura/.anyenv/envs/rbenv/shims/bundle exec fastlane remove_secrets";
 		};
 		417A3ED620C212510051B74B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -706,7 +788,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "test -e ~/.zshrc && source ~/.zshrc\nPLIST=\"./Supporting Files/Walnut/Info.plist\" bundle exec fastlane set_secrets";
+			shellScript = "eval \"$(anyenv init -)\"\nexport LC_ALL=ja_JP.UTF-8\nexport LANG=ja_JP.UTF-8\nPLIST=\"./Supporting Files/Walnut/Info.plist\" /Users/watura/.anyenv/envs/rbenv/shims/bundle exec fastlane set_secrets";
 		};
 		41869E6F20C369C400F98D00 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -719,7 +801,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "test -e ~/.zshrc && source ~/.zshrc\nPLIST=\"./Supporting Files/Walnut/Info.plist\" bundle exec fastlane remove_secrets";
+			shellScript = "eval \"$(anyenv init -)\"\nexport LC_ALL=ja_JP.UTF-8\nexport LANG=ja_JP.UTF-8\nPLIST=\"./Supporting Files/Walnut/Info.plist\" /Users/watura/.anyenv/envs/rbenv/shims/bundle exec fastlane remove_secrets";
 		};
 		41869E7020C369D600F98D00 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -781,8 +863,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				41869E7420C389B200F98D00 /* RootNavigationViewController.swift in Sources */,
+				41AE668020CFAC82009851E1 /* VCRoutingManager.swift in Sources */,
 				41869E5F20C368AF00F98D00 /* ViewController.swift in Sources */,
 				41869E5D20C368AF00F98D00 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41AE668120CFB24E009851E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -808,6 +898,11 @@
 			isa = PBXTargetDependency;
 			target = 41869DEB20C2920900F98D00 /* PnutAPI */;
 			targetProxy = 41869DF120C2920900F98D00 /* PBXContainerItemProxy */;
+		};
+		41AE668C20CFB24F009851E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41AE668520CFB24E009851E1 /* OnBoardingViewController */;
+			targetProxy = 41AE668B20CFB24F009851E1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1177,6 +1272,62 @@
 			};
 			name = Release;
 		};
+		41AE669020CFB24F009851E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/OnBoardingViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.OnBoardingViewController;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		41AE669120CFB24F009851E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/OnBoardingViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.OnBoardingViewController;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1221,6 +1372,15 @@
 			buildConfigurations = (
 				41869E6920C368B100F98D00 /* Debug */,
 				41869E6A20C368B100F98D00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41AE668F20CFB24F009851E1 /* Build configuration list for PBXNativeTarget "OnBoardingViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41AE669020CFB24F009851E1 /* Debug */,
+				41AE669120CFB24F009851E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
