@@ -1,5 +1,6 @@
 import UIKit
 import PnutAPI
+import Utils
 
 public protocol OnBoardingAction {
     func loginSuccess() -> Void
@@ -11,12 +12,17 @@ public class OnBoardingViewController: UIViewController {
     public var onBoardingAction: OnBoardingAction?
 }
 
-extension OnBoardingViewController {
-    public static func initView() -> OnBoardingViewController? {
-        let storyboardBundle = Bundle(for: self)
-        let storyboard = UIStoryboard(name: "OnBoarding", bundle: storyboardBundle)
-        return storyboard.instantiateViewController(withIdentifier: "OnBoardingViewController") as? OnBoardingViewController
+extension OnBoardingViewController: Initable {
+    public typealias VC = OnBoardingViewController
+
+    public static var storyboardName: String {
+        return "OnBoarding"
     }
+
+    public static var identifier: String {
+        return "OnBoardingViewController"
+    }
+
 }
 
 extension OnBoardingViewController {

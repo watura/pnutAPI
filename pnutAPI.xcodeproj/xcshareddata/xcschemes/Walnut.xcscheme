@@ -48,6 +48,48 @@
                ReferencedContainer = "container:pnutAPI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4116C5CA20C94D3500B8433E"
+               BuildableName = "PostViewController.framework"
+               BlueprintName = "PostViewController"
+               ReferencedContainer = "container:pnutAPI.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "411BF4FC20D0C0F100744E6D"
+               BuildableName = "StreamViewController.framework"
+               BlueprintName = "StreamViewController"
+               ReferencedContainer = "container:pnutAPI.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "411BF51420D0C2C900744E6D"
+               BuildableName = "Utils.framework"
+               BlueprintName = "Utils"
+               ReferencedContainer = "container:pnutAPI.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

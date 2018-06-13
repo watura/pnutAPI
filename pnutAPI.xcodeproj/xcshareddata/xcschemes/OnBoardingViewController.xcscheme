@@ -34,6 +34,20 @@
                ReferencedContainer = "container:pnutAPI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "411BF51420D0C2C900744E6D"
+               BuildableName = "Utils.framework"
+               BlueprintName = "Utils"
+               ReferencedContainer = "container:pnutAPI.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

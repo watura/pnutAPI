@@ -18,20 +18,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func loginButton(_ sender: Any) {
-        let manager = APITokenManager.shared
-        do {
-            _ = try manager.authorize(viewController: self, success: {[weak self] in
-                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
-                    self?.performSegue(withIdentifier: "Navigation", sender: self)
-
-                })
-                }, failed: {
-                    print("Failed")
-            })
-
-        } catch let e {
-            print(e)
-        }
+        APITokenManager.shared.removeToken()
     }
 }
 
