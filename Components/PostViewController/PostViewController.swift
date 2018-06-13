@@ -1,4 +1,5 @@
 import UIKit
+import Utils
 
 public protocol PostAction {
     func cancel() -> Void
@@ -13,12 +14,16 @@ public class PostViewController: UIViewController {
     public var postAction: PostAction?
 }
 
-extension PostViewController {
-    public static func initView() -> PostViewController? {
-        let storyboardBundle = Bundle(for: self)
-        let storyboard = UIStoryboard(name: "Post", bundle: storyboardBundle)
-        return storyboard.instantiateViewController(withIdentifier: "PostView") as? PostViewController
+extension PostViewController: Initable {
+    public static var storyboardName: String {
+        return "Post"
     }
+
+    public static var identifier: String {
+        return "PostView"
+    }
+
+    public typealias VC = PostViewController
 }
 
 extension PostViewController {
