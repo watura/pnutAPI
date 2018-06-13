@@ -1,7 +1,19 @@
 import UIKit
 import Utils
 
-public class StreamViewController: UIViewController {}
+
+public protocol StreamDataSource {
+}
+
+public protocol StreamAction {
+}
+
+public protocol StreamCellAction {
+}
+
+public class StreamViewController: UIViewController {
+    @IBOutlet weak var tableView: UITableView!
+}
 
 extension StreamViewController: InitableType {
     public typealias VC = StreamViewController

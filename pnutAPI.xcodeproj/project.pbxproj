@@ -36,6 +36,7 @@
 		411BF52120D0C2DB00744E6D /* InitableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411BF50E20D0C2AA00744E6D /* InitableType.swift */; };
 		411BF52220D0C30600744E6D /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411BF50C20D0C13100744E6D /* StreamViewController.swift */; };
 		411BF52320D0C8FA00744E6D /* Stream.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411BF50A20D0C11F00744E6D /* Stream.storyboard */; };
+		411BF52620D0C9C600744E6D /* StreamCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411BF52420D0C9B000744E6D /* StreamCellView.swift */; };
 		417A3EE220C212EC0051B74B /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED720C212CE0051B74B /* APIKit.framework */; };
 		417A3EE320C212EC0051B74B /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED920C212CF0051B74B /* OAuthSwift.framework */; };
 		417A3EE420C212EC0051B74B /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED820C212CF0051B74B /* Result.framework */; };
@@ -180,6 +181,7 @@
 		411BF51520D0C2C900744E6D /* Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		411BF51720D0C2CA00744E6D /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		411BF51820D0C2CA00744E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		411BF52420D0C9B000744E6D /* StreamCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamCellView.swift; sourceTree = "<group>"; };
 		417A3ED720C212CE0051B74B /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 		417A3ED820C212CF0051B74B /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		417A3ED920C212CF0051B74B /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
@@ -368,6 +370,7 @@
 			children = (
 				411BF50A20D0C11F00744E6D /* Stream.storyboard */,
 				411BF50C20D0C13100744E6D /* StreamViewController.swift */,
+				411BF52420D0C9B000744E6D /* StreamCellView.swift */,
 			);
 			path = StreamViewController;
 			sourceTree = "<group>";
@@ -1008,6 +1011,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				411BF52620D0C9C600744E6D /* StreamCellView.swift in Sources */,
 				411BF52220D0C30600744E6D /* StreamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
