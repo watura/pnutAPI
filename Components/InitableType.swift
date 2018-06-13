@@ -1,6 +1,6 @@
 import UIKit
 
-public protocol Initable {
+public protocol InitableType {
     associatedtype VC
     static var storyboardName: String { get }
     static var identifier: String { get }
@@ -8,7 +8,7 @@ public protocol Initable {
     static func initView() -> VC?
 }
 
-extension Initable where Self: UIViewController {
+extension InitableType where Self: UIViewController {
     public static func initView() -> VC? {
         let storyboardBundle = Bundle(for: self)
         let storyboard = UIStoryboard(name: storyboardName, bundle: storyboardBundle)

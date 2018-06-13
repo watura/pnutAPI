@@ -14,7 +14,7 @@ public class PostViewController: UIViewController {
     public var postAction: PostAction?
 }
 
-extension PostViewController: Initable {
+extension PostViewController: InitableType {
     public static var storyboardName: String {
         return "Post"
     }

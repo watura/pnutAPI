@@ -12,7 +12,7 @@ public class OnBoardingViewController: UIViewController {
     public var onBoardingAction: OnBoardingAction?
 }
 
-extension OnBoardingViewController: Initable {
+extension OnBoardingViewController: InitableType {
     public typealias VC = OnBoardingViewController
 
     public static var storyboardName: String {
