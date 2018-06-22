@@ -14,20 +14,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4116C5CA20C94D3500B8433E"
-               BuildableName = "PostViewController.framework"
-               BlueprintName = "PostViewController"
-               ReferencedContainer = "container:pnutAPI.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "411BF51420D0C2C900744E6D"
                BuildableName = "Utils.framework"
                BlueprintName = "Utils"
@@ -43,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4116C5CA20C94D3500B8433E"
-            BuildableName = "PostViewController.framework"
-            BlueprintName = "PostViewController"
-            ReferencedContainer = "container:pnutAPI.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -68,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4116C5CA20C94D3500B8433E"
-            BuildableName = "PostViewController.framework"
-            BlueprintName = "PostViewController"
+            BlueprintIdentifier = "411BF51420D0C2C900744E6D"
+            BuildableName = "Utils.framework"
+            BlueprintName = "Utils"
             ReferencedContainer = "container:pnutAPI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -86,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4116C5CA20C94D3500B8433E"
-            BuildableName = "PostViewController.framework"
-            BlueprintName = "PostViewController"
+            BlueprintIdentifier = "411BF51420D0C2C900744E6D"
+            BuildableName = "Utils.framework"
+            BlueprintName = "Utils"
             ReferencedContainer = "container:pnutAPI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

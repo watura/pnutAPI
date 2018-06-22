@@ -19,7 +19,7 @@ public class APITokenManager {
         self.callbackUrl = callbackUrl
     }
 
-    public func authorize(viewController: UIViewController, success: @escaping () -> Void = {}, failed: @escaping () -> Void = {}) throws -> OAuthSwiftRequestHandle? {
+    public func authorize(viewController: UIViewController, success: @escaping () -> Void = {}, failed: @escaping (_ error: Error) -> Void = {_ in}) throws -> OAuthSwiftRequestHandle? {
         guard let oauthSwift = oauthSwift else {
             throw APITokenManagerError.noOAuthSwiftInstance
         }
@@ -37,7 +37,7 @@ public class APITokenManager {
                 success()
         }, failure: { error in
             print(error.localizedDescription)
-            failed()
+            failed(error)
         }
         )
     }

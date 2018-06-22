@@ -6,8 +6,10 @@ import PnutAPI
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var appCoordinator: AppCordinator?
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any] = [:]) -> Bool {
+        print(url)
         if url.host == "pnut" {
             OAuthSwift.handle(url: url)
         }
@@ -27,9 +29,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         APITokenManager.shared.setCredentials(clientId: clientId, clientSecret: clientSecret, callbackUrl: "walnut://pnut")
 
+        window = UIWindow(frame: UIScreen.main.bounds)
+        if let window = window {
+            appCoordinator = AppCordinator(window: window)
+            appCoordinator?.start()
+        }
 
-        window?.rootViewController = VCRoutingMangar.shared.rootViewController()
-
+        window?.makeKeyAndVisible()
         return true
     }
 
@@ -57,4 +63,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-
