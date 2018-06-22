@@ -339,14 +339,10 @@
 		4112D39320C1FB0C00FABEB3 = {
 			isa = PBXGroup;
 			children = (
-				411BF52720D3470600744E6D /* Coordinators */,
-				4116C5DA20C94DC800B8433E /* Components */,
 				417A3EE120C212EC0051B74B /* Frameworks */,
-				41869E0120C296D100F98D00 /* PnutAPI */,
-				4112D39E20C1FB0D00FABEB3 /* PnutAPIClient */,
 				4112D39D20C1FB0D00FABEB3 /* Products */,
+				4118D77E20DCB6C90040EA4F /* Sources */,
 				41869DE120C287CA00F98D00 /* Supporting Files */,
-				41869E5B20C368AF00F98D00 /* Walnut */,
 			);
 			sourceTree = "<group>";
 		};
@@ -396,19 +392,31 @@
 		4116C5DA20C94DC800B8433E /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				411BF50E20D0C2AA00744E6D /* InitableType.swift */,
-				411BF50920D0C10B00744E6D /* StreamViewController */,
 				41AE669220CFB267009851E1 /* OnboardingViewController */,
 				4116C5CC20C94D3500B8433E /* PostViewController */,
+				411BF50920D0C10B00744E6D /* StreamViewController */,
+				411BF50E20D0C2AA00744E6D /* InitableType.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		4118D77E20DCB6C90040EA4F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4116C5DA20C94DC800B8433E /* Components */,
+				411BF52720D3470600744E6D /* Coordinators */,
+				41869E0120C296D100F98D00 /* PnutAPI */,
+				4112D39E20C1FB0D00FABEB3 /* PnutAPIClient */,
+				41869E5B20C368AF00F98D00 /* Walnut */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		411BF4FE20D0C0F100744E6D /* StreamViewController */ = {
 			isa = PBXGroup;
 			children = (
-				411BF4FF20D0C0F100744E6D /* StreamViewController.h */,
 				411BF50020D0C0F100744E6D /* Info.plist */,
+				411BF4FF20D0C0F100744E6D /* StreamViewController.h */,
 			);
 			path = StreamViewController;
 			sourceTree = "<group>";
@@ -417,8 +425,8 @@
 			isa = PBXGroup;
 			children = (
 				411BF50A20D0C11F00744E6D /* Stream.storyboard */,
-				411BF50C20D0C13100744E6D /* StreamViewController.swift */,
 				411BF52420D0C9B000744E6D /* StreamCellView.swift */,
+				411BF50C20D0C13100744E6D /* StreamViewController.swift */,
 			);
 			path = StreamViewController;
 			sourceTree = "<group>";
@@ -426,8 +434,8 @@
 		411BF51620D0C2CA00744E6D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				411BF51720D0C2CA00744E6D /* Utils.h */,
 				411BF51820D0C2CA00744E6D /* Info.plist */,
+				411BF51720D0C2CA00744E6D /* Utils.h */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -435,10 +443,10 @@
 		411BF52720D3470600744E6D /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				411BF52820D3480600744E6D /* Coordinator.swift */,
 				411BF52C20D349E200744E6D /* AppCoordinator.swift */,
-				411BF52A20D3496200744E6D /* StoryboardedType.swift */,
+				411BF52820D3480600744E6D /* Coordinator.swift */,
 				411BF53120D35FB000744E6D /* OnBoardingViewCoordinator.swift */,
+				411BF52A20D3496200744E6D /* StoryboardedType.swift */,
 				411BF53320D35FBB00744E6D /* StreamingViewCoordinator.swift */,
 			);
 			path = Coordinators;
@@ -501,12 +509,12 @@
 		41869DE120C287CA00F98D00 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				411BF51620D0C2CA00744E6D /* Utils */,
-				411BF4FE20D0C0F100744E6D /* StreamViewController */,
 				41AE668720CFB24F009851E1 /* OnBoardingViewController */,
 				41869DED20C2920900F98D00 /* PnutAPI */,
 				41869DF920C293A700F98D00 /* PnutAPIClient */,
 				4116C5D720C94D4C00B8433E /* PostViewController */,
+				411BF4FE20D0C0F100744E6D /* StreamViewController */,
+				411BF51620D0C2CA00744E6D /* Utils */,
 				41869E6C20C368B900F98D00 /* Walnut */,
 			);
 			path = "Supporting Files";
@@ -577,8 +585,8 @@
 		41AE668720CFB24F009851E1 /* OnBoardingViewController */ = {
 			isa = PBXGroup;
 			children = (
-				41AE668820CFB24F009851E1 /* OnBoardingViewController.h */,
 				41AE668920CFB24F009851E1 /* Info.plist */,
+				41AE668820CFB24F009851E1 /* OnBoardingViewController.h */,
 			);
 			path = OnBoardingViewController;
 			sourceTree = "<group>";
@@ -586,8 +594,8 @@
 		41AE669220CFB267009851E1 /* OnboardingViewController */ = {
 			isa = PBXGroup;
 			children = (
-				41AE669320CFB2BC009851E1 /* OnBoardingViewController.swift */,
 				41AE669520CFB2C5009851E1 /* OnBoarding.storyboard */,
+				41AE669320CFB2BC009851E1 /* OnBoardingViewController.swift */,
 			);
 			path = OnboardingViewController;
 			sourceTree = "<group>";
