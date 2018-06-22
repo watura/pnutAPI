@@ -2,8 +2,8 @@ import UIKit
 import Utils
 
 public protocol PostAction {
-    func cancel() -> Void
-    func compelete(text: String) -> Void
+    func cancel()
+    func compelete(text: String)
     func validate(text: String) -> Bool
 }
 
@@ -45,10 +45,10 @@ extension PostViewController {
         if let userInfo = notification.userInfo,
             let endFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             let endFrameY = endFrame.origin.y
-            let duration:TimeInterval = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue ?? 0
+            let duration: TimeInterval = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue ?? 0
             let animationCurveRawNSN = userInfo[UIKeyboardAnimationCurveUserInfoKey] as? NSNumber
             let animationCurveRaw = animationCurveRawNSN?.uintValue ?? UIViewAnimationOptions.curveEaseInOut.rawValue
-            let animationCurve:UIViewAnimationOptions = UIViewAnimationOptions(rawValue: animationCurveRaw)
+            let animationCurve: UIViewAnimationOptions = UIViewAnimationOptions(rawValue: animationCurveRaw)
             if endFrameY >= UIScreen.main.bounds.size.height {
                 self.textViewBottomConstraint?.constant = 0.0
             } else {

@@ -1,7 +1,7 @@
 import UIKit
 import OnBoardingViewController
 
-protocol OnBoardingCoordinatorAction {
+protocol OnBoardingCoordinatorAction: class {
     func onBoardingScuccess(coordinator: OnBoardingViewCoordinator)
     func onBoardingFailed(coordinator: OnBoardingViewCoordinator, error: Error)
 }
@@ -11,7 +11,7 @@ class OnBoardingViewCoordinator: Coordinator {
 
     var children: [Coordinator] = []
     private let viewController: OnBoardingViewController
-    private let delegate: OnBoardingCoordinatorAction
+    private weak var delegate: OnBoardingCoordinatorAction?
 
     init(presentor: UINavigationController, delegate: OnBoardingCoordinatorAction) {
         self.navigationController = presentor
@@ -34,12 +34,12 @@ extension OnBoardingViewCoordinator: OnBoardingAction {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {[weak self] in
             print("Login Succeed")
             if let weakSelf = self {
-                weakSelf.delegate.onBoardingScuccess(coordinator: weakSelf)
+                weakSelf.delegate?.onBoardingScuccess(coordinator: weakSelf)
             }
         })
     }
 
     func onBoardingFailed(_ error: Error) {
-        self.delegate.onBoardingFailed(coordinator: self, error: error)
+        self.delegate?.onBoardingFailed(coordinator: self, error: error)
     }
 }

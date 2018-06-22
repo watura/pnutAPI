@@ -3,8 +3,8 @@ import PnutAPI
 import Utils
 
 public protocol OnBoardingAction {
-    func onBoardingSuccess() -> Void
-    func onBoardingFailed(_ error: Error) -> Void
+    func onBoardingSuccess()
+    func onBoardingFailed(_ error: Error)
 }
 
 public class OnBoardingViewController: UIViewController {
