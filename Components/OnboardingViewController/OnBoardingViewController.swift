@@ -3,8 +3,8 @@ import PnutAPI
 import Utils
 
 public protocol OnBoardingAction {
-    func loginSuccess() -> Void
-    func loginFailed() -> Void
+    func onBoardingSuccess() -> Void
+    func onBoardingFailed(_ error: Error) -> Void
 }
 
 public class OnBoardingViewController: UIViewController {
@@ -30,9 +30,9 @@ extension OnBoardingViewController {
         let manager = APITokenManager.shared
         guard let action = onBoardingAction else { fatalError("") }
         do {
-            _ = try manager.authorize(viewController: self, success: action.loginSuccess, failed: action.loginFailed)
-        } catch {
-            action.loginFailed()
+            _ = try manager.authorize(viewController: self, success: action.onBoardingSuccess, failed: action.onBoardingFailed)
+        } catch let error {
+            action.onBoardingFailed(error)
         }
     }
 }
