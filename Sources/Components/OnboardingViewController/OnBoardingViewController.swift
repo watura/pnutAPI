@@ -2,17 +2,17 @@ import UIKit
 import PnutAPI
 import Utils
 
-public protocol OnBoardingAction {
+public protocol OnBoardingAction: class {
     func onBoardingSuccess()
     func onBoardingFailed(_ error: Error)
 }
 
 public class OnBoardingViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
-    public var onBoardingAction: OnBoardingAction?
+    public weak var onBoardingAction: OnBoardingAction?
 }
 
-extension OnBoardingViewController: InitableType {
+extension OnBoardingViewController: StoryboardedType {
     public typealias VC = OnBoardingViewController
 
     public static var storyboardName: String {

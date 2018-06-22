@@ -2,26 +2,26 @@ import UIKit
 import Utils
 
 
-public protocol StreamDataSource {
+public protocol StreamDataSource: class {
     var numberOfSections: Int { get }
     func numberOfRow(section: Int ) -> Int
     func cellforRaw(at indexPath: IndexPath) -> UITableViewCell
 }
 
-public protocol StreamAction {
+public protocol StreamAction: class {
 }
 
-public protocol StreamCellAction {
+public protocol StreamCellAction: class {
     func didSelectRow(at indexPath: IndexPath)
 }
 
 public class StreamViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    var dataSource: StreamDataSource?
-    var cellAction: StreamCellAction?
+    weak var dataSource: StreamDataSource?
+    weak var cellAction: StreamCellAction?
 }
 
-extension StreamViewController: InitableType {
+extension StreamViewController: StoryboardedType {
     public typealias VC = StreamViewController
     public static var storyboardName: String { return "Stream" }
     public static var identifier: String { return "StreamView" }
