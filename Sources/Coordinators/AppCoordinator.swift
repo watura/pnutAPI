@@ -8,7 +8,7 @@ class AppCordinator: Coordinator {
         if isAuthenticated {
             showOnboardingViewController()
         } else {
-            showStreamViewControler()
+            showOnboardingViewController()
         }
     }
 
