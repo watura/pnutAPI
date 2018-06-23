@@ -5,11 +5,11 @@ public protocol StoryboardedType {
     static var storyboardName: String { get }
     static var identifier: String { get }
 
-    static func initialize() -> VC?
+    static func initView() -> VC?
 }
 
 extension StoryboardedType where Self: UIViewController {
-    public static func initialize() -> VC? {
+    public static func initView() -> VC? {
         let storyboardBundle = Bundle(for: self)
         let storyboard = UIStoryboard(name: storyboardName, bundle: storyboardBundle)
         return storyboard.instantiateViewController(withIdentifier: identifier) as? VC
