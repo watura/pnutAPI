@@ -6,7 +6,7 @@ import StreamViewController
 class AppCordinator: Coordinator {
     func start() {
         if isAuthenticated {
-            showOnboardingViewController()
+            showStreamViewControler()
         } else {
             showOnboardingViewController()
         }

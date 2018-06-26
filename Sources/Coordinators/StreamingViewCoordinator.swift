@@ -7,6 +7,8 @@ class StreamingViewCoordinator: Coordinator {
 
     var children: [Coordinator] = []
     private let viewController: StreamViewController
+    var firstId: String?
+    var lastId: String?
 
     init(presentor: UINavigationController) {
         self.navigationController = presentor
@@ -33,7 +35,13 @@ extension StreamingViewCoordinator: StreamDataSource {
     }
 
     func dataForReloadData(updateValue: @escaping ([PostResponse]) -> Void) {
-        PostStreamsRequest().request(success: { response in
+        PostStreamsRequest().request(success: { [weak self] response in
+            if let id = response.data.first?.id {
+                self?.firstId = id
+            }
+            if let id = response.data.last?.id {
+                self?.lastId = id
+            }
             updateValue(response.data)
         }, failure: {
             print($0)

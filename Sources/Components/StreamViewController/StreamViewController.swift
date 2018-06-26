@@ -62,6 +62,7 @@ public class StreamViewController: UIViewController {
                     if let update = update?.map({ IndexPath(row: $0, section: 0) }) {
                         self?.tableView.reloadRows(at: update, with: .automatic)
                     }
+                    self?.tableView.refreshControl?.endRefreshing()
                     self?.tableView.endUpdates()
                 }
             }
@@ -94,8 +95,13 @@ extension StreamViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "StreamCell") as? StreamCellView  else { fatalError("Could not dequeue Cell") }
         let value = data[indexPath.row]
 
-        cell.textLabel?.text = value.content?.text
-        cell.detailTextLabel?.text = value.user.name
+        guard let content = value.content else { fatalError("No content") }
+        cell.set(
+            iconUrl: value.user.content.avatarImage.link,
+            name: "\(value.user.name ?? "") (\(value.user.username))",
+            htmlString: content.text,
+            date: value.createdAt
+        )
 
         return cell
     }

@@ -79,6 +79,9 @@
 		41A5987920D134B20095527D /* StreamViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 411BF4FD20D0C0F100744E6D /* StreamViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		41A5987C20D134B20095527D /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411BF51520D0C2C900744E6D /* Utils.framework */; };
 		41A5987D20D134B20095527D /* Utils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 411BF51520D0C2C900744E6D /* Utils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		41AB384020E114F300C62580 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AB383F20E114F300C62580 /* Nuke.framework */; };
+		41AB384120E114F300C62580 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AB383F20E114F300C62580 /* Nuke.framework */; };
+		41AB384220E114F300C62580 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AB383F20E114F300C62580 /* Nuke.framework */; };
 		41AE668A20CFB24F009851E1 /* OnBoardingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 41AE668820CFB24F009851E1 /* OnBoardingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41AE668D20CFB24F009851E1 /* OnBoardingViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */; };
 		41AE668E20CFB24F009851E1 /* OnBoardingViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -249,6 +252,7 @@
 		41869E6620C368B100F98D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41869E6820C368B100F98D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41869E7120C3867A00F98D00 /* Post.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
+		41AB383F20E114F300C62580 /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/iOS/Nuke.framework; sourceTree = "<group>"; };
 		41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnBoardingViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AE668820CFB24F009851E1 /* OnBoardingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnBoardingViewController.h; sourceTree = "<group>"; };
 		41AE668920CFB24F009851E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -261,6 +265,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41AB384020E114F300C62580 /* Nuke.framework in Frameworks */,
 				417A3EE220C212EC0051B74B /* APIKit.framework in Frameworks */,
 				417A3EE320C212EC0051B74B /* OAuthSwift.framework in Frameworks */,
 				411BF50420D0C0F100744E6D /* StreamViewController.framework in Frameworks */,
@@ -285,6 +290,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41AB384220E114F300C62580 /* Nuke.framework in Frameworks */,
 				4118D77D20DCB3950040EA4F /* Utils.framework in Frameworks */,
 				4118D77A20DCB3750040EA4F /* PnutAPI.framework in Frameworks */,
 			);
@@ -311,6 +317,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41AB384120E114F300C62580 /* Nuke.framework in Frameworks */,
 				4116C5C020C8070500B8433E /* APIKit.framework in Frameworks */,
 				4116C5BB20C8060500B8433E /* PnutAPI.framework in Frameworks */,
 				41A5987820D134B20095527D /* StreamViewController.framework in Frameworks */,
@@ -452,6 +459,7 @@
 		417A3EE120C212EC0051B74B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				41AB383F20E114F300C62580 /* Nuke.framework */,
 				417A3ED720C212CE0051B74B /* APIKit.framework */,
 				417A3ED920C212CF0051B74B /* OAuthSwift.framework */,
 				417A3ED820C212CF0051B74B /* Result.framework */,
@@ -762,6 +770,7 @@
 				41869E5620C368AF00F98D00 /* Sources */,
 				41869E5720C368AF00F98D00 /* Frameworks */,
 				41869E5820C368AF00F98D00 /* Resources */,
+				41AB384320E115E000C62580 /* Run Script */,
 				41869E6F20C369C400F98D00 /* ShellScript */,
 				4116C5BF20C8060500B8433E /* Embed Frameworks */,
 			);
@@ -1056,6 +1065,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		41AB384320E115E000C62580 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/OAuthSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nuke.framework",
+			);
+			name = "Run Script";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/APIKit.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/OAuthSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nuke.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1449,6 +1480,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/StreamViewController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1477,6 +1512,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/StreamViewController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
