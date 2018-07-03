@@ -7,8 +7,8 @@ class StreamingViewCoordinator: Coordinator {
 
     var children: [Coordinator] = []
     private let viewController: StreamViewController
-    var firstId: String?
-    var lastId: String?
+    private var meta: Meta?
+    private var data: [PostResponse]?
 
     init(presentor: UINavigationController) {
         self.navigationController = presentor
@@ -26,9 +26,41 @@ class StreamingViewCoordinator: Coordinator {
 }
 
 extension StreamingViewCoordinator: StreamDataSource {
-    func dataForUpdate(newer: Bool, updateValue: @escaping ([PostResponse], [Int]?, [Int]?, [Int]?) -> Void) {
-        PostStreamsRequest().request(success: { response in
-            print("No update supported")
+    func dataForUpdate(newer: Bool, updateValue: @escaping (TableUpdateData<PostResponse>) -> Void) {
+        guard let maxId = meta?.maxId, let minId = meta?.minId else { return }
+        let request: PostStreamsRequest
+        if !newer {
+            request = PostStreamsRequest(sinceId: maxId)
+        } else {
+            request = PostStreamsRequest(beforeId: minId)
+        }
+
+        request.request(success: {[weak self] response in
+            if let data = self?.data, !response.data.isEmpty {
+                let value: TableUpdateData<PostResponse>
+                var newData: [PostResponse]
+                let list: [Int]
+
+                if !newer {
+                    newData = response.data
+                    newData.append(contentsOf: data)
+                    list = (0...response.data.count - 1).map {return $0 }
+                } else {
+                    newData = data
+                    newData.append(contentsOf: response.data)
+                    list = (0...response.data.count - 1).map {return $0 + (self?.data?.count ?? 0) }
+                }
+
+                self?.data = newData
+                value = TableUpdateData<PostResponse>(data: newData, insert: list)
+                self?.meta = response.meta
+                updateValue(value)
+            } else {
+                if let data = self?.data {
+                    let value = TableUpdateData<PostResponse>(data: data)
+                    updateValue(value)
+                }
+            }
         }, failure: {
             print($0)
         })
@@ -36,19 +68,11 @@ extension StreamingViewCoordinator: StreamDataSource {
 
     func dataForReloadData(updateValue: @escaping ([PostResponse]) -> Void) {
         PostStreamsRequest().request(success: { [weak self] response in
-            if let id = response.data.first?.id {
-                self?.firstId = id
-            }
-            if let id = response.data.last?.id {
-                self?.lastId = id
-            }
+            self?.meta = response.meta
+            self?.data = response.data
             updateValue(response.data)
         }, failure: {
             print($0)
         })
-    }
-
-    func dataForUpdate(newer: Bool) -> (data: [PostResponse], update: [Int]?, insert: [Int]?, delete: [Int]?) {
-        return (data: [], update: nil, insert: nil, delete: nil)
     }
 }

@@ -81,3 +81,12 @@ public extension API {
         }
     }
 }
+
+public extension API where Self: Encodable {
+    public var parameters: Any? {
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = .prettyPrinted
+        let encoded = try! encoder.encode(self)
+        return (try? JSONSerialization.jsonObject(with: encoded, options: .allowFragments)).flatMap { $0 as? [String: Any] }
+    }
+}
