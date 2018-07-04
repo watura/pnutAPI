@@ -73,18 +73,24 @@
 		41869E5D20C368AF00F98D00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869E5C20C368AF00F98D00 /* AppDelegate.swift */; };
 		41869E6420C368B100F98D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41869E6320C368B100F98D00 /* Assets.xcassets */; };
 		41869E6720C368B100F98D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41869E6520C368B100F98D00 /* LaunchScreen.storyboard */; };
+		41A328E820E3BDD2009A2CEF /* Paginatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A328E720E3BDD2009A2CEF /* Paginatable.swift */; };
 		41A5987420D134B20095527D /* OnBoardingViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */; };
 		41A5987520D134B20095527D /* OnBoardingViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		41A5987820D134B20095527D /* StreamViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411BF4FD20D0C0F100744E6D /* StreamViewController.framework */; };
 		41A5987920D134B20095527D /* StreamViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 411BF4FD20D0C0F100744E6D /* StreamViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		41A5987C20D134B20095527D /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411BF51520D0C2C900744E6D /* Utils.framework */; };
 		41A5987D20D134B20095527D /* Utils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 411BF51520D0C2C900744E6D /* Utils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		41AB384020E114F300C62580 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AB383F20E114F300C62580 /* Nuke.framework */; };
+		41AB384120E114F300C62580 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AB383F20E114F300C62580 /* Nuke.framework */; };
+		41AB384220E114F300C62580 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AB383F20E114F300C62580 /* Nuke.framework */; };
 		41AE668A20CFB24F009851E1 /* OnBoardingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 41AE668820CFB24F009851E1 /* OnBoardingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41AE668D20CFB24F009851E1 /* OnBoardingViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */; };
 		41AE668E20CFB24F009851E1 /* OnBoardingViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		41AE669720CFB31D009851E1 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AE669520CFB2C5009851E1 /* OnBoarding.storyboard */; };
 		41AE669820CFB322009851E1 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE669320CFB2BC009851E1 /* OnBoardingViewController.swift */; };
 		41E01EA020DDBD9F006182E6 /* StoryboardedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411BF52A20D3496200744E6D /* StoryboardedType.swift */; };
+		41E703D220EC6F5D00C94904 /* StreamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E703D020EC6F5600C94904 /* StreamViewModel.swift */; };
+		41E703D320EC730800C94904 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED720C212CE0051B74B /* APIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -249,11 +255,14 @@
 		41869E6620C368B100F98D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41869E6820C368B100F98D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41869E7120C3867A00F98D00 /* Post.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
+		41A328E720E3BDD2009A2CEF /* Paginatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paginatable.swift; sourceTree = "<group>"; };
+		41AB383F20E114F300C62580 /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/iOS/Nuke.framework; sourceTree = "<group>"; };
 		41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnBoardingViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AE668820CFB24F009851E1 /* OnBoardingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnBoardingViewController.h; sourceTree = "<group>"; };
 		41AE668920CFB24F009851E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41AE669320CFB2BC009851E1 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		41AE669520CFB2C5009851E1 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
+		41E703D020EC6F5600C94904 /* StreamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +270,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41AB384020E114F300C62580 /* Nuke.framework in Frameworks */,
 				417A3EE220C212EC0051B74B /* APIKit.framework in Frameworks */,
 				417A3EE320C212EC0051B74B /* OAuthSwift.framework in Frameworks */,
 				411BF50420D0C0F100744E6D /* StreamViewController.framework in Frameworks */,
@@ -285,7 +295,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41AB384220E114F300C62580 /* Nuke.framework in Frameworks */,
 				4118D77D20DCB3950040EA4F /* Utils.framework in Frameworks */,
+				41E703D320EC730800C94904 /* APIKit.framework in Frameworks */,
 				4118D77A20DCB3750040EA4F /* PnutAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +323,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41AB384120E114F300C62580 /* Nuke.framework in Frameworks */,
 				4116C5C020C8070500B8433E /* APIKit.framework in Frameworks */,
 				4116C5BB20C8060500B8433E /* PnutAPI.framework in Frameworks */,
 				41A5987820D134B20095527D /* StreamViewController.framework in Frameworks */,
@@ -425,6 +438,7 @@
 				411BF50A20D0C11F00744E6D /* Stream.storyboard */,
 				411BF52420D0C9B000744E6D /* StreamCellView.swift */,
 				411BF50C20D0C13100744E6D /* StreamViewController.swift */,
+				41E703D020EC6F5600C94904 /* StreamViewModel.swift */,
 			);
 			path = StreamViewController;
 			sourceTree = "<group>";
@@ -452,6 +466,7 @@
 		417A3EE120C212EC0051B74B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				41AB383F20E114F300C62580 /* Nuke.framework */,
 				417A3ED720C212CE0051B74B /* APIKit.framework */,
 				417A3ED920C212CF0051B74B /* OAuthSwift.framework */,
 				417A3ED820C212CF0051B74B /* Result.framework */,
@@ -495,6 +510,7 @@
 		41869DE020C284C300F98D00 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				41A328E720E3BDD2009A2CEF /* Paginatable.swift */,
 				41869E1120C2BB6400F98D00 /* PostStreamRequest.swift */,
 				41869E0B20C2ABB800F98D00 /* PostsLifecycleRequest.swift */,
 				417A3EEE20C25BAF0051B74B /* TokenRequest.swift */,
@@ -762,6 +778,7 @@
 				41869E5620C368AF00F98D00 /* Sources */,
 				41869E5720C368AF00F98D00 /* Frameworks */,
 				41869E5820C368AF00F98D00 /* Resources */,
+				41AB384320E115E000C62580 /* Run Script */,
 				41869E6F20C369C400F98D00 /* ShellScript */,
 				4116C5BF20C8060500B8433E /* Embed Frameworks */,
 			);
@@ -1057,6 +1074,28 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
+		41AB384320E115E000C62580 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/OAuthSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nuke.framework",
+			);
+			name = "Run Script";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/APIKit.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/OAuthSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nuke.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1083,6 +1122,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				411BF52620D0C9C600744E6D /* StreamCellView.swift in Sources */,
+				41E703D220EC6F5D00C94904 /* StreamViewModel.swift in Sources */,
 				411BF52220D0C30600744E6D /* StreamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1102,6 +1142,7 @@
 				41869E0520C2970700F98D00 /* DecodableParser.swift in Sources */,
 				41869E0320C2970000F98D00 /* UsersLookupRequest.swift in Sources */,
 				41869E0820C2970D00F98D00 /* TokenResponse.swift in Sources */,
+				41A328E820E3BDD2009A2CEF /* Paginatable.swift in Sources */,
 				41869E1220C2BB6400F98D00 /* PostStreamRequest.swift in Sources */,
 				41869E1420C2BDBB00F98D00 /* Entities.swift in Sources */,
 				41869E1020C2B27500F98D00 /* Counts.swift in Sources */,
@@ -1389,7 +1430,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1417,7 +1458,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1445,10 +1486,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/StreamViewController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1473,10 +1518,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/StreamViewController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1501,7 +1550,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1529,7 +1578,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1557,7 +1606,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1589,7 +1638,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1630,7 +1679,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.Walnut;
+				PRODUCT_BUNDLE_IDENTIFIER = app.wtr.walnut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1653,7 +1702,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.Walnut;
+				PRODUCT_BUNDLE_IDENTIFIER = app.wtr.walnut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1667,7 +1716,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1695,7 +1744,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

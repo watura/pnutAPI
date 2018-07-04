@@ -4,11 +4,23 @@ import PnutAPI
 
 public protocol StreamDataSource: class {
     func dataForReloadData(updateValue: @escaping ([PostResponse]) -> Void)
-    func dataForUpdate(newer: Bool, updateValue: @escaping (_ data: [PostResponse], _ update: [Int]?, _ insert: [Int]?, _ delete: [Int]?) -> Void)
+    func dataForUpdate(newer: Bool, updateValue: @escaping (TableUpdateData<PostResponse>) -> Void)
 }
 
-public protocol StreamAction: class {
+public struct TableUpdateData<T> {
+    public let data: [T]
+    public let update: [Int]?
+    public let insert: [Int]?
+    public let delete: [Int]?
+    public init(data: [T], update: [Int]? = nil, insert: [Int]? = nil, delete: [Int]? = nil ) {
+        self.data = data
+        self.update = update
+        self.insert = insert
+        self.delete = delete
+    }
 }
+
+public protocol StreamAction: class {}
 
 public protocol StreamCellAction: class {
     func didSelectRow(at indexPath: IndexPath)
@@ -48,20 +60,23 @@ public class StreamViewController: UIViewController {
 
     @objc func pullToRefresh(_ sender: AnyObject) {
         DispatchQueue.global(qos: .background).async {[weak self] in
-            self?.dataSource?.dataForUpdate(newer: true) { data, update, insert, delete in
+            self?.dataSource?.dataForUpdate(newer: true) { data in
                 DispatchQueue.main.async {
-                    self?.data = data
+                    self?.data = data.data
+                    print(data.data.count)
+                    print(data.insert?.count)
 
                     self?.tableView.beginUpdates()
-                    if let delete = delete?.map({ IndexPath(row: $0, section: 0)}) {
+                    if let delete = data.delete?.map({ IndexPath(row: $0, section: 0)}) {
                         self?.tableView.deleteRows(at: delete, with: .automatic)
                     }
-                    if let insert = insert?.map({ IndexPath(row: $0, section: 0) }) {
+                    if let insert = data.insert?.map({ IndexPath(row: $0, section: 0) }) {
                         self?.tableView.insertRows(at: insert, with: .automatic)
                     }
-                    if let update = update?.map({ IndexPath(row: $0, section: 0) }) {
+                    if let update = data.update?.map({ IndexPath(row: $0, section: 0) }) {
                         self?.tableView.reloadRows(at: update, with: .automatic)
                     }
+                    self?.tableView.refreshControl?.endRefreshing()
                     self?.tableView.endUpdates()
                 }
             }
@@ -94,8 +109,13 @@ extension StreamViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "StreamCell") as? StreamCellView  else { fatalError("Could not dequeue Cell") }
         let value = data[indexPath.row]
 
-        cell.textLabel?.text = value.content?.text
-        cell.detailTextLabel?.text = value.user.name
+        guard let content = value.content else { fatalError("No content") }
+        cell.set(
+            iconUrl: value.user.content.avatarImage.link,
+            name: "\(value.user.name ?? "") (\(value.user.username))",
+            htmlString: content.text,
+            date: value.createdAt
+        )
 
         return cell
     }

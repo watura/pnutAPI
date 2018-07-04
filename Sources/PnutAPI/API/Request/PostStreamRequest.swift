@@ -1,9 +1,18 @@
 import Foundation
 import APIKit
 
-public struct PostStreamsRequest: API {
+public struct PostStreamsRequest: API, Paginatable, Codable {
+    public let beforeId: String?
+    public let sinceId: String?
+    public let count: Int?
+
     public typealias Response = PnutResponse<[PostResponse]>
-    public init() {}
+
+    public init(beforeId: String? = nil, sinceId: String? = nil, count: Int? = nil) {
+        self.beforeId = beforeId
+        self.sinceId = sinceId
+        self.count = count
+    }
 
     public var method: HTTPMethod {
         return .get
@@ -11,6 +20,14 @@ public struct PostStreamsRequest: API {
 
     public var path: String {
         return "posts/streams/me"
+    }
+
+    public var parameters: Any? {
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = .prettyPrinted
+        encoder.keyEncodingStrategy = .convertToSnakeCase
+        let encoded = try! encoder.encode(self)
+        return (try? JSONSerialization.jsonObject(with: encoded, options: .allowFragments)).flatMap { $0 as? [String: Any] }
     }
 }
 
