@@ -91,6 +91,7 @@
 		41E01EA020DDBD9F006182E6 /* StoryboardedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411BF52A20D3496200744E6D /* StoryboardedType.swift */; };
 		41E703D220EC6F5D00C94904 /* StreamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E703D020EC6F5600C94904 /* StreamViewModel.swift */; };
 		41E703D320EC730800C94904 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED720C212CE0051B74B /* APIKit.framework */; };
+		41E703DB20EC773600C94904 /* MainTabCoodinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E703D420EC766300C94904 /* MainTabCoodinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -263,6 +264,7 @@
 		41AE669320CFB2BC009851E1 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		41AE669520CFB2C5009851E1 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		41E703D020EC6F5600C94904 /* StreamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamViewModel.swift; sourceTree = "<group>"; };
+		41E703D420EC766300C94904 /* MainTabCoodinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabCoodinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -457,6 +459,7 @@
 			children = (
 				411BF52C20D349E200744E6D /* AppCoordinator.swift */,
 				411BF52820D3480600744E6D /* Coordinator.swift */,
+				41E703D420EC766300C94904 /* MainTabCoodinator.swift */,
 				411BF53120D35FB000744E6D /* OnBoardingViewCoordinator.swift */,
 				411BF53320D35FBB00744E6D /* StreamingViewCoordinator.swift */,
 			);
@@ -1165,6 +1168,7 @@
 				411BF53420D35FBB00744E6D /* StreamingViewCoordinator.swift in Sources */,
 				411BF52E20D34E5A00744E6D /* Coordinator.swift in Sources */,
 				411BF53220D35FB000744E6D /* OnBoardingViewCoordinator.swift in Sources */,
+				41E703DB20EC773600C94904 /* MainTabCoodinator.swift in Sources */,
 				41869E5D20C368AF00F98D00 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

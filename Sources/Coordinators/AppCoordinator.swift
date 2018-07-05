@@ -50,7 +50,7 @@ extension AppCordinator: OnBoardingCoordinatorAction {
 
 extension AppCordinator: StreamAction {
     func showStreamViewControler() {
-        let coordinator = StreamingViewCoordinator(presentor: navigationController)
+        let coordinator = MainTabCoordinator(presentor: navigationController)
         coordinator.start()
         add(coordinator: coordinator)
     }
