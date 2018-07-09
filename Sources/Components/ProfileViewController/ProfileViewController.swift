@@ -27,4 +27,21 @@ public class CircleBorderedButtonViewController: UIViewController {
     var onPress: (() -> Void)!
 }
 
-public class BioViewController: UIViewController {}
+public class BioViewController: UIViewController {
+    struct Bio {
+        let name: String
+        let id: String
+        let bio: String
+        let url: URL
+    }
+    var bio: Bio!
+}
+
+public class CountViewController: UIViewController {
+    var name: String!
+    var count: Int!
+}
+
+public class CountListtViewController: UIViewController {
+    var counts: [CountViewController]!
+}

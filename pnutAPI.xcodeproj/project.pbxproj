@@ -80,6 +80,7 @@
 		41869E5D20C368AF00F98D00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869E5C20C368AF00F98D00 /* AppDelegate.swift */; };
 		41869E6420C368B100F98D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41869E6320C368B100F98D00 /* Assets.xcassets */; };
 		41869E6720C368B100F98D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41869E6520C368B100F98D00 /* LaunchScreen.storyboard */; };
+		418EBE8220F32152001DF7B9 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411BF51520D0C2C900744E6D /* Utils.framework */; };
 		41A328E820E3BDD2009A2CEF /* Paginatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A328E720E3BDD2009A2CEF /* Paginatable.swift */; };
 		41A5987420D134B20095527D /* OnBoardingViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */; };
 		41A5987520D134B20095527D /* OnBoardingViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -362,6 +363,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				418EBE8220F32152001DF7B9 /* Utils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -709,7 +711,6 @@
 				41C7B5D420F22BCB00D66318 /* ProfileView.storyboard */,
 				41C7B5D220F22BBF00D66318 /* ProfileViewController.swift */,
 			);
-			name = ProfileViewController;
 			path = ProfileViewController;
 			sourceTree = "<group>";
 		};
