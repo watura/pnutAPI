@@ -1,16 +1,19 @@
 import UIKit
 import Utils
 import Nuke
+import PnutAPI
 
 public struct ProfileViewModel {
     let icon: URL?
     let header: URL?
-    let bio: BioViewController.Bio!
+    let bio: Profile!
+    let counts: Counts?
 
-    public init(icon: URL?, header: URL?, bio: BioViewController.Bio) {
+    public init(icon: URL?, header: URL?, bio: Profile, counts: Counts?) {
         self.icon = icon
         self.header = header
         self.bio = bio
+        self.counts = counts
     }
 }
 
@@ -18,12 +21,17 @@ public struct ProfileViewModel {
 public class ProfileViewController: UIViewController {
     public var viewModel: ProfileViewModel! {
         didSet {
-            print("viewModel set ", viewDidLoaded)
             if let iconViewController = iconViewController {
                 iconViewController.iconUrl = viewModel.icon
             }
             if let coverViewContorller = coverViewContorller {
                 coverViewContorller.imageUrl = viewModel.header
+            }
+            if let bioViewController = bioViewController {
+                bioViewController.bio = viewModel.bio
+            }
+            if let countListViewController = countListViewController {
+                countListViewController.counts = viewModel.counts
             }
         }
     }
@@ -31,7 +39,8 @@ public class ProfileViewController: UIViewController {
     var viewDidLoaded: Bool = false
     var iconViewController: IconViewController?
     var coverViewContorller: HeaderImageViewController?
-
+    var bioViewController: BioViewController?
+    var countListViewController: CountListViewController?
 
     public override func viewDidLoad() {
         viewDidLoaded = true
@@ -59,6 +68,14 @@ extension ProfileViewController {
             guard let destination = segue.destination as? HeaderImageViewController else { return }
             destination.imageUrl = viewModel.header
             coverViewContorller = destination
+        case "BioSegue":
+            guard let destination = segue.destination as? BioViewController else { return }
+            destination.bio = viewModel.bio
+            bioViewController = destination
+        case "CountsList":
+            guard let destination = segue.destination as? CountListViewController else { return }
+            destination.counts = viewModel.counts
+            countListViewController = destination
         default:
             return
         }
@@ -124,29 +141,162 @@ public class CircleBorderedButtonViewController: UIViewController {
 public class CircleBorderedButton: UIButton {
 }
 
+public struct Profile {
+    let name: String?
+    let id: String
+    let bio: String? // html
+    let url: URL?
+    public init(name: String?, id: String, bio: String?, url: URL?) {
+        self.name = name
+        self.id = id
+        self.bio = bio
+        self.url = url
+    }
+}
+
 public class BioViewController: UIViewController {
-    public struct Bio {
-        let name: String?
-        let id: String
-        let bio: String?
-        let url: URL?
-        public init(name: String?, id: String, bio: String?, url: URL?) {
-            self.name = name
-            self.id = id
-            self.bio = bio
-            self.url = url
+    var bio: Profile? = Profile(name: nil, id: "", bio: nil, url: nil) {
+        didSet {
+            update()
         }
     }
-    var bio: Bio!
+
+    weak var name: NameViewController?
+    weak var userId: UserIDViewController?
+    weak var bioText: BioTextViewController?
+    weak var urlView: URLViewController?
+
+    public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "Name":
+            if let destination = segue.destination as? NameViewController {
+                name = destination
+                name?.name = bio?.name
+            }
+        case "UserId":
+            if let destination = segue.destination as? UserIDViewController {
+                userId = destination
+                userId?.userId = bio?.id
+
+            }
+        case "Bio":
+            if let destination = segue.destination as? BioTextViewController {
+                bioText = destination
+                bioText?.bioText = bio?.bio
+
+            }
+        case "Url":
+            if let destination = segue.destination as? URLViewController {
+                urlView = destination
+                urlView?.url = bio?.url
+            }
+        default: fatalError()
+        }
+    }
+
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        update()
+    }
+
+    func update() {
+        name?.name = bio?.name
+        userId?.userId = bio?.id
+        bioText?.bioText = bio?.bio
+        urlView?.url = bio?.url
+
+    }
 }
 
 public class CountViewController: UIViewController {
     var name: String!
     var count: Int!
+
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var countLabel: UILabel!
 }
 
-public class CountListtViewController: UIViewController {
-    var counts: [CountViewController]!
+public class CountListViewController: UIViewController {
+    enum List {
+        case bookmark(Int), followers(Int), following(Int), posts(Int)
+
+        var name: String {
+            return "\(self)"
+        }
+    }
+
+    @IBOutlet weak var stackView: UIStackView!
+
+    var viewControllers: [CountViewController] = []
+
+    var counts: Counts? = nil {
+        willSet {
+            if let _ = newValue {
+            }
+        }
+        didSet {
+        }
+    }
+
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+}
+
+public class NameViewController: UIViewController {
+    var name: String? {
+        didSet {
+            label?.text = name
+        }
+    }
+    @IBOutlet weak var label: UILabel?
+
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        label?.text = name
+    }
+}
+
+public class UserIDViewController: UIViewController {
+    var userId: String? {
+        didSet {
+            if let userId = userId {
+                label?.text = "@" + userId
+            }
+        }
+    }
+    @IBOutlet weak var label: UILabel?
+
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        label?.text = userId
+    }
+}
+
+public class BioTextViewController: UIViewController {
+    var bioText: String? {
+        didSet {
+            textView?.text = bioText
+        }
+    }
+    @IBOutlet weak var textView: UITextView?
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        textView?.text = bioText
+    }
+}
+
+public class URLViewController: UIViewController {
+    var url: URL? {
+        didSet {
+            label?.text = url?.absoluteString
+        }
+    }
+    @IBOutlet weak var label: UILabel?
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        label?.text = url?.absoluteString
+    }
 }
 
 extension UIImage {
