@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4103EE4B213A5CB200E46534 /* Secrets.h in Headers */ = {isa = PBXBuildFile; fileRef = 4103EE3B213A5CB200E46534 /* Secrets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4103EE4E213A5CB200E46534 /* Secrets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4103EE39213A5CB200E46534 /* Secrets.framework */; };
+		4103EE4F213A5CB200E46534 /* Secrets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4103EE39213A5CB200E46534 /* Secrets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4103EE56213A5CE900E46534 /* HasSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103EE30213A5B0B00E46534 /* HasSecrets.swift */; };
+		4103EE57213A5CE900E46534 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103EE32213A5B2600E46534 /* Secrets.swift */; };
 		4112D3A020C1FB0D00FABEB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4112D39F20C1FB0D00FABEB3 /* AppDelegate.swift */; };
 		4112D3A220C1FB0D00FABEB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4112D3A120C1FB0D00FABEB3 /* ViewController.swift */; };
 		4112D3A520C1FB0D00FABEB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4112D3A320C1FB0D00FABEB3 /* Main.storyboard */; };
@@ -95,6 +100,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4103EE4C213A5CB200E46534 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4103EE38213A5CB200E46534;
+			remoteInfo = Secrets;
+		};
 		4116C5BD20C8060500B8433E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
@@ -194,6 +206,7 @@
 			files = (
 				41869DF420C2920900F98D00 /* PnutAPI.framework in Embed Frameworks */,
 				411BF51D20D0C2CA00744E6D /* Utils.framework in Embed Frameworks */,
+				4103EE4F213A5CB200E46534 /* Secrets.framework in Embed Frameworks */,
 				411BF50520D0C0F100744E6D /* StreamViewController.framework in Embed Frameworks */,
 				4116C5DE20C9539100B8433E /* PostViewController.framework in Embed Frameworks */,
 				41AE668E20CFB24F009851E1 /* OnBoardingViewController.framework in Embed Frameworks */,
@@ -204,6 +217,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4103EE30213A5B0B00E46534 /* HasSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasSecrets.swift; sourceTree = "<group>"; };
+		4103EE32213A5B2600E46534 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		4103EE39213A5CB200E46534 /* Secrets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Secrets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4103EE3B213A5CB200E46534 /* Secrets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Secrets.h; sourceTree = "<group>"; };
+		4103EE3C213A5CB200E46534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4112D39C20C1FB0D00FABEB3 /* PnutAPIClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PnutAPIClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4112D39F20C1FB0D00FABEB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4112D3A120C1FB0D00FABEB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -268,6 +286,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4103EE35213A5CB200E46534 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4112D39920C1FB0C00FABEB3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,6 +305,7 @@
 				411BF51C20D0C2CA00744E6D /* Utils.framework in Frameworks */,
 				4116C5DD20C9539100B8433E /* PostViewController.framework in Frameworks */,
 				41869DF320C2920900F98D00 /* PnutAPI.framework in Frameworks */,
+				4103EE4E213A5CB200E46534 /* Secrets.framework in Frameworks */,
 				417A3EE420C212EC0051B74B /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +375,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4103EE3A213A5CB200E46534 /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				4103EE3B213A5CB200E46534 /* Secrets.h */,
+				4103EE3C213A5CB200E46534 /* Info.plist */,
+			);
+			path = Secrets;
+			sourceTree = "<group>";
+		};
+		4103EE58213A5CF200E46534 /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				4103EE30213A5B0B00E46534 /* HasSecrets.swift */,
+				4103EE32213A5B2600E46534 /* Secrets.swift */,
+			);
+			path = Secrets;
+			sourceTree = "<group>";
+		};
 		4112D39320C1FB0C00FABEB3 = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +413,7 @@
 				41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */,
 				411BF4FD20D0C0F100744E6D /* StreamViewController.framework */,
 				411BF51520D0C2C900744E6D /* Utils.framework */,
+				4103EE39213A5CB200E46534 /* Secrets.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -419,6 +464,7 @@
 				411BF52720D3470600744E6D /* Coordinators */,
 				41869E0120C296D100F98D00 /* PnutAPI */,
 				4112D39E20C1FB0D00FABEB3 /* PnutAPIClient */,
+				4103EE58213A5CF200E46534 /* Secrets */,
 				41E01EA120DDBDAE006182E6 /* Utils */,
 				41869E5B20C368AF00F98D00 /* Walnut */,
 			);
@@ -530,6 +576,7 @@
 				41869DF920C293A700F98D00 /* PnutAPIClient */,
 				4116C5D720C94D4C00B8433E /* PostViewController */,
 				411BF4FE20D0C0F100744E6D /* StreamViewController */,
+				4103EE3A213A5CB200E46534 /* Secrets */,
 				411BF51620D0C2CA00744E6D /* Utils */,
 				41869E6C20C368B900F98D00 /* Walnut */,
 			);
@@ -627,6 +674,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4103EE36213A5CB200E46534 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4103EE4B213A5CB200E46534 /* Secrets.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4116C5C820C94D3500B8433E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -670,6 +725,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4103EE38213A5CB200E46534 /* Secrets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4103EE50213A5CB200E46534 /* Build configuration list for PBXNativeTarget "Secrets" */;
+			buildPhases = (
+				4103EE34213A5CB200E46534 /* Sources */,
+				4103EE35213A5CB200E46534 /* Frameworks */,
+				4103EE36213A5CB200E46534 /* Headers */,
+				4103EE37213A5CB200E46534 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Secrets;
+			productName = Secrets;
+			productReference = 4103EE39213A5CB200E46534 /* Secrets.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		4112D39B20C1FB0C00FABEB3 /* PnutAPIClient */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4112D3AE20C1FB0E00FABEB3 /* Build configuration list for PBXNativeTarget "PnutAPIClient" */;
@@ -691,6 +764,7 @@
 				41AE668C20CFB24F009851E1 /* PBXTargetDependency */,
 				411BF50320D0C0F100744E6D /* PBXTargetDependency */,
 				411BF51B20D0C2CA00744E6D /* PBXTargetDependency */,
+				4103EE4D213A5CB200E46534 /* PBXTargetDependency */,
 			);
 			name = PnutAPIClient;
 			productName = pnutAPI;
@@ -827,6 +901,9 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Wataru Nishimoto";
 				TargetAttributes = {
+					4103EE38213A5CB200E46534 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					4112D39B20C1FB0C00FABEB3 = {
 						CreatedOnToolsVersion = 9.4;
 					};
@@ -870,11 +947,19 @@
 				41AE668520CFB24E009851E1 /* OnBoardingViewController */,
 				411BF4FC20D0C0F100744E6D /* StreamViewController */,
 				411BF51420D0C2C900744E6D /* Utils */,
+				4103EE38213A5CB200E46534 /* Secrets */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4103EE37213A5CB200E46534 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4112D39A20C1FB0C00FABEB3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1102,6 +1187,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4103EE34213A5CB200E46534 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4103EE56213A5CE900E46534 /* HasSecrets.swift in Sources */,
+				4103EE57213A5CE900E46534 /* Secrets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4112D39820C1FB0C00FABEB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1184,6 +1278,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4103EE4D213A5CB200E46534 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4103EE38213A5CB200E46534 /* Secrets */;
+			targetProxy = 4103EE4C213A5CB200E46534 /* PBXContainerItemProxy */;
+		};
 		4116C5BE20C8060500B8433E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 41869DEB20C2920900F98D00 /* PnutAPI */;
@@ -1267,6 +1366,62 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4103EE51213A5CB200E46534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Secrets/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.pnutapi.Secrets;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4103EE52213A5CB200E46534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Secrets/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.pnutapi.Secrets;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		4112D3AC20C1FB0E00FABEB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1772,6 +1927,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4103EE50213A5CB200E46534 /* Build configuration list for PBXNativeTarget "Secrets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4103EE51213A5CB200E46534 /* Debug */,
+				4103EE52213A5CB200E46534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4112D39720C1FB0C00FABEB3 /* Build configuration list for PBXProject "pnutAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
