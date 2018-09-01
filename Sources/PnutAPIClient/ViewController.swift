@@ -1,18 +1,10 @@
 import UIKit
+import Secrets
 import PnutAPI
 
 final class ViewController: UITableViewController {
     override func viewDidLoad() {
-        guard let filePath = Bundle.main.path(forResource: "Info", ofType: "plist" ),
-            let plist = NSDictionary(contentsOfFile: filePath) else {
-                fatalError("Could not load plist")
-        }
-
-        guard let clientId = plist["PnutClientID"] as? String,
-            let clientSecret = plist["PnutClientSecret"] as? String else {
-                fatalError("Could not read secrets")
-        }
-        APITokenManager.shared.setCredentials(clientId: clientId, clientSecret: clientSecret, callbackUrl: "pnut-callback://pnut-callback/pnut")
+        APITokenManager.shared.setCredentials(clientId: Secrets.accessKey, clientSecret: Secrets.secretKey, callbackUrl: "pnut-callback://pnut-callback/pnut")
     }
 
     override func viewWillAppear(_ animated: Bool) {
