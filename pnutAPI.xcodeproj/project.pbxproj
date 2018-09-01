@@ -747,13 +747,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4112D3AE20C1FB0E00FABEB3 /* Build configuration list for PBXNativeTarget "PnutAPIClient" */;
 			buildPhases = (
-				417A3ED420C20D3A0051B74B /* ShellScript */,
 				417A3EE520C217AA0051B74B /* ShellScript */,
 				4112D39820C1FB0C00FABEB3 /* Sources */,
 				4112D39920C1FB0C00FABEB3 /* Frameworks */,
 				4112D39A20C1FB0C00FABEB3 /* Resources */,
 				417A3ED620C212510051B74B /* ShellScript */,
-				417A3ED520C20D5B0051B74B /* ShellScript */,
 				41869DF820C2920900F98D00 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -851,12 +849,10 @@
 			buildConfigurationList = 41869E6B20C368B100F98D00 /* Build configuration list for PBXNativeTarget "Walnut" */;
 			buildPhases = (
 				41869E7020C369D600F98D00 /* ShellScript */,
-				41869E6E20C369B000F98D00 /* ShellScript */,
 				41869E5620C368AF00F98D00 /* Sources */,
 				41869E5720C368AF00F98D00 /* Frameworks */,
 				41869E5820C368AF00F98D00 /* Resources */,
 				41AB384320E115E000C62580 /* Run Script */,
-				41869E6F20C369C400F98D00 /* ShellScript */,
 				4116C5BF20C8060500B8433E /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -1046,32 +1042,6 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
-		417A3ED420C20D3A0051B74B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "eval \"$(anyenv init -)\"\nexport LC_ALL=ja_JP.UTF-8\nexport LANG=ja_JP.UTF-8\nPLIST=\"./Supporting Files/PnutAPIClient/Info.plist\" /Users/watura/.anyenv/envs/rbenv/shims/bundle exec fastlane set_secrets";
-		};
-		417A3ED520C20D5B0051B74B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "eval \"$(anyenv init -)\"\nexport LC_ALL=ja_JP.UTF-8\nexport LANG=ja_JP.UTF-8\nPLIST=\"./Supporting Files/PnutAPIClient/Info.plist\" /Users/watura/.anyenv/envs/rbenv/shims/bundle exec fastlane remove_secrets";
-		};
 		417A3ED620C212510051B74B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1122,32 +1092,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-		41869E6E20C369B000F98D00 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "eval \"$(anyenv init -)\"\nexport LC_ALL=ja_JP.UTF-8\nexport LANG=ja_JP.UTF-8\nPLIST=\"./Supporting Files/Walnut/Info.plist\" /Users/watura/.anyenv/envs/rbenv/shims/bundle exec fastlane set_secrets";
-		};
-		41869E6F20C369C400F98D00 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "eval \"$(anyenv init -)\"\nexport LC_ALL=ja_JP.UTF-8\nexport LANG=ja_JP.UTF-8\nPLIST=\"./Supporting Files/Walnut/Info.plist\" /Users/watura/.anyenv/envs/rbenv/shims/bundle exec fastlane remove_secrets";
 		};
 		41869E7020C369D600F98D00 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
