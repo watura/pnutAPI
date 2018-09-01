@@ -12,6 +12,8 @@
 		4103EE4F213A5CB200E46534 /* Secrets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4103EE39213A5CB200E46534 /* Secrets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4103EE56213A5CE900E46534 /* HasSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103EE30213A5B0B00E46534 /* HasSecrets.swift */; };
 		4103EE57213A5CE900E46534 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103EE32213A5B2600E46534 /* Secrets.swift */; };
+		4103EE59213A5EA700E46534 /* Secrets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4103EE39213A5CB200E46534 /* Secrets.framework */; };
+		4103EE5A213A5EA700E46534 /* Secrets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4103EE39213A5CB200E46534 /* Secrets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4112D3A020C1FB0D00FABEB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4112D39F20C1FB0D00FABEB3 /* AppDelegate.swift */; };
 		4112D3A220C1FB0D00FABEB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4112D3A120C1FB0D00FABEB3 /* ViewController.swift */; };
 		4112D3A520C1FB0D00FABEB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4112D3A320C1FB0D00FABEB3 /* Main.storyboard */; };
@@ -107,6 +109,13 @@
 			remoteGlobalIDString = 4103EE38213A5CB200E46534;
 			remoteInfo = Secrets;
 		};
+		4103EE5B213A5EA700E46534 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4103EE38213A5CB200E46534;
+			remoteInfo = Secrets;
+		};
 		4116C5BD20C8060500B8433E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
@@ -194,6 +203,7 @@
 				4116C5D320C94D3500B8433E /* PostViewController.framework in Embed Frameworks */,
 				4116C5C320C8070500B8433E /* OAuthSwift.framework in Embed Frameworks */,
 				4116C5C520C8070500B8433E /* Result.framework in Embed Frameworks */,
+				4103EE5A213A5EA700E46534 /* Secrets.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +369,7 @@
 				41A5987C20D134B20095527D /* Utils.framework in Frameworks */,
 				4116C5D220C94D3500B8433E /* PostViewController.framework in Frameworks */,
 				4116C5C220C8070500B8433E /* OAuthSwift.framework in Frameworks */,
+				4103EE59213A5EA700E46534 /* Secrets.framework in Frameworks */,
 				4116C5C420C8070500B8433E /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -863,6 +874,7 @@
 				41A5987720D134B20095527D /* PBXTargetDependency */,
 				41A5987B20D134B20095527D /* PBXTargetDependency */,
 				41A5987F20D134B20095527D /* PBXTargetDependency */,
+				4103EE5C213A5EA700E46534 /* PBXTargetDependency */,
 			);
 			name = Walnut;
 			productName = Walnut;
@@ -1226,6 +1238,11 @@
 			isa = PBXTargetDependency;
 			target = 4103EE38213A5CB200E46534 /* Secrets */;
 			targetProxy = 4103EE4C213A5CB200E46534 /* PBXContainerItemProxy */;
+		};
+		4103EE5C213A5EA700E46534 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4103EE38213A5CB200E46534 /* Secrets */;
+			targetProxy = 4103EE5B213A5EA700E46534 /* PBXContainerItemProxy */;
 		};
 		4116C5BE20C8060500B8433E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
