@@ -69,15 +69,15 @@
             </objects>
             <point key="canvasLocation" x="-514.39999999999998" y="-41.829085457271368"/>
         </scene>
-        <!--Icon View Controller-->
+        <!--Circle Image View Controller-->
         <scene sceneID="pgg-OG-WVf">
             <objects>
-                <viewController id="4WP-JH-6C9" customClass="IconViewController" customModule="ProfileViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4WP-JH-6C9" customClass="CircleImageViewController" customModule="CircleImageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yWO-AE-Lz2">
                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vxl-xe-5dc" customClass="CircleImageView" customModule="ProfileViewController" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vxl-xe-5dc">
                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="vxl-xe-5dc" secondAttribute="height" multiplier="1:1" id="OYs-mi-56k"/>
@@ -97,7 +97,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="128" height="128"/>
                     <connections>
-                        <outlet property="imageView" destination="vxl-xe-5dc" id="dAD-De-AaA"/>
+                        <outlet property="imageView" destination="vxl-xe-5dc" id="NoE-ol-92C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dVP-xv-r8J" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -341,6 +341,7 @@
                             <constraint firstAttribute="trailing" secondItem="qxF-ac-Jnl" secondAttribute="trailing" id="Mxe-R9-txI"/>
                             <constraint firstAttribute="bottom" secondItem="qxF-ac-Jnl" secondAttribute="bottom" id="rKb-Z9-oNf"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qfq-Ex-cex"/>
                     </view>
                     <connections>
                         <outlet property="stackView" destination="qxF-ac-Jnl" id="3kr-7I-2q2"/>

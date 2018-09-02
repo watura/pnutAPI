@@ -1,7 +1,9 @@
 import UIKit
 import Utils
+import Color
 import Nuke
 import PnutAPI
+import CircleImageViewController
 
 public struct ProfileViewModel {
     let icon: URL?
@@ -16,7 +18,6 @@ public struct ProfileViewModel {
         self.counts = counts
     }
 }
-
 
 public class ProfileViewController: UIViewController {
     public var viewModel: ProfileViewModel! {
@@ -37,7 +38,7 @@ public class ProfileViewController: UIViewController {
     }
 
     var viewDidLoaded: Bool = false
-    var iconViewController: IconViewController?
+    var iconViewController: CircleImageViewController?
     var coverViewContorller: HeaderImageViewController?
     var bioViewController: BioViewController?
     var countListViewController: CountListViewController?
@@ -61,7 +62,7 @@ extension ProfileViewController {
         guard let identifier = segue.identifier else { return }
         switch identifier {
         case "UserIconSegue":
-            guard let destination = segue.destination as? IconViewController else { return }
+            guard let destination = segue.destination as? CircleImageViewController else { return }
             destination.iconUrl = viewModel.icon
             iconViewController = destination
         case "HeaderSegue":
@@ -80,65 +81,6 @@ extension ProfileViewController {
             return
         }
     }
-}
-
-
-public class IconViewController: UIViewController {
-    @IBOutlet weak var imageView: CircleImageView?
-    var iconUrl: URL! {
-        didSet {
-            loadImage()
-        }
-    }
-
-    public override func viewDidLoad() {
-        super.viewDidLoad()
-        loadImage()
-    }
-
-    func loadImage() {
-        if let imageView = imageView {
-            var request = ImageRequest(url: iconUrl)
-            request.process(key: "ProfileIcon", {
-                return $0.rounded(with: UIColor.background)
-            })
-            Nuke.loadImage(with: request, into: imageView)
-        }
-    }
-
-}
-
-public class CircleImageView: UIImageView {
-    public override func draw(_ rect: CGRect) {
-        super.draw(rect)
-        print("drawRect")
-    }
-}
-
-public class HeaderImageViewController: UIViewController {
-    var imageUrl: URL! {
-        didSet {
-            if let imageView = imageView {
-                Nuke.loadImage(with: imageUrl, into: imageView)
-            }
-        }
-    }
-
-    public override func viewDidLoad() {
-        super.viewDidLoad()
-        if let imageView = imageView {
-            Nuke.loadImage(with: imageUrl, into: imageView)
-        }
-    }
-    @IBOutlet weak var imageView: UIImageView?
-}
-
-public class CircleBorderedButtonViewController: UIViewController {
-    var text: String!
-    var onPress: (() -> Void)!
-}
-
-public class CircleBorderedButton: UIButton {
 }
 
 public struct Profile {
@@ -296,27 +238,5 @@ public class URLViewController: UIViewController {
     public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         label?.text = url?.absoluteString
-    }
-}
-
-extension UIImage {
-    func rounded(with backgroundColor: UIColor) -> UIImage? {
-        // 背景を透過ではなくす
-        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
-        let context = UIGraphicsGetCurrentContext()
-        let rect = CGRect(origin: .zero, size: size)
-        // clear colorで背景色を塗る
-        context?.setFillColor(UIColor.clear.cgColor)
-        context?.fill(rect)
-        // 丸い画像を描画する
-        let path = UIBezierPath(ovalIn: rect)
-        path.addClip()
-        // 白で背景を塗る
-        context?.setFillColor(UIColor.white.cgColor)
-        context?.fill(rect)
-        draw(in: rect)
-        let roundedImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return roundedImage
     }
 }

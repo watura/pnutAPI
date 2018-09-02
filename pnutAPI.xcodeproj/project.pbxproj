@@ -55,6 +55,25 @@
 		411BF52F20D34E5A00744E6D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411BF52C20D349E200744E6D /* AppCoordinator.swift */; };
 		411BF53220D35FB000744E6D /* OnBoardingViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411BF53120D35FB000744E6D /* OnBoardingViewCoordinator.swift */; };
 		411BF53420D35FBB00744E6D /* StreamingViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411BF53320D35FBB00744E6D /* StreamingViewCoordinator.swift */; };
+		415AA0C6213A721A003F4E73 /* CircleImageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 415AA0B6213A721A003F4E73 /* CircleImageViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		415AA0C9213A721A003F4E73 /* CircleImageViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415AA0B4213A721A003F4E73 /* CircleImageViewController.framework */; };
+		415AA0CA213A721A003F4E73 /* CircleImageViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 415AA0B4213A721A003F4E73 /* CircleImageViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		415AA0D4213A7259003F4E73 /* CircleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415AA0D2213A7249003F4E73 /* CircleImageViewController.swift */; };
+		415AA0D5213A733D003F4E73 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AB383F20E114F300C62580 /* Nuke.framework */; };
+		415AA0DF213A7364003F4E73 /* Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 415AA0DD213A7364003F4E73 /* Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		415AA0E2213A7364003F4E73 /* Color.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415AA0DB213A7364003F4E73 /* Color.framework */; };
+		415AA0E3213A7364003F4E73 /* Color.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 415AA0DB213A7364003F4E73 /* Color.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		415AA0EA213A7397003F4E73 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A2B10220F84DD800894DF5 /* ColorExtension.swift */; };
+		415AA0EB213A73B8003F4E73 /* Color.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415AA0DB213A7364003F4E73 /* Color.framework */; };
+		415AA0EC213A74D3003F4E73 /* CircleImageViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415AA0B4213A721A003F4E73 /* CircleImageViewController.framework */; };
+		415AA0EF213A7523003F4E73 /* Color.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415AA0DB213A7364003F4E73 /* Color.framework */; };
+		415AA0F8213A7B47003F4E73 /* HeaderImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415AA0F6213A7B31003F4E73 /* HeaderImageViewController.swift */; };
+		415AA107213A7D81003F4E73 /* BorderedButtonViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 415AA105213A7D81003F4E73 /* BorderedButtonViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		415AA10A213A7D81003F4E73 /* BorderedButtonViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415AA103213A7D81003F4E73 /* BorderedButtonViewController.framework */; };
+		415AA10B213A7D81003F4E73 /* BorderedButtonViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 415AA103213A7D81003F4E73 /* BorderedButtonViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		415AA111213A8001003F4E73 /* BorderedButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415AA0F9213A7BF2003F4E73 /* BorderedButtonViewController.swift */; };
+		415AA112213A8014003F4E73 /* BorderedButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 415AA10F213A7DC7003F4E73 /* BorderedButtonViewController.xib */; };
+		415AA113213A859B003F4E73 /* BorderedButtonViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415AA103213A7D81003F4E73 /* BorderedButtonViewController.framework */; };
 		417A3EE220C212EC0051B74B /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED720C212CE0051B74B /* APIKit.framework */; };
 		417A3EE320C212EC0051B74B /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED920C212CF0051B74B /* OAuthSwift.framework */; };
 		417A3EE420C212EC0051B74B /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED820C212CF0051B74B /* Result.framework */; };
@@ -91,7 +110,6 @@
 		41A2B0FF20F84D6E00894DF5 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A2B0F920F84D5800894DF5 /* ColorAssets.xcassets */; };
 		41A2B10020F84D6F00894DF5 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A2B0F920F84D5800894DF5 /* ColorAssets.xcassets */; };
 		41A2B10120F84D7100894DF5 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A2B0F920F84D5800894DF5 /* ColorAssets.xcassets */; };
-		41A2B10320F84DD800894DF5 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A2B10220F84DD800894DF5 /* ColorExtension.swift */; };
 		41A328E820E3BDD2009A2CEF /* Paginatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A328E720E3BDD2009A2CEF /* Paginatable.swift */; };
 		41A5987420D134B20095527D /* OnBoardingViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */; };
 		41A5987520D134B20095527D /* OnBoardingViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -107,6 +125,7 @@
 		41AE668E20CFB24F009851E1 /* OnBoardingViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		41AE669720CFB31D009851E1 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AE669520CFB2C5009851E1 /* OnBoarding.storyboard */; };
 		41AE669820CFB322009851E1 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE669320CFB2BC009851E1 /* OnBoardingViewController.swift */; };
+		41B39A83213A8F8F00E1EE82 /* CircleImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B39A82213A8F8F00E1EE82 /* CircleImageViewController.xib */; };
 		41C7B5E020F22BFE00D66318 /* ProfileViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 41C7B5DE20F22BFE00D66318 /* ProfileViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41C7B5E320F22BFE00D66318 /* ProfileViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C7B5DC20F22BFE00D66318 /* ProfileViewController.framework */; };
 		41C7B5E420F22BFE00D66318 /* ProfileViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41C7B5DC20F22BFE00D66318 /* ProfileViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -116,6 +135,7 @@
 		41E703D220EC6F5D00C94904 /* StreamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E703D020EC6F5600C94904 /* StreamViewModel.swift */; };
 		41E703D320EC730800C94904 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED720C212CE0051B74B /* APIKit.framework */; };
 		41E703DB20EC773600C94904 /* MainTabCoodinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E703D420EC766300C94904 /* MainTabCoodinator.swift */; };
+		41FB7F24213BB5EF00B4067D /* PnutAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41869DEC20C2920900F98D00 /* PnutAPI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +188,69 @@
 			remoteGlobalIDString = 411BF51420D0C2C900744E6D;
 			remoteInfo = Utils;
 		};
+		415AA0C7213A721A003F4E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 415AA0B3213A721A003F4E73;
+			remoteInfo = CircleImageViewController;
+		};
+		415AA0E0213A7364003F4E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 415AA0DA213A7364003F4E73;
+			remoteInfo = Color;
+		};
+		415AA0F0213A7529003F4E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 415AA0DA213A7364003F4E73;
+			remoteInfo = Color;
+		};
+		415AA0F2213A7534003F4E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 415AA0DA213A7364003F4E73;
+			remoteInfo = Color;
+		};
+		415AA0F4213A7699003F4E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 411BF51420D0C2C900744E6D;
+			remoteInfo = Utils;
+		};
+		415AA108213A7D81003F4E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 415AA102213A7D81003F4E73;
+			remoteInfo = BorderedButtonViewController;
+		};
+		415AA114213A85A6003F4E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 415AA0B3213A721A003F4E73;
+			remoteInfo = CircleImageViewController;
+		};
+		415AA116213A85A6003F4E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 415AA102213A7D81003F4E73;
+			remoteInfo = BorderedButtonViewController;
+		};
+		415AA118213A85B1003F4E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 411BF51420D0C2C900744E6D;
+			remoteInfo = Utils;
+		};
 		41869DF120C2920900F98D00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
@@ -210,6 +293,13 @@
 			remoteGlobalIDString = 41C7B5DB20F22BFE00D66318;
 			remoteInfo = ProfileViewController;
 		};
+		41FB7F25213BB5F700B4067D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41869DEB20C2920900F98D00;
+			remoteInfo = PnutAPI;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -240,6 +330,9 @@
 			dstSubfolderSpec = 10;
 			files = (
 				41869DF420C2920900F98D00 /* PnutAPI.framework in Embed Frameworks */,
+				415AA0CA213A721A003F4E73 /* CircleImageViewController.framework in Embed Frameworks */,
+				415AA0E3213A7364003F4E73 /* Color.framework in Embed Frameworks */,
+				415AA10B213A7D81003F4E73 /* BorderedButtonViewController.framework in Embed Frameworks */,
 				411BF51D20D0C2CA00744E6D /* Utils.framework in Embed Frameworks */,
 				4103EE4F213A5CB200E46534 /* Secrets.framework in Embed Frameworks */,
 				411BF50520D0C0F100744E6D /* StreamViewController.framework in Embed Frameworks */,
@@ -283,6 +376,19 @@
 		411BF52C20D349E200744E6D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		411BF53120D35FB000744E6D /* OnBoardingViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewCoordinator.swift; sourceTree = "<group>"; };
 		411BF53320D35FBB00744E6D /* StreamingViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingViewCoordinator.swift; sourceTree = "<group>"; };
+		415AA0B4213A721A003F4E73 /* CircleImageViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CircleImageViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		415AA0B6213A721A003F4E73 /* CircleImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleImageViewController.h; sourceTree = "<group>"; };
+		415AA0B7213A721A003F4E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		415AA0D2213A7249003F4E73 /* CircleImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageViewController.swift; sourceTree = "<group>"; };
+		415AA0DB213A7364003F4E73 /* Color.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Color.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		415AA0DD213A7364003F4E73 /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		415AA0DE213A7364003F4E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		415AA0F6213A7B31003F4E73 /* HeaderImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderImageViewController.swift; sourceTree = "<group>"; };
+		415AA0F9213A7BF2003F4E73 /* BorderedButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButtonViewController.swift; sourceTree = "<group>"; };
+		415AA103213A7D81003F4E73 /* BorderedButtonViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BorderedButtonViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		415AA105213A7D81003F4E73 /* BorderedButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BorderedButtonViewController.h; sourceTree = "<group>"; };
+		415AA106213A7D81003F4E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		415AA10F213A7DC7003F4E73 /* BorderedButtonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BorderedButtonViewController.xib; sourceTree = "<group>"; };
 		417A3ED720C212CE0051B74B /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 		417A3ED820C212CF0051B74B /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		417A3ED920C212CF0051B74B /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
@@ -319,6 +425,7 @@
 		41AE668920CFB24F009851E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41AE669320CFB2BC009851E1 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		41AE669520CFB2C5009851E1 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
+		41B39A82213A8F8F00E1EE82 /* CircleImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleImageViewController.xib; sourceTree = "<group>"; };
 		41C7B5D220F22BBF00D66318 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		41C7B5D420F22BCB00D66318 /* ProfileView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileView.storyboard; sourceTree = "<group>"; };
 		41C7B5DC20F22BFE00D66318 /* ProfileViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProfileViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -343,13 +450,16 @@
 				41AB384020E114F300C62580 /* Nuke.framework in Frameworks */,
 				417A3EE220C212EC0051B74B /* APIKit.framework in Frameworks */,
 				417A3EE320C212EC0051B74B /* OAuthSwift.framework in Frameworks */,
+				415AA0C9213A721A003F4E73 /* CircleImageViewController.framework in Frameworks */,
 				411BF50420D0C0F100744E6D /* StreamViewController.framework in Frameworks */,
 				41AE668D20CFB24F009851E1 /* OnBoardingViewController.framework in Frameworks */,
 				411BF51C20D0C2CA00744E6D /* Utils.framework in Frameworks */,
 				4116C5DD20C9539100B8433E /* PostViewController.framework in Frameworks */,
 				41869DF320C2920900F98D00 /* PnutAPI.framework in Frameworks */,
 				4103EE4E213A5CB200E46534 /* Secrets.framework in Frameworks */,
+				415AA0E2213A7364003F4E73 /* Color.framework in Frameworks */,
 				417A3EE420C212EC0051B74B /* Result.framework in Frameworks */,
+				415AA10A213A7D81003F4E73 /* BorderedButtonViewController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +484,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		411BF51120D0C2C900744E6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415AA0B0213A721A003F4E73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415AA0EB213A73B8003F4E73 /* Color.framework in Frameworks */,
+				415AA0D5213A733D003F4E73 /* Nuke.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415AA0D7213A7364003F4E73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415AA0FF213A7D81003F4E73 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -421,6 +554,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41FB7F24213BB5EF00B4067D /* PnutAPI.framework in Frameworks */,
+				415AA113213A859B003F4E73 /* BorderedButtonViewController.framework in Frameworks */,
+				415AA0EF213A7523003F4E73 /* Color.framework in Frameworks */,
+				415AA0EC213A74D3003F4E73 /* CircleImageViewController.framework in Frameworks */,
 				4103EE5D213A64E800E46534 /* Utils.framework in Frameworks */,
 				41A2B0F820F703E300894DF5 /* Nuke.framework in Frameworks */,
 			);
@@ -469,6 +606,9 @@
 				411BF51520D0C2C900744E6D /* Utils.framework */,
 				4103EE39213A5CB200E46534 /* Secrets.framework */,
 				41C7B5DC20F22BFE00D66318 /* ProfileViewController.framework */,
+				415AA0B4213A721A003F4E73 /* CircleImageViewController.framework */,
+				415AA0DB213A7364003F4E73 /* Color.framework */,
+				415AA103213A7D81003F4E73 /* BorderedButtonViewController.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -505,6 +645,8 @@
 		4116C5DA20C94DC800B8433E /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				415AA0FD213A7D6C003F4E73 /* BorderedButtonViewController */,
+				415AA0D1213A7242003F4E73 /* CircleImageViewController */,
 				41AE669220CFB267009851E1 /* OnboardingViewController */,
 				4116C5CC20C94D3500B8433E /* PostViewController */,
 				41C7B5D620F22BD100D66318 /* ProfileViewController */,
@@ -570,6 +712,59 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		415AA0B5213A721A003F4E73 /* CircleImageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				415AA0B6213A721A003F4E73 /* CircleImageViewController.h */,
+				415AA0B7213A721A003F4E73 /* Info.plist */,
+			);
+			path = CircleImageViewController;
+			sourceTree = "<group>";
+		};
+		415AA0D1213A7242003F4E73 /* CircleImageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				415AA0D2213A7249003F4E73 /* CircleImageViewController.swift */,
+				41B39A82213A8F8F00E1EE82 /* CircleImageViewController.xib */,
+			);
+			path = CircleImageViewController;
+			sourceTree = "<group>";
+		};
+		415AA0DC213A7364003F4E73 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				415AA0DD213A7364003F4E73 /* Color.h */,
+				415AA0DE213A7364003F4E73 /* Info.plist */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		415AA0E7213A737D003F4E73 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				41A2B10220F84DD800894DF5 /* ColorExtension.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		415AA0FD213A7D6C003F4E73 /* BorderedButtonViewController */ = {
+			isa = PBXGroup;
+			children = (
+				415AA0F9213A7BF2003F4E73 /* BorderedButtonViewController.swift */,
+				415AA10F213A7DC7003F4E73 /* BorderedButtonViewController.xib */,
+			);
+			path = BorderedButtonViewController;
+			sourceTree = "<group>";
+		};
+		415AA104213A7D81003F4E73 /* BorderedButtonViewController */ = {
+			isa = PBXGroup;
+			children = (
+				415AA105213A7D81003F4E73 /* BorderedButtonViewController.h */,
+				415AA106213A7D81003F4E73 /* Info.plist */,
+			);
+			path = BorderedButtonViewController;
+			sourceTree = "<group>";
+		};
 		417A3EE120C212EC0051B74B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -629,6 +824,9 @@
 		41869DE120C287CA00F98D00 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				415AA104213A7D81003F4E73 /* BorderedButtonViewController */,
+				415AA0B5213A721A003F4E73 /* CircleImageViewController */,
+				415AA0DC213A7364003F4E73 /* Color */,
 				41AE668720CFB24F009851E1 /* OnBoardingViewController */,
 				41869DED20C2920900F98D00 /* PnutAPI */,
 				41869DF920C293A700F98D00 /* PnutAPIClient */,
@@ -727,6 +925,7 @@
 			children = (
 				41C7B5D420F22BCB00D66318 /* ProfileView.storyboard */,
 				41C7B5D220F22BBF00D66318 /* ProfileViewController.swift */,
+				415AA0F6213A7B31003F4E73 /* HeaderImageViewController.swift */,
 			);
 			path = ProfileViewController;
 			sourceTree = "<group>";
@@ -743,8 +942,8 @@
 		41E01EA120DDBDAE006182E6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				415AA0E7213A737D003F4E73 /* Color */,
 				411BF52A20D3496200744E6D /* StoryboardedType.swift */,
-				41A2B10220F84DD800894DF5 /* ColorExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -781,6 +980,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				411BF51920D0C2CA00744E6D /* Utils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415AA0B1213A721A003F4E73 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415AA0C6213A721A003F4E73 /* CircleImageViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415AA0D8213A7364003F4E73 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415AA0DF213A7364003F4E73 /* Color.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415AA100213A7D81003F4E73 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415AA107213A7D81003F4E73 /* BorderedButtonViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -849,6 +1072,9 @@
 				411BF50320D0C0F100744E6D /* PBXTargetDependency */,
 				411BF51B20D0C2CA00744E6D /* PBXTargetDependency */,
 				4103EE4D213A5CB200E46534 /* PBXTargetDependency */,
+				415AA0C8213A721A003F4E73 /* PBXTargetDependency */,
+				415AA0E1213A7364003F4E73 /* PBXTargetDependency */,
+				415AA109213A7D81003F4E73 /* PBXTargetDependency */,
 			);
 			name = PnutAPIClient;
 			productName = pnutAPI;
@@ -908,6 +1134,63 @@
 			name = Utils;
 			productName = Utils;
 			productReference = 411BF51520D0C2C900744E6D /* Utils.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		415AA0B3213A721A003F4E73 /* CircleImageViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 415AA0CB213A721B003F4E73 /* Build configuration list for PBXNativeTarget "CircleImageViewController" */;
+			buildPhases = (
+				415AA0AF213A721A003F4E73 /* Sources */,
+				415AA0B0213A721A003F4E73 /* Frameworks */,
+				415AA0B1213A721A003F4E73 /* Headers */,
+				415AA0B2213A721A003F4E73 /* Resources */,
+				41FB7F22213BB05200B4067D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				415AA0F5213A7699003F4E73 /* PBXTargetDependency */,
+				415AA0F3213A7534003F4E73 /* PBXTargetDependency */,
+			);
+			name = CircleImageViewController;
+			productName = CircleImageViewController;
+			productReference = 415AA0B4213A721A003F4E73 /* CircleImageViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		415AA0DA213A7364003F4E73 /* Color */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 415AA0E4213A7364003F4E73 /* Build configuration list for PBXNativeTarget "Color" */;
+			buildPhases = (
+				415AA0D6213A7364003F4E73 /* Sources */,
+				415AA0D7213A7364003F4E73 /* Frameworks */,
+				415AA0D8213A7364003F4E73 /* Headers */,
+				415AA0D9213A7364003F4E73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Color;
+			productName = Color;
+			productReference = 415AA0DB213A7364003F4E73 /* Color.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		415AA102213A7D81003F4E73 /* BorderedButtonViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 415AA10C213A7D81003F4E73 /* Build configuration list for PBXNativeTarget "BorderedButtonViewController" */;
+			buildPhases = (
+				415AA0FE213A7D81003F4E73 /* Sources */,
+				415AA0FF213A7D81003F4E73 /* Frameworks */,
+				415AA100213A7D81003F4E73 /* Headers */,
+				415AA101213A7D81003F4E73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BorderedButtonViewController;
+			productName = BorderedButtonViewController;
+			productReference = 415AA103213A7D81003F4E73 /* BorderedButtonViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		41869DEB20C2920900F98D00 /* PnutAPI */ = {
@@ -983,10 +1266,16 @@
 				41C7B5D820F22BFE00D66318 /* Frameworks */,
 				41C7B5D920F22BFE00D66318 /* Headers */,
 				41C7B5DA20F22BFE00D66318 /* Resources */,
+				41FB7F23213BB5A900B4067D /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				41FB7F26213BB5F700B4067D /* PBXTargetDependency */,
+				415AA119213A85B1003F4E73 /* PBXTargetDependency */,
+				415AA115213A85A6003F4E73 /* PBXTargetDependency */,
+				415AA117213A85A6003F4E73 /* PBXTargetDependency */,
+				415AA0F1213A7529003F4E73 /* PBXTargetDependency */,
 			);
 			name = ProfileViewController;
 			productName = ProfileViewController;
@@ -1018,6 +1307,15 @@
 					411BF51420D0C2C900744E6D = {
 						CreatedOnToolsVersion = 9.4;
 					};
+					415AA0B3213A721A003F4E73 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					415AA0DA213A7364003F4E73 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					415AA102213A7D81003F4E73 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					41869DEB20C2920900F98D00 = {
 						CreatedOnToolsVersion = 9.4;
 					};
@@ -1046,14 +1344,17 @@
 			projectRoot = "";
 			targets = (
 				4112D39B20C1FB0C00FABEB3 /* PnutAPIClient */,
-				41869DEB20C2920900F98D00 /* PnutAPI */,
 				41869E5920C368AF00F98D00 /* Walnut */,
+				4103EE38213A5CB200E46534 /* Secrets */,
+				41869DEB20C2920900F98D00 /* PnutAPI */,
 				41AE668520CFB24E009851E1 /* OnBoardingViewController */,
 				4116C5CA20C94D3500B8433E /* PostViewController */,
 				41C7B5DB20F22BFE00D66318 /* ProfileViewController */,
 				411BF4FC20D0C0F100744E6D /* StreamViewController */,
+				415AA0B3213A721A003F4E73 /* CircleImageViewController */,
+				415AA102213A7D81003F4E73 /* BorderedButtonViewController */,
+				415AA0DA213A7364003F4E73 /* Color */,
 				411BF51420D0C2C900744E6D /* Utils */,
-				4103EE38213A5CB200E46534 /* Secrets */,
 			);
 		};
 /* End PBXProject section */
@@ -1100,6 +1401,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				41A2B0FA20F84D5800894DF5 /* ColorAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415AA0B2213A721A003F4E73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41B39A83213A8F8F00E1EE82 /* CircleImageViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415AA0D9213A7364003F4E73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415AA101213A7D81003F4E73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415AA112213A8014003F4E73 /* BorderedButtonViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1166,7 +1490,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		417A3ED620C212510051B74B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1245,10 +1569,42 @@
 			);
 			name = "Run Script";
 			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/APIKit.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/OAuthSwift.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nuke.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		41FB7F22213BB05200B4067D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Nuke.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		41FB7F23213BB5A900B4067D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Nuke.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1299,7 +1655,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				41E01EA020DDBD9F006182E6 /* StoryboardedType.swift in Sources */,
-				41A2B10320F84DD800894DF5 /* ColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415AA0AF213A721A003F4E73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415AA0D4213A7259003F4E73 /* CircleImageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415AA0D6213A7364003F4E73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415AA0EA213A7397003F4E73 /* ColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415AA0FE213A7D81003F4E73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415AA111213A8001003F4E73 /* BorderedButtonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1352,6 +1731,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41C7B5E820F22C4200D66318 /* ProfileViewController.swift in Sources */,
+				415AA0F8213A7B47003F4E73 /* HeaderImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1393,6 +1773,51 @@
 			target = 411BF51420D0C2C900744E6D /* Utils */;
 			targetProxy = 411BF51A20D0C2CA00744E6D /* PBXContainerItemProxy */;
 		};
+		415AA0C8213A721A003F4E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 415AA0B3213A721A003F4E73 /* CircleImageViewController */;
+			targetProxy = 415AA0C7213A721A003F4E73 /* PBXContainerItemProxy */;
+		};
+		415AA0E1213A7364003F4E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 415AA0DA213A7364003F4E73 /* Color */;
+			targetProxy = 415AA0E0213A7364003F4E73 /* PBXContainerItemProxy */;
+		};
+		415AA0F1213A7529003F4E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 415AA0DA213A7364003F4E73 /* Color */;
+			targetProxy = 415AA0F0213A7529003F4E73 /* PBXContainerItemProxy */;
+		};
+		415AA0F3213A7534003F4E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 415AA0DA213A7364003F4E73 /* Color */;
+			targetProxy = 415AA0F2213A7534003F4E73 /* PBXContainerItemProxy */;
+		};
+		415AA0F5213A7699003F4E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 411BF51420D0C2C900744E6D /* Utils */;
+			targetProxy = 415AA0F4213A7699003F4E73 /* PBXContainerItemProxy */;
+		};
+		415AA109213A7D81003F4E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 415AA102213A7D81003F4E73 /* BorderedButtonViewController */;
+			targetProxy = 415AA108213A7D81003F4E73 /* PBXContainerItemProxy */;
+		};
+		415AA115213A85A6003F4E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 415AA0B3213A721A003F4E73 /* CircleImageViewController */;
+			targetProxy = 415AA114213A85A6003F4E73 /* PBXContainerItemProxy */;
+		};
+		415AA117213A85A6003F4E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 415AA102213A7D81003F4E73 /* BorderedButtonViewController */;
+			targetProxy = 415AA116213A85A6003F4E73 /* PBXContainerItemProxy */;
+		};
+		415AA119213A85B1003F4E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 411BF51420D0C2C900744E6D /* Utils */;
+			targetProxy = 415AA118213A85B1003F4E73 /* PBXContainerItemProxy */;
+		};
 		41869DF220C2920900F98D00 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 41869DEB20C2920900F98D00 /* PnutAPI */;
@@ -1422,6 +1847,11 @@
 			isa = PBXTargetDependency;
 			target = 41C7B5DB20F22BFE00D66318 /* ProfileViewController */;
 			targetProxy = 41C7B5E120F22BFE00D66318 /* PBXContainerItemProxy */;
+		};
+		41FB7F26213BB5F700B4067D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41869DEB20C2920900F98D00 /* PnutAPI */;
+			targetProxy = 41FB7F25213BB5F700B4067D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1848,6 +2278,183 @@
 			};
 			name = Release;
 		};
+		415AA0CC213A721B003F4E73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/CircleImageViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"$(CONFIGURATION_BUILD_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.pnutapi.CircleImageViewController;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		415AA0CD213A721B003F4E73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/CircleImageViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.pnutapi.CircleImageViewController;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		415AA0E5213A7364003F4E73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Color/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.pnutapi.Color;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		415AA0E6213A7364003F4E73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Color/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.pnutapi.Color;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		415AA10D213A7D81003F4E73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/BorderedButtonViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.pnutapi.BorderedButtonViewController;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		415AA10E213A7D81003F4E73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/BorderedButtonViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.pnutapi.BorderedButtonViewController;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		41869DF620C2920900F98D00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2131,6 +2738,33 @@
 			buildConfigurations = (
 				411BF51F20D0C2CA00744E6D /* Debug */,
 				411BF52020D0C2CA00744E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		415AA0CB213A721B003F4E73 /* Build configuration list for PBXNativeTarget "CircleImageViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				415AA0CC213A721B003F4E73 /* Debug */,
+				415AA0CD213A721B003F4E73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		415AA0E4213A7364003F4E73 /* Build configuration list for PBXNativeTarget "Color" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				415AA0E5213A7364003F4E73 /* Debug */,
+				415AA0E6213A7364003F4E73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		415AA10C213A7D81003F4E73 /* Build configuration list for PBXNativeTarget "BorderedButtonViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				415AA10D213A7D81003F4E73 /* Debug */,
+				415AA10E213A7D81003F4E73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
