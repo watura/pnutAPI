@@ -1,7 +1,7 @@
 import UIKit
 import Utils
 
-public protocol PostAction: class {
+public protocol PostAction {
     func cancel()
     func compelete(text: String)
     func validate(text: String) -> Bool
@@ -11,7 +11,7 @@ public class PostViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var textViewBottomConstraint: NSLayoutConstraint!
 
-    public weak var postAction: PostAction?
+    public var postAction: PostAction?
 }
 
 extension PostViewController: StoryboardedType {

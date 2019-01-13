@@ -1,5 +1,6 @@
 import UIKit
 import OAuthSwift
+import Secrets
 import PnutAPI
 
 @UIApplicationMain
@@ -17,17 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        guard let filePath = Bundle.main.path(forResource: "Info", ofType: "plist" ),
-            let plist = NSDictionary(contentsOfFile: filePath) else {
-                fatalError("Could not load plist")
-        }
 
-        guard let clientId = plist["PnutClientID"] as? String,
-            let clientSecret = plist["PnutClientSecret"] as? String else {
-                fatalError("Could not read secrets")
-        }
-        APITokenManager.shared.setCredentials(clientId: clientId, clientSecret: clientSecret, callbackUrl: "walnut://pnut")
+        APITokenManager.shared.setCredentials(clientId: Secrets.accessKey, clientSecret: Secrets.secretKey, callbackUrl: "walnut://pnut")
 
         window = UIWindow(frame: UIScreen.main.bounds)
         if let window = window {
