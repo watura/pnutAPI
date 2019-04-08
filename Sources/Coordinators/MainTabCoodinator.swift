@@ -14,12 +14,12 @@ class MainTabCoordinator: Coordinator {
         let streamingNavigation = UINavigationController()
         streamingNavigation.tabBarItem = UITabBarItem(tabBarSystemItem: .mostViewed, tag: 0)
         let streamCoordinator = StreamingViewCoordinator(presentor: streamingNavigation)
-
-        add(coordinator: streamCoordinator)
-
+        let profileCoordinator = ProfileViewCoordinator(presentor: streamingNavigation)
+        add(coordinator: profileCoordinator)
+        streamingNavigation.isNavigationBarHidden = true
         self.tabBar.setViewControllers([streamingNavigation], animated: true)
         self.tabBar.tabBar.isHidden = true
         navigationController.setViewControllers([self.tabBar], animated: true)
-        streamCoordinator.start()
+        profileCoordinator.start()
     }
 }
