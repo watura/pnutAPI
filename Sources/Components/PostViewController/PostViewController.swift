@@ -1,5 +1,4 @@
 import UIKit
-import Utils
 
 public protocol PostAction {
     func cancel()
