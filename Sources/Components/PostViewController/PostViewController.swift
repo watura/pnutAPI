@@ -14,7 +14,7 @@ public class PostViewController: UIViewController {
     public var postAction: PostAction?
 }
 
-extension PostViewController: StoryboardedType {
+extension PostViewController {
     public static var storyboardName: String {
         return "Post"
     }
@@ -23,7 +23,11 @@ extension PostViewController: StoryboardedType {
         return "PostView"
     }
 
-    public typealias VC = PostViewController
+    public static func initView() -> PostViewController? {
+        let storyboardBundle = Bundle(for: self)
+        let storyboard = UIStoryboard(name: storyboardName, bundle: storyboardBundle)
+        return storyboard.instantiateViewController(withIdentifier: identifier) as? PostViewController
+    }
 }
 
 extension PostViewController {
