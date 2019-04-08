@@ -17,7 +17,7 @@
                BlueprintIdentifier = "4112D39B20C1FB0C00FABEB3"
                BuildableName = "PnutAPIClient.app"
                BlueprintName = "PnutAPIClient"
-               ReferencedContainer = "container:pnutAPI.xcodeproj">
+               ReferencedContainer = "container:PnutAPI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "4103EE40213A5CB200E46534"
                BuildableName = "SecretsTests.xctest"
                BlueprintName = "SecretsTests"
-               ReferencedContainer = "container:pnutAPI.xcodeproj">
+               ReferencedContainer = "container:PnutAPI.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,7 +45,7 @@
                BlueprintIdentifier = "415AA0BB213A721A003F4E73"
                BuildableName = "CircleImageViewControllerTests.xctest"
                BlueprintName = "CircleImageViewControllerTests"
-               ReferencedContainer = "container:pnutAPI.xcodeproj">
+               ReferencedContainer = "container:PnutAPI.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,7 +55,7 @@
             BlueprintIdentifier = "4112D39B20C1FB0C00FABEB3"
             BuildableName = "PnutAPIClient.app"
             BlueprintName = "PnutAPIClient"
-            ReferencedContainer = "container:pnutAPI.xcodeproj">
+            ReferencedContainer = "container:PnutAPI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -78,7 +78,7 @@
             BlueprintIdentifier = "4112D39B20C1FB0C00FABEB3"
             BuildableName = "PnutAPIClient.app"
             BlueprintName = "PnutAPIClient"
-            ReferencedContainer = "container:pnutAPI.xcodeproj">
+            ReferencedContainer = "container:PnutAPI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -97,7 +97,7 @@
             BlueprintIdentifier = "4112D39B20C1FB0C00FABEB3"
             BuildableName = "PnutAPIClient.app"
             BlueprintName = "PnutAPIClient"
-            ReferencedContainer = "container:pnutAPI.xcodeproj">
+            ReferencedContainer = "container:PnutAPI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

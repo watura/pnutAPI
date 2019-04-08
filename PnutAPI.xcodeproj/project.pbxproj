@@ -497,7 +497,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4112D39720C1FB0C00FABEB3 /* Build configuration list for PBXProject "pnutAPI" */;
+			buildConfigurationList = 4112D39720C1FB0C00FABEB3 /* Build configuration list for PBXProject "PnutAPI" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -1073,7 +1073,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4112D39720C1FB0C00FABEB3 /* Build configuration list for PBXProject "pnutAPI" */ = {
+		4112D39720C1FB0C00FABEB3 /* Build configuration list for PBXProject "PnutAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4112D3AC20C1FB0E00FABEB3 /* Debug */,
