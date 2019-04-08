@@ -51,11 +51,11 @@ public class APITokenManager {
 }
 
 public extension APITokenManager {
-    public var hasToken: Bool {
+    var hasToken: Bool {
         return token != nil
     }
 
-    public func credential() throws -> OAuthSwiftCredential {
+    func credential() throws -> OAuthSwiftCredential {
         guard let cred = oauthSwift?.client.credential else {
             throw APITokenManagerError.noCredential
         }

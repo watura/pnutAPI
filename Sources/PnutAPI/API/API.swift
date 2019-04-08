@@ -7,7 +7,7 @@ public protocol API: Request where Response: Codable {
 }
 
 public extension API {
-    public var credential: OAuthSwiftCredential {
+    var credential: OAuthSwiftCredential {
         do {
             return try APITokenManager.shared.credential()
         } catch let e {
@@ -16,12 +16,12 @@ public extension API {
         }
     }
 
-    public var baseURL: URL {
+    var baseURL: URL {
         guard let url = URL(string: "https://api.pnut.io/v0/") else { fatalError() }
         return url
     }
 
-    public func intercept(urlRequest: URLRequest) throws -> URLRequest {
+    func intercept(urlRequest: URLRequest) throws -> URLRequest {
         let url = self.baseURL.absoluteString + self.path
 
         let header = credential.makeHeaders(URL(string: url)!,
@@ -35,7 +35,7 @@ public extension API {
         return mutableRequest
     }
 
-    public var bodyParameters: BodyParameters? {
+    var bodyParameters: BodyParameters? {
         guard let parameters = parameters as? [String: Any], !method.prefersQueryParameters else {
             return nil
         }
@@ -43,7 +43,7 @@ public extension API {
         return FormURLEncodedBodyParameters(formObject: parameters)
     }
 
-    public func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Response {
+    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Response {
         let data = try JSONSerialization.data(withJSONObject: object, options: [])
         let decoder = JSONDecoder()
 
@@ -58,7 +58,7 @@ public extension API {
         return try decoder.decode(Response.self, from: data)
     }
 
-    public func request(success: ((Self.Response) -> Void)? = nil, failure: ((SessionTaskError) -> Void)? = nil) {
+    func request(success: ((Self.Response) -> Void)? = nil, failure: ((SessionTaskError) -> Void)? = nil) {
         Session.send(self) { result in
             switch result {
             case .success(let response):
@@ -83,7 +83,7 @@ public extension API {
 }
 
 public extension API where Self: Encodable {
-    public var parameters: Any? {
+    var parameters: Any? {
         let encoder = JSONEncoder()
         encoder.outputFormatting = .prettyPrinted
         let encoded = try! encoder.encode(self)
