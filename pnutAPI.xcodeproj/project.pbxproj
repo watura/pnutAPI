@@ -14,6 +14,8 @@
 		4103EE57213A5CE900E46534 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103EE32213A5B2600E46534 /* Secrets.swift */; };
 		4103EE59213A5EA700E46534 /* Secrets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4103EE39213A5CB200E46534 /* Secrets.framework */; };
 		4103EE5A213A5EA700E46534 /* Secrets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4103EE39213A5CB200E46534 /* Secrets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4103EE5D213A64E800E46534 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411BF51520D0C2C900744E6D /* Utils.framework */; };
+		4112335820F5AA6B00538563 /* ProfileViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4112335720F5AA6B00538563 /* ProfileViewCoordinator.swift */; };
 		4112D3A020C1FB0D00FABEB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4112D39F20C1FB0D00FABEB3 /* AppDelegate.swift */; };
 		4112D3A220C1FB0D00FABEB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4112D3A120C1FB0D00FABEB3 /* ViewController.swift */; };
 		4112D3A520C1FB0D00FABEB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4112D3A320C1FB0D00FABEB3 /* Main.storyboard */; };
@@ -53,6 +55,25 @@
 		411BF52F20D34E5A00744E6D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411BF52C20D349E200744E6D /* AppCoordinator.swift */; };
 		411BF53220D35FB000744E6D /* OnBoardingViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411BF53120D35FB000744E6D /* OnBoardingViewCoordinator.swift */; };
 		411BF53420D35FBB00744E6D /* StreamingViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411BF53320D35FBB00744E6D /* StreamingViewCoordinator.swift */; };
+		415AA0C6213A721A003F4E73 /* CircleImageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 415AA0B6213A721A003F4E73 /* CircleImageViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		415AA0C9213A721A003F4E73 /* CircleImageViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415AA0B4213A721A003F4E73 /* CircleImageViewController.framework */; };
+		415AA0CA213A721A003F4E73 /* CircleImageViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 415AA0B4213A721A003F4E73 /* CircleImageViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		415AA0D4213A7259003F4E73 /* CircleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415AA0D2213A7249003F4E73 /* CircleImageViewController.swift */; };
+		415AA0D5213A733D003F4E73 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AB383F20E114F300C62580 /* Nuke.framework */; };
+		415AA0DF213A7364003F4E73 /* Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 415AA0DD213A7364003F4E73 /* Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		415AA0E2213A7364003F4E73 /* Color.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415AA0DB213A7364003F4E73 /* Color.framework */; };
+		415AA0E3213A7364003F4E73 /* Color.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 415AA0DB213A7364003F4E73 /* Color.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		415AA0EA213A7397003F4E73 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A2B10220F84DD800894DF5 /* ColorExtension.swift */; };
+		415AA0EB213A73B8003F4E73 /* Color.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415AA0DB213A7364003F4E73 /* Color.framework */; };
+		415AA0EC213A74D3003F4E73 /* CircleImageViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415AA0B4213A721A003F4E73 /* CircleImageViewController.framework */; };
+		415AA0EF213A7523003F4E73 /* Color.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415AA0DB213A7364003F4E73 /* Color.framework */; };
+		415AA0F8213A7B47003F4E73 /* HeaderImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415AA0F6213A7B31003F4E73 /* HeaderImageViewController.swift */; };
+		415AA107213A7D81003F4E73 /* BorderedButtonViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 415AA105213A7D81003F4E73 /* BorderedButtonViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		415AA10A213A7D81003F4E73 /* BorderedButtonViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415AA103213A7D81003F4E73 /* BorderedButtonViewController.framework */; };
+		415AA10B213A7D81003F4E73 /* BorderedButtonViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 415AA103213A7D81003F4E73 /* BorderedButtonViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		415AA111213A8001003F4E73 /* BorderedButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415AA0F9213A7BF2003F4E73 /* BorderedButtonViewController.swift */; };
+		415AA112213A8014003F4E73 /* BorderedButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 415AA10F213A7DC7003F4E73 /* BorderedButtonViewController.xib */; };
+		415AA113213A859B003F4E73 /* BorderedButtonViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415AA103213A7D81003F4E73 /* BorderedButtonViewController.framework */; };
 		417A3EE220C212EC0051B74B /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED720C212CE0051B74B /* APIKit.framework */; };
 		417A3EE320C212EC0051B74B /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED920C212CF0051B74B /* OAuthSwift.framework */; };
 		417A3EE420C212EC0051B74B /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED820C212CF0051B74B /* Result.framework */; };
@@ -80,6 +101,15 @@
 		41869E5D20C368AF00F98D00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869E5C20C368AF00F98D00 /* AppDelegate.swift */; };
 		41869E6420C368B100F98D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41869E6320C368B100F98D00 /* Assets.xcassets */; };
 		41869E6720C368B100F98D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41869E6520C368B100F98D00 /* LaunchScreen.storyboard */; };
+		41A2B0F820F703E300894DF5 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AB383F20E114F300C62580 /* Nuke.framework */; };
+		41A2B0FA20F84D5800894DF5 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A2B0F920F84D5800894DF5 /* ColorAssets.xcassets */; };
+		41A2B0FB20F84D6C00894DF5 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A2B0F920F84D5800894DF5 /* ColorAssets.xcassets */; };
+		41A2B0FC20F84D6D00894DF5 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A2B0F920F84D5800894DF5 /* ColorAssets.xcassets */; };
+		41A2B0FD20F84D6D00894DF5 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A2B0F920F84D5800894DF5 /* ColorAssets.xcassets */; };
+		41A2B0FE20F84D6E00894DF5 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A2B0F920F84D5800894DF5 /* ColorAssets.xcassets */; };
+		41A2B0FF20F84D6E00894DF5 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A2B0F920F84D5800894DF5 /* ColorAssets.xcassets */; };
+		41A2B10020F84D6F00894DF5 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A2B0F920F84D5800894DF5 /* ColorAssets.xcassets */; };
+		41A2B10120F84D7100894DF5 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A2B0F920F84D5800894DF5 /* ColorAssets.xcassets */; };
 		41A328E820E3BDD2009A2CEF /* Paginatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A328E720E3BDD2009A2CEF /* Paginatable.swift */; };
 		41A5987420D134B20095527D /* OnBoardingViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */; };
 		41A5987520D134B20095527D /* OnBoardingViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -95,10 +125,17 @@
 		41AE668E20CFB24F009851E1 /* OnBoardingViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		41AE669720CFB31D009851E1 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AE669520CFB2C5009851E1 /* OnBoarding.storyboard */; };
 		41AE669820CFB322009851E1 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE669320CFB2BC009851E1 /* OnBoardingViewController.swift */; };
+		41B39A83213A8F8F00E1EE82 /* CircleImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B39A82213A8F8F00E1EE82 /* CircleImageViewController.xib */; };
+		41C7B5E020F22BFE00D66318 /* ProfileViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 41C7B5DE20F22BFE00D66318 /* ProfileViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41C7B5E320F22BFE00D66318 /* ProfileViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C7B5DC20F22BFE00D66318 /* ProfileViewController.framework */; };
+		41C7B5E420F22BFE00D66318 /* ProfileViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41C7B5DC20F22BFE00D66318 /* ProfileViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		41C7B5E820F22C4200D66318 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C7B5D220F22BBF00D66318 /* ProfileViewController.swift */; };
+		41C7B5E920F22C4C00D66318 /* ProfileView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C7B5D420F22BCB00D66318 /* ProfileView.storyboard */; };
 		41E01EA020DDBD9F006182E6 /* StoryboardedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411BF52A20D3496200744E6D /* StoryboardedType.swift */; };
 		41E703D220EC6F5D00C94904 /* StreamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E703D020EC6F5600C94904 /* StreamViewModel.swift */; };
 		41E703D320EC730800C94904 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED720C212CE0051B74B /* APIKit.framework */; };
 		41E703DB20EC773600C94904 /* MainTabCoodinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E703D420EC766300C94904 /* MainTabCoodinator.swift */; };
+		41FB7F24213BB5EF00B4067D /* PnutAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41869DEC20C2920900F98D00 /* PnutAPI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +188,69 @@
 			remoteGlobalIDString = 411BF51420D0C2C900744E6D;
 			remoteInfo = Utils;
 		};
+		415AA0C7213A721A003F4E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 415AA0B3213A721A003F4E73;
+			remoteInfo = CircleImageViewController;
+		};
+		415AA0E0213A7364003F4E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 415AA0DA213A7364003F4E73;
+			remoteInfo = Color;
+		};
+		415AA0F0213A7529003F4E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 415AA0DA213A7364003F4E73;
+			remoteInfo = Color;
+		};
+		415AA0F2213A7534003F4E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 415AA0DA213A7364003F4E73;
+			remoteInfo = Color;
+		};
+		415AA0F4213A7699003F4E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 411BF51420D0C2C900744E6D;
+			remoteInfo = Utils;
+		};
+		415AA108213A7D81003F4E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 415AA102213A7D81003F4E73;
+			remoteInfo = BorderedButtonViewController;
+		};
+		415AA114213A85A6003F4E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 415AA0B3213A721A003F4E73;
+			remoteInfo = CircleImageViewController;
+		};
+		415AA116213A85A6003F4E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 415AA102213A7D81003F4E73;
+			remoteInfo = BorderedButtonViewController;
+		};
+		415AA118213A85B1003F4E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 411BF51420D0C2C900744E6D;
+			remoteInfo = Utils;
+		};
 		41869DF120C2920900F98D00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
@@ -186,6 +286,20 @@
 			remoteGlobalIDString = 41AE668520CFB24E009851E1;
 			remoteInfo = OnBoardingViewController;
 		};
+		41C7B5E120F22BFE00D66318 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41C7B5DB20F22BFE00D66318;
+			remoteInfo = ProfileViewController;
+		};
+		41FB7F25213BB5F700B4067D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41869DEB20C2920900F98D00;
+			remoteInfo = PnutAPI;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -198,6 +312,7 @@
 				4116C5C120C8070500B8433E /* APIKit.framework in Embed Frameworks */,
 				4116C5BC20C8060500B8433E /* PnutAPI.framework in Embed Frameworks */,
 				41A5987920D134B20095527D /* StreamViewController.framework in Embed Frameworks */,
+				41C7B5E420F22BFE00D66318 /* ProfileViewController.framework in Embed Frameworks */,
 				41A5987520D134B20095527D /* OnBoardingViewController.framework in Embed Frameworks */,
 				41A5987D20D134B20095527D /* Utils.framework in Embed Frameworks */,
 				4116C5D320C94D3500B8433E /* PostViewController.framework in Embed Frameworks */,
@@ -215,6 +330,9 @@
 			dstSubfolderSpec = 10;
 			files = (
 				41869DF420C2920900F98D00 /* PnutAPI.framework in Embed Frameworks */,
+				415AA0CA213A721A003F4E73 /* CircleImageViewController.framework in Embed Frameworks */,
+				415AA0E3213A7364003F4E73 /* Color.framework in Embed Frameworks */,
+				415AA10B213A7D81003F4E73 /* BorderedButtonViewController.framework in Embed Frameworks */,
 				411BF51D20D0C2CA00744E6D /* Utils.framework in Embed Frameworks */,
 				4103EE4F213A5CB200E46534 /* Secrets.framework in Embed Frameworks */,
 				411BF50520D0C0F100744E6D /* StreamViewController.framework in Embed Frameworks */,
@@ -232,6 +350,7 @@
 		4103EE39213A5CB200E46534 /* Secrets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Secrets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4103EE3B213A5CB200E46534 /* Secrets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Secrets.h; sourceTree = "<group>"; };
 		4103EE3C213A5CB200E46534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4112335720F5AA6B00538563 /* ProfileViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewCoordinator.swift; sourceTree = "<group>"; };
 		4112D39C20C1FB0D00FABEB3 /* PnutAPIClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PnutAPIClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4112D39F20C1FB0D00FABEB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4112D3A120C1FB0D00FABEB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -257,6 +376,19 @@
 		411BF52C20D349E200744E6D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		411BF53120D35FB000744E6D /* OnBoardingViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewCoordinator.swift; sourceTree = "<group>"; };
 		411BF53320D35FBB00744E6D /* StreamingViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingViewCoordinator.swift; sourceTree = "<group>"; };
+		415AA0B4213A721A003F4E73 /* CircleImageViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CircleImageViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		415AA0B6213A721A003F4E73 /* CircleImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleImageViewController.h; sourceTree = "<group>"; };
+		415AA0B7213A721A003F4E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		415AA0D2213A7249003F4E73 /* CircleImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageViewController.swift; sourceTree = "<group>"; };
+		415AA0DB213A7364003F4E73 /* Color.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Color.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		415AA0DD213A7364003F4E73 /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		415AA0DE213A7364003F4E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		415AA0F6213A7B31003F4E73 /* HeaderImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderImageViewController.swift; sourceTree = "<group>"; };
+		415AA0F9213A7BF2003F4E73 /* BorderedButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButtonViewController.swift; sourceTree = "<group>"; };
+		415AA103213A7D81003F4E73 /* BorderedButtonViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BorderedButtonViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		415AA105213A7D81003F4E73 /* BorderedButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BorderedButtonViewController.h; sourceTree = "<group>"; };
+		415AA106213A7D81003F4E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		415AA10F213A7DC7003F4E73 /* BorderedButtonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BorderedButtonViewController.xib; sourceTree = "<group>"; };
 		417A3ED720C212CE0051B74B /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 		417A3ED820C212CF0051B74B /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		417A3ED920C212CF0051B74B /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
@@ -284,6 +416,8 @@
 		41869E6620C368B100F98D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41869E6820C368B100F98D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41869E7120C3867A00F98D00 /* Post.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
+		41A2B0F920F84D5800894DF5 /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
+		41A2B10220F84DD800894DF5 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		41A328E720E3BDD2009A2CEF /* Paginatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paginatable.swift; sourceTree = "<group>"; };
 		41AB383F20E114F300C62580 /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/iOS/Nuke.framework; sourceTree = "<group>"; };
 		41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnBoardingViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -291,6 +425,12 @@
 		41AE668920CFB24F009851E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41AE669320CFB2BC009851E1 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		41AE669520CFB2C5009851E1 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
+		41B39A82213A8F8F00E1EE82 /* CircleImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleImageViewController.xib; sourceTree = "<group>"; };
+		41C7B5D220F22BBF00D66318 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		41C7B5D420F22BCB00D66318 /* ProfileView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileView.storyboard; sourceTree = "<group>"; };
+		41C7B5DC20F22BFE00D66318 /* ProfileViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProfileViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41C7B5DE20F22BFE00D66318 /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		41C7B5DF20F22BFE00D66318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41E703D020EC6F5600C94904 /* StreamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamViewModel.swift; sourceTree = "<group>"; };
 		41E703D420EC766300C94904 /* MainTabCoodinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabCoodinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -310,13 +450,16 @@
 				41AB384020E114F300C62580 /* Nuke.framework in Frameworks */,
 				417A3EE220C212EC0051B74B /* APIKit.framework in Frameworks */,
 				417A3EE320C212EC0051B74B /* OAuthSwift.framework in Frameworks */,
+				415AA0C9213A721A003F4E73 /* CircleImageViewController.framework in Frameworks */,
 				411BF50420D0C0F100744E6D /* StreamViewController.framework in Frameworks */,
 				41AE668D20CFB24F009851E1 /* OnBoardingViewController.framework in Frameworks */,
 				411BF51C20D0C2CA00744E6D /* Utils.framework in Frameworks */,
 				4116C5DD20C9539100B8433E /* PostViewController.framework in Frameworks */,
 				41869DF320C2920900F98D00 /* PnutAPI.framework in Frameworks */,
 				4103EE4E213A5CB200E46534 /* Secrets.framework in Frameworks */,
+				415AA0E2213A7364003F4E73 /* Color.framework in Frameworks */,
 				417A3EE420C212EC0051B74B /* Result.framework in Frameworks */,
+				415AA10A213A7D81003F4E73 /* BorderedButtonViewController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +490,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		415AA0B0213A721A003F4E73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415AA0EB213A73B8003F4E73 /* Color.framework in Frameworks */,
+				415AA0D5213A733D003F4E73 /* Nuke.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415AA0D7213A7364003F4E73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415AA0FF213A7D81003F4E73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41869DE820C2920900F98D00 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,6 +537,7 @@
 				4116C5C220C8070500B8433E /* OAuthSwift.framework in Frameworks */,
 				4103EE59213A5EA700E46534 /* Secrets.framework in Frameworks */,
 				4116C5C420C8070500B8433E /* Result.framework in Frameworks */,
+				41C7B5E320F22BFE00D66318 /* ProfileViewController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +547,19 @@
 			files = (
 				4118D77B20DCB38D0040EA4F /* Utils.framework in Frameworks */,
 				4118D77920DCB3720040EA4F /* PnutAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C7B5D820F22BFE00D66318 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41FB7F24213BB5EF00B4067D /* PnutAPI.framework in Frameworks */,
+				415AA113213A859B003F4E73 /* BorderedButtonViewController.framework in Frameworks */,
+				415AA0EF213A7523003F4E73 /* Color.framework in Frameworks */,
+				415AA0EC213A74D3003F4E73 /* CircleImageViewController.framework in Frameworks */,
+				4103EE5D213A64E800E46534 /* Utils.framework in Frameworks */,
+				41A2B0F820F703E300894DF5 /* Nuke.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +605,10 @@
 				411BF4FD20D0C0F100744E6D /* StreamViewController.framework */,
 				411BF51520D0C2C900744E6D /* Utils.framework */,
 				4103EE39213A5CB200E46534 /* Secrets.framework */,
+				41C7B5DC20F22BFE00D66318 /* ProfileViewController.framework */,
+				415AA0B4213A721A003F4E73 /* CircleImageViewController.framework */,
+				415AA0DB213A7364003F4E73 /* Color.framework */,
+				415AA103213A7D81003F4E73 /* BorderedButtonViewController.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -461,8 +645,11 @@
 		4116C5DA20C94DC800B8433E /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				415AA0FD213A7D6C003F4E73 /* BorderedButtonViewController */,
+				415AA0D1213A7242003F4E73 /* CircleImageViewController */,
 				41AE669220CFB267009851E1 /* OnboardingViewController */,
 				4116C5CC20C94D3500B8433E /* PostViewController */,
+				41C7B5D620F22BD100D66318 /* ProfileViewController */,
 				411BF50920D0C10B00744E6D /* StreamViewController */,
 			);
 			path = Components;
@@ -507,6 +694,7 @@
 			children = (
 				411BF51820D0C2CA00744E6D /* Info.plist */,
 				411BF51720D0C2CA00744E6D /* Utils.h */,
+				41A2B0F920F84D5800894DF5 /* ColorAssets.xcassets */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -517,10 +705,64 @@
 				411BF52C20D349E200744E6D /* AppCoordinator.swift */,
 				411BF52820D3480600744E6D /* Coordinator.swift */,
 				41E703D420EC766300C94904 /* MainTabCoodinator.swift */,
+				4112335720F5AA6B00538563 /* ProfileViewCoordinator.swift */,
 				411BF53120D35FB000744E6D /* OnBoardingViewCoordinator.swift */,
 				411BF53320D35FBB00744E6D /* StreamingViewCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		415AA0B5213A721A003F4E73 /* CircleImageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				415AA0B6213A721A003F4E73 /* CircleImageViewController.h */,
+				415AA0B7213A721A003F4E73 /* Info.plist */,
+			);
+			path = CircleImageViewController;
+			sourceTree = "<group>";
+		};
+		415AA0D1213A7242003F4E73 /* CircleImageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				415AA0D2213A7249003F4E73 /* CircleImageViewController.swift */,
+				41B39A82213A8F8F00E1EE82 /* CircleImageViewController.xib */,
+			);
+			path = CircleImageViewController;
+			sourceTree = "<group>";
+		};
+		415AA0DC213A7364003F4E73 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				415AA0DD213A7364003F4E73 /* Color.h */,
+				415AA0DE213A7364003F4E73 /* Info.plist */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		415AA0E7213A737D003F4E73 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				41A2B10220F84DD800894DF5 /* ColorExtension.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		415AA0FD213A7D6C003F4E73 /* BorderedButtonViewController */ = {
+			isa = PBXGroup;
+			children = (
+				415AA0F9213A7BF2003F4E73 /* BorderedButtonViewController.swift */,
+				415AA10F213A7DC7003F4E73 /* BorderedButtonViewController.xib */,
+			);
+			path = BorderedButtonViewController;
+			sourceTree = "<group>";
+		};
+		415AA104213A7D81003F4E73 /* BorderedButtonViewController */ = {
+			isa = PBXGroup;
+			children = (
+				415AA105213A7D81003F4E73 /* BorderedButtonViewController.h */,
+				415AA106213A7D81003F4E73 /* Info.plist */,
+			);
+			path = BorderedButtonViewController;
 			sourceTree = "<group>";
 		};
 		417A3EE120C212EC0051B74B /* Frameworks */ = {
@@ -582,10 +824,14 @@
 		41869DE120C287CA00F98D00 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				415AA104213A7D81003F4E73 /* BorderedButtonViewController */,
+				415AA0B5213A721A003F4E73 /* CircleImageViewController */,
+				415AA0DC213A7364003F4E73 /* Color */,
 				41AE668720CFB24F009851E1 /* OnBoardingViewController */,
 				41869DED20C2920900F98D00 /* PnutAPI */,
 				41869DF920C293A700F98D00 /* PnutAPIClient */,
 				4116C5D720C94D4C00B8433E /* PostViewController */,
+				41C7B5DD20F22BFE00D66318 /* ProfileViewController */,
 				411BF4FE20D0C0F100744E6D /* StreamViewController */,
 				4103EE3A213A5CB200E46534 /* Secrets */,
 				411BF51620D0C2CA00744E6D /* Utils */,
@@ -674,9 +920,29 @@
 			path = OnboardingViewController;
 			sourceTree = "<group>";
 		};
+		41C7B5D620F22BD100D66318 /* ProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41C7B5D420F22BCB00D66318 /* ProfileView.storyboard */,
+				41C7B5D220F22BBF00D66318 /* ProfileViewController.swift */,
+				415AA0F6213A7B31003F4E73 /* HeaderImageViewController.swift */,
+			);
+			path = ProfileViewController;
+			sourceTree = "<group>";
+		};
+		41C7B5DD20F22BFE00D66318 /* ProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41C7B5DF20F22BFE00D66318 /* Info.plist */,
+				41C7B5DE20F22BFE00D66318 /* ProfileViewController.h */,
+			);
+			path = ProfileViewController;
+			sourceTree = "<group>";
+		};
 		41E01EA120DDBDAE006182E6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				415AA0E7213A737D003F4E73 /* Color */,
 				411BF52A20D3496200744E6D /* StoryboardedType.swift */,
 			);
 			path = Utils;
@@ -717,6 +983,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		415AA0B1213A721A003F4E73 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415AA0C6213A721A003F4E73 /* CircleImageViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415AA0D8213A7364003F4E73 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415AA0DF213A7364003F4E73 /* Color.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415AA100213A7D81003F4E73 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415AA107213A7D81003F4E73 /* BorderedButtonViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41869DE920C2920900F98D00 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -730,6 +1020,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				41AE668A20CFB24F009851E1 /* OnBoardingViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C7B5D920F22BFE00D66318 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C7B5E020F22BFE00D66318 /* ProfileViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -774,6 +1072,9 @@
 				411BF50320D0C0F100744E6D /* PBXTargetDependency */,
 				411BF51B20D0C2CA00744E6D /* PBXTargetDependency */,
 				4103EE4D213A5CB200E46534 /* PBXTargetDependency */,
+				415AA0C8213A721A003F4E73 /* PBXTargetDependency */,
+				415AA0E1213A7364003F4E73 /* PBXTargetDependency */,
+				415AA109213A7D81003F4E73 /* PBXTargetDependency */,
 			);
 			name = PnutAPIClient;
 			productName = pnutAPI;
@@ -835,6 +1136,63 @@
 			productReference = 411BF51520D0C2C900744E6D /* Utils.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		415AA0B3213A721A003F4E73 /* CircleImageViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 415AA0CB213A721B003F4E73 /* Build configuration list for PBXNativeTarget "CircleImageViewController" */;
+			buildPhases = (
+				415AA0AF213A721A003F4E73 /* Sources */,
+				415AA0B0213A721A003F4E73 /* Frameworks */,
+				415AA0B1213A721A003F4E73 /* Headers */,
+				415AA0B2213A721A003F4E73 /* Resources */,
+				41FB7F22213BB05200B4067D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				415AA0F5213A7699003F4E73 /* PBXTargetDependency */,
+				415AA0F3213A7534003F4E73 /* PBXTargetDependency */,
+			);
+			name = CircleImageViewController;
+			productName = CircleImageViewController;
+			productReference = 415AA0B4213A721A003F4E73 /* CircleImageViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		415AA0DA213A7364003F4E73 /* Color */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 415AA0E4213A7364003F4E73 /* Build configuration list for PBXNativeTarget "Color" */;
+			buildPhases = (
+				415AA0D6213A7364003F4E73 /* Sources */,
+				415AA0D7213A7364003F4E73 /* Frameworks */,
+				415AA0D8213A7364003F4E73 /* Headers */,
+				415AA0D9213A7364003F4E73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Color;
+			productName = Color;
+			productReference = 415AA0DB213A7364003F4E73 /* Color.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		415AA102213A7D81003F4E73 /* BorderedButtonViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 415AA10C213A7D81003F4E73 /* Build configuration list for PBXNativeTarget "BorderedButtonViewController" */;
+			buildPhases = (
+				415AA0FE213A7D81003F4E73 /* Sources */,
+				415AA0FF213A7D81003F4E73 /* Frameworks */,
+				415AA100213A7D81003F4E73 /* Headers */,
+				415AA101213A7D81003F4E73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BorderedButtonViewController;
+			productName = BorderedButtonViewController;
+			productReference = 415AA103213A7D81003F4E73 /* BorderedButtonViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		41869DEB20C2920900F98D00 /* PnutAPI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41869DF520C2920900F98D00 /* Build configuration list for PBXNativeTarget "PnutAPI" */;
@@ -875,6 +1233,7 @@
 				41A5987B20D134B20095527D /* PBXTargetDependency */,
 				41A5987F20D134B20095527D /* PBXTargetDependency */,
 				4103EE5C213A5EA700E46534 /* PBXTargetDependency */,
+				41C7B5E220F22BFE00D66318 /* PBXTargetDependency */,
 			);
 			name = Walnut;
 			productName = Walnut;
@@ -897,6 +1256,30 @@
 			name = OnBoardingViewController;
 			productName = OnBoardingViewController;
 			productReference = 41AE668620CFB24E009851E1 /* OnBoardingViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		41C7B5DB20F22BFE00D66318 /* ProfileViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41C7B5E520F22BFE00D66318 /* Build configuration list for PBXNativeTarget "ProfileViewController" */;
+			buildPhases = (
+				41C7B5D720F22BFE00D66318 /* Sources */,
+				41C7B5D820F22BFE00D66318 /* Frameworks */,
+				41C7B5D920F22BFE00D66318 /* Headers */,
+				41C7B5DA20F22BFE00D66318 /* Resources */,
+				41FB7F23213BB5A900B4067D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41FB7F26213BB5F700B4067D /* PBXTargetDependency */,
+				415AA119213A85B1003F4E73 /* PBXTargetDependency */,
+				415AA115213A85A6003F4E73 /* PBXTargetDependency */,
+				415AA117213A85A6003F4E73 /* PBXTargetDependency */,
+				415AA0F1213A7529003F4E73 /* PBXTargetDependency */,
+			);
+			name = ProfileViewController;
+			productName = ProfileViewController;
+			productReference = 41C7B5DC20F22BFE00D66318 /* ProfileViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -924,6 +1307,15 @@
 					411BF51420D0C2C900744E6D = {
 						CreatedOnToolsVersion = 9.4;
 					};
+					415AA0B3213A721A003F4E73 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					415AA0DA213A7364003F4E73 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					415AA102213A7D81003F4E73 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					41869DEB20C2920900F98D00 = {
 						CreatedOnToolsVersion = 9.4;
 					};
@@ -932,6 +1324,9 @@
 					};
 					41AE668520CFB24E009851E1 = {
 						CreatedOnToolsVersion = 9.4;
+					};
+					41C7B5DB20F22BFE00D66318 = {
+						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
 			};
@@ -949,13 +1344,17 @@
 			projectRoot = "";
 			targets = (
 				4112D39B20C1FB0C00FABEB3 /* PnutAPIClient */,
-				41869DEB20C2920900F98D00 /* PnutAPI */,
 				41869E5920C368AF00F98D00 /* Walnut */,
-				4116C5CA20C94D3500B8433E /* PostViewController */,
-				41AE668520CFB24E009851E1 /* OnBoardingViewController */,
-				411BF4FC20D0C0F100744E6D /* StreamViewController */,
-				411BF51420D0C2C900744E6D /* Utils */,
 				4103EE38213A5CB200E46534 /* Secrets */,
+				41869DEB20C2920900F98D00 /* PnutAPI */,
+				41AE668520CFB24E009851E1 /* OnBoardingViewController */,
+				4116C5CA20C94D3500B8433E /* PostViewController */,
+				41C7B5DB20F22BFE00D66318 /* ProfileViewController */,
+				411BF4FC20D0C0F100744E6D /* StreamViewController */,
+				415AA0B3213A721A003F4E73 /* CircleImageViewController */,
+				415AA102213A7D81003F4E73 /* BorderedButtonViewController */,
+				415AA0DA213A7364003F4E73 /* Color */,
+				411BF51420D0C2C900744E6D /* Utils */,
 			);
 		};
 /* End PBXProject section */
@@ -974,6 +1373,7 @@
 			files = (
 				4112D3AA20C1FB0E00FABEB3 /* LaunchScreen.storyboard in Resources */,
 				4112D3A720C1FB0E00FABEB3 /* Assets.xcassets in Resources */,
+				41A2B10120F84D7100894DF5 /* ColorAssets.xcassets in Resources */,
 				4112D3A520C1FB0D00FABEB3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -982,6 +1382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41A2B0FD20F84D6D00894DF5 /* ColorAssets.xcassets in Resources */,
 				4116C5D920C94D8100B8433E /* Post.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -990,6 +1391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41A2B0FB20F84D6C00894DF5 /* ColorAssets.xcassets in Resources */,
 				411BF52320D0C8FA00744E6D /* Stream.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -998,6 +1400,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41A2B0FA20F84D5800894DF5 /* ColorAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415AA0B2213A721A003F4E73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41B39A83213A8F8F00E1EE82 /* CircleImageViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415AA0D9213A7364003F4E73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415AA101213A7D81003F4E73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415AA112213A8014003F4E73 /* BorderedButtonViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1005,6 +1431,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41A2B10020F84D6F00894DF5 /* ColorAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1013,6 +1440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41869E6720C368B100F98D00 /* LaunchScreen.storyboard in Resources */,
+				41A2B0FF20F84D6E00894DF5 /* ColorAssets.xcassets in Resources */,
 				41869E6420C368B100F98D00 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1021,7 +1449,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41A2B0FE20F84D6E00894DF5 /* ColorAssets.xcassets in Resources */,
 				41AE669720CFB31D009851E1 /* OnBoarding.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C7B5DA20F22BFE00D66318 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41A2B0FC20F84D6D00894DF5 /* ColorAssets.xcassets in Resources */,
+				41C7B5E920F22C4C00D66318 /* ProfileView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1052,7 +1490,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		417A3ED620C212510051B74B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1131,10 +1569,42 @@
 			);
 			name = "Run Script";
 			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/APIKit.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/OAuthSwift.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nuke.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		41FB7F22213BB05200B4067D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Nuke.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		41FB7F23213BB5A900B4067D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Nuke.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1188,6 +1658,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		415AA0AF213A721A003F4E73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415AA0D4213A7259003F4E73 /* CircleImageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415AA0D6213A7364003F4E73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415AA0EA213A7397003F4E73 /* ColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415AA0FE213A7D81003F4E73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415AA111213A8001003F4E73 /* BorderedButtonViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41869DE720C2920900F98D00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1218,6 +1712,7 @@
 				411BF53420D35FBB00744E6D /* StreamingViewCoordinator.swift in Sources */,
 				411BF52E20D34E5A00744E6D /* Coordinator.swift in Sources */,
 				411BF53220D35FB000744E6D /* OnBoardingViewCoordinator.swift in Sources */,
+				4112335820F5AA6B00538563 /* ProfileViewCoordinator.swift in Sources */,
 				41E703DB20EC773600C94904 /* MainTabCoodinator.swift in Sources */,
 				41869E5D20C368AF00F98D00 /* AppDelegate.swift in Sources */,
 			);
@@ -1228,6 +1723,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				41AE669820CFB322009851E1 /* OnBoardingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C7B5D720F22BFE00D66318 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C7B5E820F22C4200D66318 /* ProfileViewController.swift in Sources */,
+				415AA0F8213A7B47003F4E73 /* HeaderImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1269,6 +1773,51 @@
 			target = 411BF51420D0C2C900744E6D /* Utils */;
 			targetProxy = 411BF51A20D0C2CA00744E6D /* PBXContainerItemProxy */;
 		};
+		415AA0C8213A721A003F4E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 415AA0B3213A721A003F4E73 /* CircleImageViewController */;
+			targetProxy = 415AA0C7213A721A003F4E73 /* PBXContainerItemProxy */;
+		};
+		415AA0E1213A7364003F4E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 415AA0DA213A7364003F4E73 /* Color */;
+			targetProxy = 415AA0E0213A7364003F4E73 /* PBXContainerItemProxy */;
+		};
+		415AA0F1213A7529003F4E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 415AA0DA213A7364003F4E73 /* Color */;
+			targetProxy = 415AA0F0213A7529003F4E73 /* PBXContainerItemProxy */;
+		};
+		415AA0F3213A7534003F4E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 415AA0DA213A7364003F4E73 /* Color */;
+			targetProxy = 415AA0F2213A7534003F4E73 /* PBXContainerItemProxy */;
+		};
+		415AA0F5213A7699003F4E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 411BF51420D0C2C900744E6D /* Utils */;
+			targetProxy = 415AA0F4213A7699003F4E73 /* PBXContainerItemProxy */;
+		};
+		415AA109213A7D81003F4E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 415AA102213A7D81003F4E73 /* BorderedButtonViewController */;
+			targetProxy = 415AA108213A7D81003F4E73 /* PBXContainerItemProxy */;
+		};
+		415AA115213A85A6003F4E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 415AA0B3213A721A003F4E73 /* CircleImageViewController */;
+			targetProxy = 415AA114213A85A6003F4E73 /* PBXContainerItemProxy */;
+		};
+		415AA117213A85A6003F4E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 415AA102213A7D81003F4E73 /* BorderedButtonViewController */;
+			targetProxy = 415AA116213A85A6003F4E73 /* PBXContainerItemProxy */;
+		};
+		415AA119213A85B1003F4E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 411BF51420D0C2C900744E6D /* Utils */;
+			targetProxy = 415AA118213A85B1003F4E73 /* PBXContainerItemProxy */;
+		};
 		41869DF220C2920900F98D00 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 41869DEB20C2920900F98D00 /* PnutAPI */;
@@ -1293,6 +1842,16 @@
 			isa = PBXTargetDependency;
 			target = 41AE668520CFB24E009851E1 /* OnBoardingViewController */;
 			targetProxy = 41AE668B20CFB24F009851E1 /* PBXContainerItemProxy */;
+		};
+		41C7B5E220F22BFE00D66318 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41C7B5DB20F22BFE00D66318 /* ProfileViewController */;
+			targetProxy = 41C7B5E120F22BFE00D66318 /* PBXContainerItemProxy */;
+		};
+		41FB7F26213BB5F700B4067D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41869DEB20C2920900F98D00 /* PnutAPI */;
+			targetProxy = 41FB7F25213BB5F700B4067D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1719,6 +2278,183 @@
 			};
 			name = Release;
 		};
+		415AA0CC213A721B003F4E73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/CircleImageViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"$(CONFIGURATION_BUILD_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.pnutapi.CircleImageViewController;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		415AA0CD213A721B003F4E73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/CircleImageViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.pnutapi.CircleImageViewController;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		415AA0E5213A7364003F4E73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Color/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.pnutapi.Color;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		415AA0E6213A7364003F4E73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Color/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.pnutapi.Color;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		415AA10D213A7D81003F4E73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/BorderedButtonViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.pnutapi.BorderedButtonViewController;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		415AA10E213A7D81003F4E73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 23P2WNBSHC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/BorderedButtonViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.pnutapi.BorderedButtonViewController;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		41869DF620C2920900F98D00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1885,6 +2621,70 @@
 			};
 			name = Release;
 		};
+		41C7B5E620F22BFE00D66318 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/ProfileViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.ProfileViewController;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		41C7B5E720F22BFE00D66318 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/ProfileViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.ProfileViewController;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1942,6 +2742,33 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		415AA0CB213A721B003F4E73 /* Build configuration list for PBXNativeTarget "CircleImageViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				415AA0CC213A721B003F4E73 /* Debug */,
+				415AA0CD213A721B003F4E73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		415AA0E4213A7364003F4E73 /* Build configuration list for PBXNativeTarget "Color" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				415AA0E5213A7364003F4E73 /* Debug */,
+				415AA0E6213A7364003F4E73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		415AA10C213A7D81003F4E73 /* Build configuration list for PBXNativeTarget "BorderedButtonViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				415AA10D213A7D81003F4E73 /* Debug */,
+				415AA10E213A7D81003F4E73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		41869DF520C2920900F98D00 /* Build configuration list for PBXNativeTarget "PnutAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1965,6 +2792,15 @@
 			buildConfigurations = (
 				41AE669020CFB24F009851E1 /* Debug */,
 				41AE669120CFB24F009851E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41C7B5E520F22BFE00D66318 /* Build configuration list for PBXNativeTarget "ProfileViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41C7B5E620F22BFE00D66318 /* Debug */,
+				41C7B5E720F22BFE00D66318 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
