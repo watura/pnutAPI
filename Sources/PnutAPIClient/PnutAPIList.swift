@@ -34,7 +34,7 @@ enum PnutAPIList: String {
         switch self {
         case .authorize:
             let manager = APITokenManager.shared
-            _ = try? manager.authorize(viewController: viewController)
+            _ = ((try? manager.authorize(viewController: viewController)) as OAuthSwiftRequestHandle??)
         case .lookupUser:
             LookupUserRequest(userId: "1").request()
         case .lookupUsers:
