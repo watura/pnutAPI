@@ -36,9 +36,9 @@ public struct UserResponse: Codable {
     public let content: Content
     public let counts: Counts
     public let verified: Verified?
-    public let followsYou: Bool
-    public let youBlocked: Bool
-    public let youFollow: Bool
-    public let youMuted: Bool
-    public let youCanFollow: Bool
+    public let followsYou: Bool?
+    public let youBlocked: Bool?
+    public let youFollow: Bool?
+    public let youMuted: Bool?
+    public let youCanFollow: Bool?
 }
