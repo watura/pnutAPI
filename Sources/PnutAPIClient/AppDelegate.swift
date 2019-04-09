@@ -7,7 +7,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
-        if url.host == "pnut-callback" {
+        if url.host == "pnut" {
             OAuthSwift.handle(url: url)
         }
         return true
