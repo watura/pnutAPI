@@ -290,6 +290,14 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		417E9AF9225CA1C200FF9C63 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				41A328E720E3BDD2009A2CEF /* Paginatable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		41869DD520C27D6F00F98D00 /* Response */ = {
 			isa = PBXGroup;
 			children = (
@@ -307,7 +315,7 @@
 		41869DE020C284C300F98D00 /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				41A328E720E3BDD2009A2CEF /* Paginatable.swift */,
+				417E9AF9225CA1C200FF9C63 /* Protocol */,
 				41869E1120C2BB6400F98D00 /* PostStreamRequest.swift */,
 				41869E0B20C2ABB800F98D00 /* PostsLifecycleRequest.swift */,
 				417A3EEE20C25BAF0051B74B /* TokenRequest.swift */,
