@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "411BF51420D0C2C900744E6D"
-               BuildableName = "Utils.framework"
-               BlueprintName = "Utils"
-               ReferencedContainer = "container:pnutAPI.xcodeproj">
+               BlueprintIdentifier = "41869DEB20C2920900F98D00"
+               BuildableName = "PnutAPI.framework"
+               BlueprintName = "PnutAPI"
+               ReferencedContainer = "container:PnutAPI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "411BF51420D0C2C900744E6D"
-            BuildableName = "Utils.framework"
-            BlueprintName = "Utils"
-            ReferencedContainer = "container:pnutAPI.xcodeproj">
+            BlueprintIdentifier = "41869DEB20C2920900F98D00"
+            BuildableName = "PnutAPI.framework"
+            BlueprintName = "PnutAPI"
+            ReferencedContainer = "container:PnutAPI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "411BF51420D0C2C900744E6D"
-            BuildableName = "Utils.framework"
-            BlueprintName = "Utils"
-            ReferencedContainer = "container:pnutAPI.xcodeproj">
+            BlueprintIdentifier = "41869DEB20C2920900F98D00"
+            BuildableName = "PnutAPI.framework"
+            BlueprintName = "PnutAPI"
+            ReferencedContainer = "container:PnutAPI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

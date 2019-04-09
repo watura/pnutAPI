@@ -23,7 +23,7 @@ final class ViewController: UITableViewController {
         }
 
         let api = PnutAPIList.list[indexPath.row]
-        cell.textLabel?.text = api.rawValue
+        cell.textLabel?.text = api.rawValue.capitalized
         return cell
     }
 

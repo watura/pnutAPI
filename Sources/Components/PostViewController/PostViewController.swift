@@ -1,5 +1,4 @@
 import UIKit
-import Utils
 
 public protocol PostAction {
     func cancel()
@@ -14,7 +13,7 @@ public class PostViewController: UIViewController {
     public var postAction: PostAction?
 }
 
-extension PostViewController: StoryboardedType {
+extension PostViewController {
     public static var storyboardName: String {
         return "Post"
     }
@@ -23,7 +22,11 @@ extension PostViewController: StoryboardedType {
         return "PostView"
     }
 
-    public typealias VC = PostViewController
+    public static func initView() -> PostViewController? {
+        let storyboardBundle = Bundle(for: self)
+        let storyboard = UIStoryboard(name: storyboardName, bundle: storyboardBundle)
+        return storyboard.instantiateViewController(withIdentifier: identifier) as? PostViewController
+    }
 }
 
 extension PostViewController {
@@ -31,7 +34,7 @@ extension PostViewController {
         super.viewWillAppear(animated)
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(self.keyboardWillChangeFrame(notification:)),
-                                               name: Notification.Name.UIKeyboardWillChangeFrame,
+                                               name: UIResponder.keyboardWillChangeFrameNotification,
                                                object: nil)
         textView.becomeFirstResponder()
     }
@@ -43,12 +46,12 @@ extension PostViewController {
 
     @objc func keyboardWillChangeFrame(notification: Notification) {
         if let userInfo = notification.userInfo,
-            let endFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            let endFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             let endFrameY = endFrame.origin.y
-            let duration: TimeInterval = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue ?? 0
-            let animationCurveRawNSN = userInfo[UIKeyboardAnimationCurveUserInfoKey] as? NSNumber
-            let animationCurveRaw = animationCurveRawNSN?.uintValue ?? UIViewAnimationOptions.curveEaseInOut.rawValue
-            let animationCurve: UIViewAnimationOptions = UIViewAnimationOptions(rawValue: animationCurveRaw)
+            let duration: TimeInterval = (userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue ?? 0
+            let animationCurveRawNSN = userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? NSNumber
+            let animationCurveRaw = animationCurveRawNSN?.uintValue ?? UIView.AnimationOptions.curveEaseInOut.rawValue
+            let animationCurve: UIView.AnimationOptions = UIView.AnimationOptions(rawValue: animationCurveRaw)
             if endFrameY >= UIScreen.main.bounds.size.height {
                 self.textViewBottomConstraint?.constant = 0.0
             } else {
