@@ -4,7 +4,7 @@ import PnutAPI
 
 final class ViewController: UITableViewController {
     override func viewDidLoad() {
-        APITokenManager.shared.setCredentials(clientId: Secrets.accessKey, clientSecret: Secrets.secretKey, callbackUrl: "pnut-callback://pnut-callback/pnut")
+        APITokenManager.shared.setCredentials(clientId: Secrets.accessKey, clientSecret: Secrets.secretKey, callbackUrl: "pnut-callback://pnut")
     }
 
     override func viewWillAppear(_ animated: Bool) {

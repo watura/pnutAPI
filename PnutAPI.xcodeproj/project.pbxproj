@@ -7,22 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4103EE4B213A5CB200E46534 /* Secrets.h in Headers */ = {isa = PBXBuildFile; fileRef = 4103EE3B213A5CB200E46534 /* Secrets.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4103EE4E213A5CB200E46534 /* Secrets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4103EE39213A5CB200E46534 /* Secrets.framework */; };
-		4103EE4F213A5CB200E46534 /* Secrets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4103EE39213A5CB200E46534 /* Secrets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4103EE56213A5CE900E46534 /* HasSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103EE30213A5B0B00E46534 /* HasSecrets.swift */; };
-		4103EE57213A5CE900E46534 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103EE32213A5B2600E46534 /* Secrets.swift */; };
+		4109EF1722619EC6000BF15A /* HasSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103EE30213A5B0B00E46534 /* HasSecrets.swift */; };
+		4109EF1822619EC6000BF15A /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103EE32213A5B2600E46534 /* Secrets.swift */; };
+		4109EF1922619ED5000BF15A /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41869E7120C3867A00F98D00 /* Post.storyboard */; };
+		4109EF1A22619ED5000BF15A /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4116C5B820C7EA1A00B8433E /* PostViewController.swift */; };
 		4112D3A020C1FB0D00FABEB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4112D39F20C1FB0D00FABEB3 /* AppDelegate.swift */; };
 		4112D3A220C1FB0D00FABEB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4112D3A120C1FB0D00FABEB3 /* ViewController.swift */; };
 		4112D3A520C1FB0D00FABEB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4112D3A320C1FB0D00FABEB3 /* Main.storyboard */; };
 		4112D3A720C1FB0E00FABEB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4112D3A620C1FB0E00FABEB3 /* Assets.xcassets */; };
 		4112D3AA20C1FB0E00FABEB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4112D3A820C1FB0E00FABEB3 /* LaunchScreen.storyboard */; };
-		4116C5CF20C94D3500B8433E /* PostViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4116C5CD20C94D3500B8433E /* PostViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4116C5D820C94D7800B8433E /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4116C5B820C7EA1A00B8433E /* PostViewController.swift */; };
-		4116C5D920C94D8100B8433E /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41869E7120C3867A00F98D00 /* Post.storyboard */; };
-		4116C5DD20C9539100B8433E /* PostViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4116C5CB20C94D3500B8433E /* PostViewController.framework */; };
-		4116C5DE20C9539100B8433E /* PostViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4116C5CB20C94D3500B8433E /* PostViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4118D77820DCB36E0040EA4F /* PnutAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41869DEC20C2920900F98D00 /* PnutAPI.framework */; };
 		417A3EE220C212EC0051B74B /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED720C212CE0051B74B /* APIKit.framework */; };
 		417A3EE320C212EC0051B74B /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED920C212CF0051B74B /* OAuthSwift.framework */; };
 		417A3EE420C212EC0051B74B /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED820C212CF0051B74B /* Result.framework */; };
@@ -51,20 +44,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4103EE4C213A5CB200E46534 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4103EE38213A5CB200E46534;
-			remoteInfo = Secrets;
-		};
-		4116C5DF20C9539100B8433E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4116C5CA20C94D3500B8433E;
-			remoteInfo = PostViewController;
-		};
 		41869DF120C2920900F98D00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4112D39420C1FB0C00FABEB3 /* Project object */;
@@ -82,8 +61,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				41869DF420C2920900F98D00 /* PnutAPI.framework in Embed Frameworks */,
-				4103EE4F213A5CB200E46534 /* Secrets.framework in Embed Frameworks */,
-				4116C5DE20C9539100B8433E /* PostViewController.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,7 +70,6 @@
 /* Begin PBXFileReference section */
 		4103EE30213A5B0B00E46534 /* HasSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasSecrets.swift; sourceTree = "<group>"; };
 		4103EE32213A5B2600E46534 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
-		4103EE39213A5CB200E46534 /* Secrets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Secrets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4103EE3B213A5CB200E46534 /* Secrets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Secrets.h; sourceTree = "<group>"; };
 		4103EE3C213A5CB200E46534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4112D39C20C1FB0D00FABEB3 /* PnutAPIClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PnutAPIClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,7 +80,6 @@
 		4112D3A920C1FB0E00FABEB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4112D3AB20C1FB0E00FABEB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4116C5B820C7EA1A00B8433E /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
-		4116C5CB20C94D3500B8433E /* PostViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PostViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4116C5CD20C94D3500B8433E /* PostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
 		4116C5CE20C94D3500B8433E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		417A3ED720C212CE0051B74B /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
@@ -133,31 +108,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4103EE35213A5CB200E46534 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4112D39920C1FB0C00FABEB3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				417A3EE220C212EC0051B74B /* APIKit.framework in Frameworks */,
 				417A3EE320C212EC0051B74B /* OAuthSwift.framework in Frameworks */,
-				4116C5DD20C9539100B8433E /* PostViewController.framework in Frameworks */,
 				41869DF320C2920900F98D00 /* PnutAPI.framework in Frameworks */,
-				4103EE4E213A5CB200E46534 /* Secrets.framework in Frameworks */,
 				417A3EE420C212EC0051B74B /* Result.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4116C5C720C94D3500B8433E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4118D77820DCB36E0040EA4F /* PnutAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +155,8 @@
 			children = (
 				417A3EE120C212EC0051B74B /* Frameworks */,
 				4112D39D20C1FB0D00FABEB3 /* Products */,
-				4118D77E20DCB6C90040EA4F /* Sources */,
+				41869E0120C296D100F98D00 /* PnutAPI */,
+				4112D39E20C1FB0D00FABEB3 /* PnutAPIClient */,
 				41869DE120C287CA00F98D00 /* Supporting Files */,
 			);
 			sourceTree = "<group>";
@@ -207,8 +166,6 @@
 			children = (
 				4112D39C20C1FB0D00FABEB3 /* PnutAPIClient.app */,
 				41869DEC20C2920900F98D00 /* PnutAPI.framework */,
-				4116C5CB20C94D3500B8433E /* PostViewController.framework */,
-				4103EE39213A5CB200E46534 /* Secrets.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,21 +173,14 @@
 		4112D39E20C1FB0D00FABEB3 /* PnutAPIClient */ = {
 			isa = PBXGroup;
 			children = (
+				4103EE58213A5CF200E46534 /* Secrets */,
 				41869DE220C28B1200F98D00 /* Storyboard */,
+				4116C5B820C7EA1A00B8433E /* PostViewController.swift */,
 				4112D39F20C1FB0D00FABEB3 /* AppDelegate.swift */,
 				41869DE520C291A500F98D00 /* PnutAPIList.swift */,
 				4112D3A120C1FB0D00FABEB3 /* ViewController.swift */,
 			);
 			path = PnutAPIClient;
-			sourceTree = "<group>";
-		};
-		4116C5CC20C94D3500B8433E /* PostViewController */ = {
-			isa = PBXGroup;
-			children = (
-				41869E7120C3867A00F98D00 /* Post.storyboard */,
-				4116C5B820C7EA1A00B8433E /* PostViewController.swift */,
-			);
-			path = PostViewController;
 			sourceTree = "<group>";
 		};
 		4116C5D720C94D4C00B8433E /* PostViewController */ = {
@@ -240,25 +190,6 @@
 				4116C5CD20C94D3500B8433E /* PostViewController.h */,
 			);
 			path = PostViewController;
-			sourceTree = "<group>";
-		};
-		4116C5DA20C94DC800B8433E /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				4116C5CC20C94D3500B8433E /* PostViewController */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		4118D77E20DCB6C90040EA4F /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				4116C5DA20C94DC800B8433E /* Components */,
-				41869E0120C296D100F98D00 /* PnutAPI */,
-				4112D39E20C1FB0D00FABEB3 /* PnutAPIClient */,
-				4103EE58213A5CF200E46534 /* Secrets */,
-			);
-			path = Sources;
 			sourceTree = "<group>";
 		};
 		417A3EE120C212EC0051B74B /* Frameworks */ = {
@@ -338,6 +269,7 @@
 		41869DE220C28B1200F98D00 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				41869E7120C3867A00F98D00 /* Post.storyboard */,
 				4112D3A820C1FB0E00FABEB3 /* LaunchScreen.storyboard */,
 				4112D3A320C1FB0D00FABEB3 /* Main.storyboard */,
 			);
@@ -374,22 +306,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4103EE36213A5CB200E46534 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4103EE4B213A5CB200E46534 /* Secrets.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4116C5C820C94D3500B8433E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4116C5CF20C94D3500B8433E /* PostViewController.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		41869DE920C2920900F98D00 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -401,24 +317,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4103EE38213A5CB200E46534 /* Secrets */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4103EE50213A5CB200E46534 /* Build configuration list for PBXNativeTarget "Secrets" */;
-			buildPhases = (
-				4103EE34213A5CB200E46534 /* Sources */,
-				4103EE35213A5CB200E46534 /* Frameworks */,
-				4103EE36213A5CB200E46534 /* Headers */,
-				4103EE37213A5CB200E46534 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Secrets;
-			productName = Secrets;
-			productReference = 4103EE39213A5CB200E46534 /* Secrets.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		4112D39B20C1FB0C00FABEB3 /* PnutAPIClient */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4112D3AE20C1FB0E00FABEB3 /* Build configuration list for PBXNativeTarget "PnutAPIClient" */;
@@ -434,32 +332,11 @@
 			);
 			dependencies = (
 				41869DF220C2920900F98D00 /* PBXTargetDependency */,
-				4116C5E020C9539100B8433E /* PBXTargetDependency */,
-				4103EE4D213A5CB200E46534 /* PBXTargetDependency */,
 			);
 			name = PnutAPIClient;
 			productName = pnutAPI;
 			productReference = 4112D39C20C1FB0D00FABEB3 /* PnutAPIClient.app */;
 			productType = "com.apple.product-type.application";
-		};
-		4116C5CA20C94D3500B8433E /* PostViewController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4116C5D620C94D3500B8433E /* Build configuration list for PBXNativeTarget "PostViewController" */;
-			buildPhases = (
-				4116C5DB20C951D900B8433E /* ShellScript */,
-				4116C5C620C94D3500B8433E /* Sources */,
-				4116C5C720C94D3500B8433E /* Frameworks */,
-				4116C5C820C94D3500B8433E /* Headers */,
-				4116C5C920C94D3500B8433E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PostViewController;
-			productName = PostViewController;
-			productReference = 4116C5CB20C94D3500B8433E /* PostViewController.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 		41869DEB20C2920900F98D00 /* PnutAPI */ = {
 			isa = PBXNativeTarget;
@@ -491,15 +368,7 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Wataru Nishimoto";
 				TargetAttributes = {
-					4103EE38213A5CB200E46534 = {
-						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1020;
-					};
 					4112D39B20C1FB0C00FABEB3 = {
-						CreatedOnToolsVersion = 9.4;
-						LastSwiftMigration = 1020;
-					};
-					4116C5CA20C94D3500B8433E = {
 						CreatedOnToolsVersion = 9.4;
 						LastSwiftMigration = 1020;
 					};
@@ -523,36 +392,20 @@
 			projectRoot = "";
 			targets = (
 				4112D39B20C1FB0C00FABEB3 /* PnutAPIClient */,
-				4103EE38213A5CB200E46534 /* Secrets */,
 				41869DEB20C2920900F98D00 /* PnutAPI */,
-				4116C5CA20C94D3500B8433E /* PostViewController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4103EE37213A5CB200E46534 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4112D39A20C1FB0C00FABEB3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4109EF1922619ED5000BF15A /* Post.storyboard in Resources */,
 				4112D3AA20C1FB0E00FABEB3 /* LaunchScreen.storyboard in Resources */,
 				4112D3A720C1FB0E00FABEB3 /* Assets.xcassets in Resources */,
 				4112D3A520C1FB0D00FABEB3 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4116C5C920C94D3500B8433E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4116C5D920C94D8100B8433E /* Post.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,19 +419,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4116C5DB20C951D900B8433E /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
 		4116C5DC20C951FA00B8433E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -646,30 +486,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4103EE34213A5CB200E46534 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4103EE56213A5CE900E46534 /* HasSecrets.swift in Sources */,
-				4103EE57213A5CE900E46534 /* Secrets.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4112D39820C1FB0C00FABEB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4109EF1A22619ED5000BF15A /* PostViewController.swift in Sources */,
+				4109EF1722619EC6000BF15A /* HasSecrets.swift in Sources */,
+				4109EF1822619EC6000BF15A /* Secrets.swift in Sources */,
 				4112D3A220C1FB0D00FABEB3 /* ViewController.swift in Sources */,
 				4112D3A020C1FB0D00FABEB3 /* AppDelegate.swift in Sources */,
 				41869DE620C291A500F98D00 /* PnutAPIList.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4116C5C620C94D3500B8433E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4116C5D820C94D7800B8433E /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,16 +524,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4103EE4D213A5CB200E46534 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4103EE38213A5CB200E46534 /* Secrets */;
-			targetProxy = 4103EE4C213A5CB200E46534 /* PBXContainerItemProxy */;
-		};
-		4116C5E020C9539100B8433E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4116C5CA20C94D3500B8433E /* PostViewController */;
-			targetProxy = 4116C5DF20C9539100B8433E /* PBXContainerItemProxy */;
-		};
 		41869DF220C2920900F98D00 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 41869DEB20C2920900F98D00 /* PnutAPI */;
@@ -737,62 +553,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4103EE51213A5CB200E46534 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 23P2WNBSHC;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Secrets/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.pnutapi.Secrets;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4103EE52213A5CB200E46534 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 23P2WNBSHC;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Secrets/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.pnutapi.Secrets;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		4112D3AC20C1FB0E00FABEB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -953,62 +713,6 @@
 			};
 			name = Release;
 		};
-		4116C5D420C94D3500B8433E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/PostViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.PostViewController;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4116C5D520C94D3500B8433E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/PostViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.wtr.PostViewController;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		41869DF620C2920900F98D00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1076,15 +780,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4103EE50213A5CB200E46534 /* Build configuration list for PBXNativeTarget "Secrets" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4103EE51213A5CB200E46534 /* Debug */,
-				4103EE52213A5CB200E46534 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4112D39720C1FB0C00FABEB3 /* Build configuration list for PBXProject "PnutAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1099,15 +794,6 @@
 			buildConfigurations = (
 				4112D3AF20C1FB0E00FABEB3 /* Debug */,
 				4112D3B020C1FB0E00FABEB3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4116C5D620C94D3500B8433E /* Build configuration list for PBXNativeTarget "PostViewController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4116C5D420C94D3500B8433E /* Debug */,
-				4116C5D520C94D3500B8433E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
