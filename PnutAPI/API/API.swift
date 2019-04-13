@@ -20,7 +20,9 @@ public extension API {
         guard let url = URL(string: "https://api.pnut.io/v0/") else { fatalError() }
         return url
     }
+}
 
+public extension API {
     func intercept(urlRequest: URLRequest) throws -> URLRequest {
         let url = self.baseURL.absoluteString + self.path
 
@@ -33,6 +35,13 @@ public extension API {
             mutableRequest.setValue(value, forHTTPHeaderField: field)
         }
         return mutableRequest
+    }
+
+    var queryParameters: [String: Any]? {
+        guard let parameters = parameters as? [String: Any], method.prefersQueryParameters else {
+            return nil
+        }
+        return parameters
     }
 
     var bodyParameters: BodyParameters? {
@@ -88,5 +97,18 @@ public extension API where Self: Encodable {
         encoder.outputFormatting = .prettyPrinted
         let encoded = try! encoder.encode(self)
         return (try? JSONSerialization.jsonObject(with: encoded, options: .allowFragments)).flatMap { $0 as? [String: Any] }
+    }
+}
+
+public extension API where Self: HasObject {
+    var parameters: Any? {
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = .prettyPrinted
+
+        guard let encoded = try? encoder.encode(self),
+            let dict = try? JSONSerialization.jsonObject(with: encoded, options: .allowFragments) as? [String: Any] else {
+                return nil
+        }
+        return dict["object"]
     }
 }
