@@ -4,7 +4,7 @@ import APIKit
 import PnutAPI
 import PostViewController
 
-enum PnutAPIList: String {
+enum PnutAPIList: String, CaseIterable {
     case authorize
 
     case lookupUser
@@ -24,11 +24,7 @@ enum PnutAPIList: String {
     case deleteToken
     case getToken
 
-    static var count: Int { return PnutAPIList.list.count }
-
-    static var list: [PnutAPIList] {
-        return [.authorize, .lookupUser, .lookupUsers, .postLifecyclePost, .postLifecycleRevise, .postLifecycleDelete, .postStreams, .unifiedPostStreams, .mentionsPostStreams, .postsPostStreams, .globalPostStreams, .tagsPostStreams, .deleteToken, .getToken]
-    }
+    static var count: Int { return PnutAPIList.allCases.count }
 
     func action(viewController: UIViewController) {
         switch self {

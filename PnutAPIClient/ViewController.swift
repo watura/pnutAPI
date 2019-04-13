@@ -22,14 +22,14 @@ final class ViewController: UITableViewController {
             fatalError()
         }
 
-        let api = PnutAPIList.list[indexPath.row]
+        let api = PnutAPIList.allCases[indexPath.row]
         cell.textLabel?.text = api.rawValue.capitalized
         return cell
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let api = PnutAPIList.list[indexPath.row]
+        let api = PnutAPIList.allCases[indexPath.row]
         api.action(viewController: self)
     }
 }
