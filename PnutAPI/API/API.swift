@@ -34,7 +34,24 @@ public extension API {
         for (field, value) in header {
             mutableRequest.setValue(value, forHTTPHeaderField: field)
         }
+//        mutableRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
         return mutableRequest
+    }
+
+    func intercept(object: Any, urlResponse: HTTPURLResponse) throws -> Any {
+        let statusCode = urlResponse.statusCode
+
+        guard (200 ..< 300).contains(statusCode) else {
+            if let object = object as? Data,
+                let text = String(data: object, encoding: .utf8) {
+                print(text)
+            } else {
+                print(object)
+            }
+            throw ResponseError.unacceptableStatusCode(statusCode)
+        }
+
+        return object
     }
 
     var queryParameters: [String: Any]? {
@@ -45,11 +62,10 @@ public extension API {
     }
 
     var bodyParameters: BodyParameters? {
-        guard let parameters = parameters as? [String: Any], !method.prefersQueryParameters else {
-            return nil
+        if let param = parameters {
+            return JSONBodyParameters(JSONObject: param)
         }
-
-        return FormURLEncodedBodyParameters(formObject: parameters)
+        return nil
     }
 
     func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Response {
@@ -61,13 +77,16 @@ public extension API {
 
         if let _ = try? decoder.decode(Response.self, from: data) {
         } else if let value = String(data: data, encoding: .utf8) {
-            print(value)
+            print("response value", value)
         }
 
         return try decoder.decode(Response.self, from: data)
     }
 
     func request(success: ((Self.Response) -> Void)? = nil, failure: ((SessionTaskError) -> Void)? = nil) {
+        print("REQUEST: ", self.method, self.baseURL.absoluteString + self.path)
+        print(self.bodyParameters ?? "")
+
         Session.send(self) { result in
             switch result {
             case .success(let response):
@@ -77,13 +96,12 @@ public extension API {
                     let encoder = JSONEncoder()
                     encoder.outputFormatting = .prettyPrinted
                     let encoded = try! encoder.encode(response)
-                    print(String(data: encoded, encoding: .utf8)!)
+                    print("encoded: ", String(data: encoded, encoding: .utf8)!)
                 }
             case .failure(let error):
                 if let failure = failure {
                     failure(error)
                 } else {
-                    print(self.baseURL.absoluteString + self.path)
                     print(error)
                 }
             }

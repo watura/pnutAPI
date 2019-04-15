@@ -10,6 +10,8 @@ enum PnutAPIList: String, CaseIterable {
     case lookupUser
     case lookupUsers
 
+    case usersMePut
+
     case postLifecyclePost
     case postLifecycleRevise
     case postLifecycleDelete
@@ -31,6 +33,9 @@ enum PnutAPIList: String, CaseIterable {
         case .authorize:
             let manager = APITokenManager.shared
             _ = ((try? manager.authorize(viewController: viewController)) as OAuthSwiftRequestHandle??)
+        case .usersMePut:
+            let userObj = Users.Me.UserObject(timezone: "Asia/Tokyo", locale: "ja_JP", name: "wtr", text: "Update From PnutAPIList")
+            Users.Me.Put(object: userObj).request()
         case .lookupUser:
             LookupUserRequest(userId: "1").request()
         case .lookupUsers:

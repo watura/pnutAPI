@@ -37,7 +37,7 @@ extension Users.Me {
         }
 
         public var path: String {
-            return "/users/me"
+            return "users/me"
         }
     }
 }
