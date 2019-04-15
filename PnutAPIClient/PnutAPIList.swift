@@ -11,6 +11,7 @@ enum PnutAPIList: String, CaseIterable {
     case lookupUsers
 
     case usersMePut
+    case usersMePatch
 
     case postLifecyclePost
     case postLifecycleRevise
@@ -36,6 +37,9 @@ enum PnutAPIList: String, CaseIterable {
         case .usersMePut:
             let userObj = Users.Me.UserObject(timezone: "Asia/Tokyo", locale: "ja_JP", name: "wtr", text: "Update From PnutAPIList")
             Users.Me.Put(object: userObj).request()
+        case .usersMePatch:
+            let userObj = Users.Me.UserObject(text: "Update From PnutAPIList[Patch]")
+            Users.Me.Patch(object: userObj).request()
         case .lookupUser:
             LookupUserRequest(userId: "1").request()
         case .lookupUsers:
