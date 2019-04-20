@@ -26,3 +26,15 @@ public struct Secrets: HasSecrets {
 And, stored in `PnutAPIClient/Secrets/`
 
 Make sure not to upload Secrets.swift to the github.
+
+# Supported APIs
+- [x] PUT /users/me
+- [x] PATCH /users/me
+- [ ] POST /users/me/avatar
+- [ ] GET /users/{user_id}/avatar
+- [ ] GET /users/{user_id}/cover
+- [ ] POST /users/me/cover
+- [x] GET /users/{user_id}
+- [x] GET /users
+- [ ] GET /apps/me/users/ids
+- [ ] GET /apps/me/users/tokens
