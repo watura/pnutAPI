@@ -30,7 +30,6 @@
 		41869DFB20C293D600F98D00 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED920C212CF0051B74B /* OAuthSwift.framework */; };
 		41869DFC20C293D600F98D00 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417A3ED820C212CF0051B74B /* Result.framework */; };
 		41869E0220C296FC00F98D00 /* TokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417A3EEE20C25BAF0051B74B /* TokenRequest.swift */; };
-		41869E0320C2970000F98D00 /* UsersLookupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869DE320C28B6200F98D00 /* UsersLookupRequest.swift */; };
 		41869E0420C2970300F98D00 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417A3EEA20C258DD0051B74B /* API.swift */; };
 		41869E0620C2970D00F98D00 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869DDE20C2834D00F98D00 /* Meta.swift */; };
 		41869E0720C2970D00F98D00 /* PnutResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869DDC20C2827000F98D00 /* PnutResponse.swift */; };
@@ -97,7 +96,6 @@
 		41869DD820C27D9F00F98D00 /* TokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
 		41869DDC20C2827000F98D00 /* PnutResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PnutResponse.swift; sourceTree = "<group>"; };
 		41869DDE20C2834D00F98D00 /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
-		41869DE320C28B6200F98D00 /* UsersLookupRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersLookupRequest.swift; sourceTree = "<group>"; };
 		41869DE520C291A500F98D00 /* PnutAPIList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PnutAPIList.swift; sourceTree = "<group>"; };
 		41869DEC20C2920900F98D00 /* PnutAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PnutAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41869DEE20C2920900F98D00 /* pnutAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pnutAPI.h; sourceTree = "<group>"; };
@@ -158,7 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				4109EF1C2261B40F000BF15A /* Users.swift */,
-				41869DE320C28B6200F98D00 /* UsersLookupRequest.swift */,
 				4109EF1E2261B43A000BF15A /* Profile.swift */,
 			);
 			path = Users;
@@ -519,7 +516,6 @@
 			files = (
 				4109EF1F2261B43A000BF15A /* Profile.swift in Sources */,
 				4109EF212261C7DB000BF15A /* HasObject.swift in Sources */,
-				41869E0320C2970000F98D00 /* UsersLookupRequest.swift in Sources */,
 				41869E0820C2970D00F98D00 /* TokenResponse.swift in Sources */,
 				41A328E820E3BDD2009A2CEF /* Paginatable.swift in Sources */,
 				41869E1220C2BB6400F98D00 /* PostStreamRequest.swift in Sources */,

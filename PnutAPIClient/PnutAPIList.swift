@@ -41,9 +41,9 @@ enum PnutAPIList: String, CaseIterable {
             let userObj = Users.Me.UserObject(text: "Update From PnutAPIList[Patch]")
             Users.Me.Patch(object: userObj).request()
         case .lookupUser:
-            LookupUserRequest(userId: "1").request()
+            Users.User(userId: "1").request()
         case .lookupUsers:
-            LookupUsersRequest(ids: ["1", "136"]).request()
+            Users.Users(ids: ["1", "136"]).request()
         case .postLifecyclePost:
             guard let pvc = PostViewController.initView() else { fatalError() }
             pvc.postAction = self
