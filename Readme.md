@@ -38,3 +38,7 @@ Make sure not to upload Secrets.swift to the github.
 - [x] GET /users
 - [ ] GET /apps/me/users/ids
 - [ ] GET /apps/me/users/tokens
+- [ ] GET /users/{user_id}/following
+- [ ] GET /users/{user_id}/followers
+- [ ] PUT /users/{user_id}/follow
+- [ ] DELETE /users/{user_id}/follow
