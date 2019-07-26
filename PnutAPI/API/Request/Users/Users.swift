@@ -3,6 +3,7 @@ import APIKit
 
 public enum Users {
     public enum Me {}
+    public enum Follow {}
 }
 
 extension Users {

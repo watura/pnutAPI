@@ -41,6 +41,7 @@
 		41869E1020C2B27500F98D00 /* Counts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869E0F20C2B27500F98D00 /* Counts.swift */; };
 		41869E1220C2BB6400F98D00 /* PostStreamRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869E1120C2BB6400F98D00 /* PostStreamRequest.swift */; };
 		41869E1420C2BDBB00F98D00 /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41869E1320C2BDBB00F98D00 /* Entities.swift */; };
+		419CE692226B0E8400C24C9C /* Follow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419CE691226B0E8400C24C9C /* Follow.swift */; };
 		41A328E820E3BDD2009A2CEF /* Paginatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A328E720E3BDD2009A2CEF /* Paginatable.swift */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +107,7 @@
 		41869E1120C2BB6400F98D00 /* PostStreamRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStreamRequest.swift; sourceTree = "<group>"; };
 		41869E1320C2BDBB00F98D00 /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
 		41869E7120C3867A00F98D00 /* Post.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
+		419CE691226B0E8400C24C9C /* Follow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follow.swift; sourceTree = "<group>"; };
 		41A328E720E3BDD2009A2CEF /* Paginatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paginatable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +157,7 @@
 		4109EF1B2261B3F1000BF15A /* Users */ = {
 			isa = PBXGroup;
 			children = (
+				419CE691226B0E8400C24C9C /* Follow.swift */,
 				4109EF1C2261B40F000BF15A /* Users.swift */,
 				4109EF1E2261B43A000BF15A /* Profile.swift */,
 			);
@@ -521,6 +524,7 @@
 				41869E1220C2BB6400F98D00 /* PostStreamRequest.swift in Sources */,
 				41869E1420C2BDBB00F98D00 /* Entities.swift in Sources */,
 				41869E1020C2B27500F98D00 /* Counts.swift in Sources */,
+				419CE692226B0E8400C24C9C /* Follow.swift in Sources */,
 				41869E0E20C2B17700F98D00 /* PostResponse.swift in Sources */,
 				4109EF1D2261B40F000BF15A /* Users.swift in Sources */,
 				41869E0920C2970D00F98D00 /* UserResponse.swift in Sources */,
